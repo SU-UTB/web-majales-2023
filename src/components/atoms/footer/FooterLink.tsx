@@ -1,9 +1,9 @@
 type Props = {
   linkTo: string;
-  isMailLink: boolean;
+  isMailLink?: boolean;
 };
 
-const FooterLink = ({ linkTo, isMailLink }: Props) => {
+const FooterLink = ({ linkTo, isMailLink = false }: Props) => {
   return (
     <a
       href={isMailLink ? `mailto:${linkTo}` : `https://${linkTo}`}
