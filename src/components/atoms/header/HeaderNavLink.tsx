@@ -1,9 +1,6 @@
-type Props = {
-  linkTo: string;
-  linkText: string;
-};
+import LinkItem from '../../../lib/shared/LinkItem';
 
-const HeaderNavLink = ({ linkTo, linkText }: Props) => {
+const HeaderNavLink = ({ linkTo, linkText }: LinkItem) => {
   return <div>HeaderNavLink</div>;
 };
 

@@ -1,5 +1,5 @@
 type Props = {
-  children: any;
+  children: React.ReactNode;
 };
 
 const PartnerSection = ({ children }: Props) => {
