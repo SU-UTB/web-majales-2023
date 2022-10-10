@@ -1,19 +1,21 @@
+import { Link } from 'react-router-dom';
+
 type Props = {
   linkTo: string;
   linkText: string;
-  blank: boolean;
+  blank?: boolean;
 };
 
 const NavToPageBlueButton = ({ linkTo, linkText, blank = false }: Props) => {
   return (
-    <a
+    <Link
       target={blank ? '_blank' : '_self'}
-      href={linkTo}
+      to={linkTo}
       rel="noopener noreferrer"
       className="inline-block text-white bg-dark_blu uppercase txt-bold text-lg px-8 py-4"
     >
       {linkText}
-    </a>
+    </Link>
   );
 };
 

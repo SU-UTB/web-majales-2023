@@ -1,6 +1,6 @@
 type Props = {
-  sectionHeadingText: string;
-  children: React.ReactNode;
+  sectionHeadingText?: string;
+  children?: React.ReactNode;
 };
 
 const SectionHeading = ({ sectionHeadingText, children }: Props) => {

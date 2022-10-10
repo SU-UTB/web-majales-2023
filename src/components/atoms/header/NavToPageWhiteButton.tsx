@@ -1,7 +1,7 @@
 type Props = {
   linkTo: string;
   linkText: string;
-  blank: boolean;
+  blank?: boolean;
 };
 
 const NavToPageWhiteButton = ({ linkTo, linkText, blank = false }: Props) => {
