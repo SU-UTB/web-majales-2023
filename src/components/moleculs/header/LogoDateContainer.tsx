@@ -1,4 +1,4 @@
-const LodoDateContainer = () => {
+const LogoDateContainer = () => {
   return (
     <div className="logo-date-container flex space-x-8 items-center lg:pt-4">
       <a href="./">
@@ -9,4 +9,4 @@ const LodoDateContainer = () => {
   );
 };
 
-export default LodoDateContainer;
+export default LogoDateContainer;
