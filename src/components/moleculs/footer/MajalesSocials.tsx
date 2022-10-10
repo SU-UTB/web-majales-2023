@@ -1,4 +1,4 @@
-import PictureLinkItem from '../../../lib/shared/PictureLinkItem';
+import PictureLinkItem from '../../../lib/types/PictureLinkItem';
 import SocItem from '../../atoms/social/SocItem';
 
 const MajalesSocials = () => {

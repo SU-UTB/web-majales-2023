@@ -1,3 +1,4 @@
+import { ROUTES } from '../../lib/constants/Routes';
 import FooterItemHeadline from '../atoms/footer/FooterItemHeadline';
 import FooterLink from '../atoms/footer/FooterLink';
 import FooterNavLink from '../atoms/footer/FooterNavLink';
@@ -41,29 +42,6 @@ const Footer = () => {
     },
   ];
 
-  const navLinks = [
-    {
-      linkTo: '/lineup.html',
-      linkText: 'lineup',
-    },
-    {
-      linkTo: '/bandContest.html',
-      linkText: 'soutěž kapel',
-    },
-    {
-      linkTo: '/majalesKing.html',
-      linkText: 'král majálesu',
-    },
-    {
-      linkTo: '/partners.html',
-      linkText: 'partneři',
-    },
-    {
-      linkTo: '/contact.html',
-      linkText: 'kontakt',
-    },
-  ];
-
   const footerLinks = [
     {
       linkTo: 'sunovy.utb.cz',
@@ -82,12 +60,9 @@ const Footer = () => {
       <div className="footer-inner flex flex-col items-center md:items-start md:flex-row text-center md:text-left justify-around">
         <div className="footer-nav-links mb-4 md:mb-0">
           <FooterItemHeadline headlineText="majáles" />
-          {navLinks.map((navLink) => (
+          {ROUTES.map((route) => (
             <div className="footer-nav-link mb-2">
-              <FooterNavLink
-                linkTo={navLink.linkTo}
-                linkText={navLink.linkText}
-              />
+              <FooterNavLink linkTo={route.path} linkText={route.linkText} />
             </div>
           ))}
           <div className="footer-contact-links flex flex-col mt-4 md:mt-6 items-center md:items-start">

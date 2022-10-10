@@ -1,4 +1,4 @@
-import LinkItem from '../../../lib/shared/LinkItem';
+import LinkItem from '../../../lib/types/LinkItem';
 
 const NewsItemLink = ({ linkTo, linkText }: LinkItem) => {
   return (

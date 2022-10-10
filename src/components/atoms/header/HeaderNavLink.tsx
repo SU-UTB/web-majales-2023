@@ -1,7 +1,8 @@
-import LinkItem from '../../../lib/shared/LinkItem';
+import { Link } from 'react-router-dom';
+import LinkItem from '../../../lib/types/LinkItem';
 
 const HeaderNavLink = ({ linkTo, linkText }: LinkItem) => {
-  return <div>HeaderNavLink</div>;
+  return <Link to={linkTo}>{linkText}</Link>;
 };
 
 export default HeaderNavLink;

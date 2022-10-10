@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ROUTES } from '../../lib/constants/Routes';
 import HamburgerButton from '../atoms/header/HamburgerButton';
 import HeaderNavLink from '../atoms/header/HeaderNavLink';
 import HorizontalSocials from '../moleculs/header/HorizontalSocials';
@@ -17,12 +18,9 @@ const Header = () => {
           handleClick={() => setToggledMenu(!toggledMenu)}
         />
         <ul className="nav-items w-full lg:pt-4 lg:w-auto flex flex-col lg:flex-row items-center lg:space-x-8 absolute lg:static bg-white top-20 lg:top-0">
-          <HeaderNavLink linkTo="/lineup" linkText="lineup" />
-          <HeaderNavLink linkTo="/soutez-kapel" linkText="soutěž kapel" />
-          <HeaderNavLink linkTo="/kral-a-kralovna" linkText="král majálesu" />
-          <HeaderNavLink linkTo="/aktuality" linkText="aktuality" />
-          <HeaderNavLink linkTo="/partneri" linkText="partneři" />
-          <HeaderNavLink linkTo="/kontakt" linkText="kontakt" />
+          {ROUTES.map((route) => (
+            <HeaderNavLink linkTo={route.path} linkText={route.linkText} />
+          ))}
           <HorizontalSocials />
         </ul>
       </nav>
