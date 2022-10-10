@@ -3,7 +3,7 @@ import LandingHeading from '../../atoms/landing/LandingHeading';
 import VerticalSocials from '../../shared/VerticalSocials';
 import BandList from './BandList';
 
-const LandingLineup = () => {
+const Landing = () => {
   return (
     <section id="landing-lineup" className="py-6 md:py-12 relative">
       <VerticalSocials />
@@ -36,4 +36,4 @@ const LandingLineup = () => {
   );
 };
 
-export default LandingLineup;
+export default Landing;

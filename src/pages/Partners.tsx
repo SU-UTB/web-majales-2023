@@ -1,5 +1,13 @@
+import Landing from '../components/organisms/partners/Landing';
+import PartnerList from '../components/organisms/partners/PartnerList';
+
 const Partners = () => {
-  return <div>Partners</div>;
+  return (
+    <>
+      <Landing />
+      <PartnerList />
+    </>
+  );
 };
 
 export default Partners;

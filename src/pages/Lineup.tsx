@@ -1,5 +1,11 @@
+import Landing from '../components/organisms/lineup/Landing';
+
 const Lineup = () => {
-  return <div>Lineup</div>;
+  return (
+    <>
+      <Landing />
+    </>
+  );
 };
 
 export default Lineup;

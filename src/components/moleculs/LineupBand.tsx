@@ -1,5 +1,7 @@
+import BandItem from '../../lib/types/BandItem';
+
 type Props = {
-  band: Band;
+  band: BandItem;
   children: React.ReactNode;
 };
 
