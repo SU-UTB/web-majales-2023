@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: CabinetGroteskBlack;
   src: url('./fonts/CabinetGrotesk-Black.woff2') format('woff2');
