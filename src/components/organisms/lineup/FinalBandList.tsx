@@ -25,7 +25,7 @@ const FinalBandList = () => {
       <div className="w-full md:w-4/5 xl:w-3/5 mx-auto">
         <SectionHeading sectionHeadingText="Finalisté soutěže kapel" />
         {finalBands.map((finalBand) => (
-          <div className="final-band-item">
+          <div key={finalBand.imgSrc} className="final-band-item">
             <img src={finalBand.imgSrc} alt={finalBand.imgAlt} />
           </div>
         ))}

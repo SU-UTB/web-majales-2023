@@ -1,19 +1,18 @@
-import fbIcon from '../../assets/socials/fb_social.svg';
-import igIcon from '../../assets/socials/ig_social.svg';
+import { SOCIALS_LINKS } from '../../lib/constants/Socials';
 import SocItem from '../atoms/social/SocItem';
 
 const VerticalSocials = () => {
   return (
     <div className="majales_socials_vertical hidden lg:fixed lg:flex items-center flex-col space-y-4 {$$props.class}">
       <SocItem
-        linkTo="https://www.facebook.com/studentskaunieutb"
-        imgSrc={fbIcon}
-        imgAlt="fb"
+        linkTo={SOCIALS_LINKS.SU_FB.linkTo}
+        imgSrc={SOCIALS_LINKS.SU_FB.imgSrc}
+        imgAlt={SOCIALS_LINKS.SU_FB.imgAlt}
       />
       <SocItem
-        linkTo="https://www.instagram.com/majalesutb/"
-        imgSrc={igIcon}
-        imgAlt="ig"
+        linkTo={SOCIALS_LINKS.MAJALES_IG.linkTo}
+        imgSrc={SOCIALS_LINKS.MAJALES_IG.imgSrc}
+        imgAlt={SOCIALS_LINKS.MAJALES_IG.imgAlt}
       />
     </div>
   );

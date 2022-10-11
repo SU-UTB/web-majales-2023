@@ -19,7 +19,11 @@ const Header = () => {
         />
         <ul className="nav-items w-full lg:pt-4 lg:w-auto flex flex-col lg:flex-row items-center lg:space-x-8 absolute lg:static bg-white top-20 lg:top-0">
           {ROUTES.map((route) => (
-            <HeaderNavLink linkTo={route.path} linkText={route.linkText} />
+            <HeaderNavLink
+              key={route.path}
+              linkTo={route.path}
+              linkText={route.linkText}
+            />
           ))}
           <HorizontalSocials />
         </ul>

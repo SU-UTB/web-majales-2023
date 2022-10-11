@@ -1,3 +1,4 @@
+import majalesLogo from '../../../assets/partners/majales_logo.png';
 import LandingHeading from '../../atoms/landing/LandingHeading';
 import VerticalSocials from '../../shared/VerticalSocials';
 
@@ -7,10 +8,7 @@ const Landing = () => {
       <VerticalSocials />
       <div className="flex justify-around items-center flex-wrap">
         <div className="img-section w-full md:w-4/5 lg:w-2/5">
-          <img
-            src="./assets/partners/majales_logo.png"
-            alt="Majáles UTB Zlín 2022"
-          />
+          <img src={majalesLogo} alt="Majáles UTB Zlín 2022" />
         </div>
         <div className="heading-section w-full md:w-4/5 lg:w-2/5 px-8 md:px-0">
           <LandingHeading landingHeadingText="S kým to na vás hrajeme?" />

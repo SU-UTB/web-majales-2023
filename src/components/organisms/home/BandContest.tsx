@@ -1,3 +1,4 @@
+import bandContestImg from '../../../assets/home/band_contest.jpg';
 import { ROUTE_PATHS } from '../../../lib/constants/Routes';
 import NavToPageBlueButton from '../../atoms/header/NavToPageBlueButton';
 
@@ -25,11 +26,7 @@ const BandContest = () => {
           />
         </div>
         <div className="px-8 md:px-0 md:w-3/4 lg:w-4/12">
-          <img
-            className=""
-            src="./assets/home/band_contest.jpg"
-            alt="Soutěž kapel"
-          />
+          <img className="" src={bandContestImg} alt="Soutěž kapel" />
         </div>
       </div>
     </section>

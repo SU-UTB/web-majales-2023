@@ -233,7 +233,7 @@ const PartnerList = () => {
           </h4>
           <div className="main-partners flex flex-wrap justify-around mb-8 md:mb-16">
             {mainPartners.map((mainPartner) => (
-              <PartnerBox>
+              <PartnerBox key={mainPartner.partnerImg}>
                 <PartnerPicture
                   linkTo={mainPartner.partnerLink}
                   imgSrc={mainPartner.partnerImg}
@@ -248,7 +248,7 @@ const PartnerList = () => {
           <h4 className="txt-extrabold text-2xl text-center mb-8">Partneři</h4>
           <div className="partners flex flex-wrap justify-around mb-8 md:mb-16">
             {partners.map((partner) => (
-              <PartnerBox>
+              <PartnerBox key={partner.partnerImg}>
                 <PartnerPicture
                   linkTo={partner.partnerLink}
                   imgSrc={partner.partnerImg}
@@ -265,7 +265,7 @@ const PartnerList = () => {
           </h4>
           <div className="medial-partners flex flex-wrap justify-around mb-8 md:mb-16">
             {medialPartners.map((medialPartner) => (
-              <PartnerBox>
+              <PartnerBox key={medialPartner.partnerImg}>
                 <PartnerPicture
                   linkTo={medialPartner.partnerLink}
                   imgSrc={medialPartner.partnerImg}
@@ -295,7 +295,7 @@ const PartnerList = () => {
           </h4>
           <div className="partners flex flex-wrap justify-around">
             {organizators.map((organizator) => (
-              <PartnerBox>
+              <PartnerBox key={organizator.partnerImg}>
                 <PartnerPicture
                   linkTo={organizator.partnerLink}
                   imgSrc={organizator.partnerImg}

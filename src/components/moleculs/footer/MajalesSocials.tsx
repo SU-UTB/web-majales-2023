@@ -1,29 +1,12 @@
-import PictureLinkItem from '../../../lib/types/PictureLinkItem';
+import { SOCIAL_LINKS_IMAGES } from '../../../lib/constants/Socials';
 import SocItem from '../../atoms/social/SocItem';
 
 const MajalesSocials = () => {
-  const socialItems: PictureLinkItem[] = [
-    {
-      linkTo: './',
-      imgSrc: './assets/socials/maj_social.png',
-      imgAlt: 'majales',
-    },
-    {
-      linkTo: 'https://www.facebook.com/studentskaunieutb',
-      imgSrc: './assets/socials/fb_social.svg',
-      imgAlt: 'fb',
-    },
-    {
-      linkTo: 'https://www.instagram.com/majalesutb/',
-      imgSrc: './assets/socials/ig_social.svg',
-      imgAlt: 'ig',
-    },
-  ];
-
   return (
     <div className="maj-socials flex items-center justify-center space-x-4">
-      {socialItems.map((socItem) => (
+      {SOCIAL_LINKS_IMAGES.map((socItem) => (
         <SocItem
+          key={socItem.imgSrc}
           linkTo={socItem.linkTo}
           imgSrc={socItem.imgSrc}
           imgAlt={socItem.imgAlt}

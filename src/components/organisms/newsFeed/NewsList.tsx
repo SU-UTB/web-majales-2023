@@ -1,9 +1,10 @@
+import newsImg from '../../../assets/news/news_1.jpg';
 import NewsItemLink from '../../atoms/news/NewsItemLink';
 
 const NewsList = () => {
   const newsList = [
     {
-      imgSrc: './assets/news/news_1.jpg',
+      imgSrc: newsImg,
       category: 'doprovodný program',
       headlineTxt: 'MAJÁLESOVÁ STEZKA ZLÍNEM',
       description:
@@ -17,7 +18,10 @@ const NewsList = () => {
     <section id="news-list" className="relative -top-36 py-6">
       <div className="news-wrapper px-4 md:w-4/5 mx-auto">
         {newsList.map((newsItem) => (
-          <div className="flex mb-12 lg:justify-between flex-wrap">
+          <div
+            key={newsItem.imgSrc}
+            className="flex mb-12 lg:justify-between flex-wrap"
+          >
             <div className="news-item-img lg:w-4/12">
               <a
                 href={newsItem.linkTo}

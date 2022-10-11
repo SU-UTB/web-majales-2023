@@ -11,7 +11,7 @@ const Routes = () => {
     <RouterRoutes location={location} key={location.key}>
       <Route index element={<Home />} />
       {ROUTES.map((route) => (
-        <Route path={route.path} element={route.component} />
+        <Route key={route.path} path={route.path} element={route.component} />
       ))}
     </RouterRoutes>
   );

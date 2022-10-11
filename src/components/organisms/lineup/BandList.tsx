@@ -97,7 +97,7 @@ const BandList = () => {
             <VerticalBandSocial spotifyLink={udg.spotify} igLink={udg.ig} />
           </LineupBand>
           {bandsFirst.map((band) => (
-            <LineupBand band={band}>
+            <LineupBand key={band.bandName} band={band}>
               <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
                 <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
                   {band.bandName}
@@ -124,7 +124,7 @@ const BandList = () => {
       <div className="band-list-second flex lg:py-2 lg:pl-2">
         <div className="lg:grid w-full grid-cols-2 lg:grid-rows-1 lg:gap-2">
           {bandsSecond.map((band) => (
-            <LineupBand band={band}>
+            <LineupBand key={band.bandName} band={band}>
               <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
                 <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
                   {band.bandName}

@@ -1,3 +1,4 @@
+import landingVideo from '../../../assets/lineup/lineup_landing_vid.mp4';
 import NavToPageWhiteButton from '../../atoms/header/NavToPageWhiteButton';
 import LandingHeading from '../../atoms/landing/LandingHeading';
 import VerticalSocials from '../../shared/VerticalSocials';
@@ -14,10 +15,7 @@ const Landing = () => {
           autoPlay
           loop
         >
-          <source
-            src="../assets/lineup/lineup_landing_vid.mp4"
-            type="video/mp4"
-          />
+          <source src={landingVideo} type="video/mp4" />
         </video>
         <div className="about-lineup md:1/2 lg:w-2/5 xl:w-4/12 px-8 md:px-4 my-4 lg:my-8 md:my-0">
           <LandingHeading landingHeadingText="Koho si můžete letos poslechnout?" />

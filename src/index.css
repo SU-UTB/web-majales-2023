@@ -4,31 +4,31 @@
 
 @font-face {
   font-family: CabinetGroteskBlack;
-  src: url('./fonts/CabinetGrotesk-Black.woff2') format('woff2');
+  src: url('./assets/fonts/CabinetGrotesk-Black.woff2') format('woff2');
   font-weight: 900;
 }
 
 @font-face {
   font-family: CabinetGroteskExtraBold;
-  src: url('./fonts/CabinetGrotesk-Extrabold.woff2') format('woff2');
+  src: url('./assets/fonts/CabinetGrotesk-Extrabold.woff2') format('woff2');
   font-weight: 800;
 }
 
 @font-face {
   font-family: CabinetGroteskBold;
-  src: url('./fonts/CabinetGrotesk-Bold.woff2') format('woff2');
+  src: url('./assets/fonts/CabinetGrotesk-Bold.woff2') format('woff2');
   font-weight: 700;
 }
 
 @font-face {
   font-family: CabinetGroteskMedium;
-  src: url('./fonts/CabinetGrotesk-Medium.woff2') format('woff2');
+  src: url('./assets/fonts/CabinetGrotesk-Medium.woff2') format('woff2');
   font-weight: 500;
 }
 
 @font-face {
   font-family: CabinetGroteskRegular;
-  src: url('./fonts/CabinetGrotesk-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/CabinetGrotesk-Regular.woff2') format('woff2');
   font-weight: 400;
 }
 

@@ -1,9 +1,11 @@
+import aftermovie from '../../../assets/video/aftermovie.mp4';
+
 const Aftermovie = () => {
   return (
     <section id="aftermovie" className="relative -top-10 md:-top-24">
       <div className="yt-video md:w-4/5 lg:w-3/5 2xl:h-1/2 mx-auto px-8 md:px-0">
         <video controls>
-          <source src="./assets/video/aftermovie.mp4" type="video/mp4" />
+          <source src={aftermovie} type="video/mp4" />
           <track kind="captions" />
           Tvúj prohlížeč nepodporuje formát videa
         </video>

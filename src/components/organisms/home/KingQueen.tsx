@@ -1,3 +1,4 @@
+import kingQueenImg from '../../../assets/home/king_queen.jpg';
 import NavToPageBlueButton from '../../atoms/header/NavToPageBlueButton';
 
 const KingQueen = () => {
@@ -5,10 +6,7 @@ const KingQueen = () => {
     <section id="king-queen" className="py-8">
       <div className="md:w-4/5 mx-auto py-8 md:py-16 flex flex-col lg:flex-row items-center">
         <div className="king-queen-img md:w-3/4 lg:w-1/2 px-8 md:px-2">
-          <img
-            src="./assets/home/king_queen.jpg"
-            alt="král a královna Majálesu"
-          />
+          <img src={kingQueenImg} alt="král a královna Majálesu" />
         </div>
         <div className="king-queen-desc lg:w-1/2 px-12 md:px-4">
           <h5 className="section-heading text-left text-light_blu md:w-4/5 2xl:w-3/5 mb-8">

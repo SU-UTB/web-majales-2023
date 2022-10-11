@@ -39,6 +39,7 @@ const ContactList = () => {
       <div className="md:w-4/5 mx-auto px-8 md:px-0 flex justify-center md:justify-between items-center flex-wrap">
         {contacts.map((contact) => (
           <ContactItem
+            key={contact.name}
             contactName={contact.name}
             contactPos={contact.pos}
             contactMail={contact.mail}

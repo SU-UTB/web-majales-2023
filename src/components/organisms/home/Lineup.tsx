@@ -67,7 +67,7 @@ const Lineup = () => {
       </div>
       <div className="stage-schedule sm:w-4/5 md:w-3/5 xl:w-2/5 mx-auto my-4 md:my-8 xl:my-16">
         {stageSchedules.map((stage) => (
-          <div className="stage mb-16">
+          <div key={stage.stageName} className="stage mb-16">
             <h4 className="text-2xl sm:text-3xl txt-medium text-center mb-2">
               {stage.stageType}
             </h4>
@@ -75,7 +75,10 @@ const Lineup = () => {
               {stage.stageName}
             </h3>
             {stage.bands.map((band) => (
-              <div className="flex justify-between items-center text-lg sm:text-xl uppercase txt-medium mb-5">
+              <div
+                key={band.bandName}
+                className="flex justify-between items-center text-lg sm:text-xl uppercase txt-medium mb-5"
+              >
                 <span>{band.bandTime}</span>
                 <span className="hidden sm:block divider flex-grow border-b-2 mx-4"></span>
                 <span>{band.bandName}</span>

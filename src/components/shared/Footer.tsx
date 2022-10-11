@@ -61,13 +61,14 @@ const Footer = () => {
         <div className="footer-nav-links mb-4 md:mb-0">
           <FooterItemHeadline headlineText="majáles" />
           {ROUTES.map((route) => (
-            <div className="footer-nav-link mb-2">
+            <div key={route.path} className="footer-nav-link mb-2">
               <FooterNavLink linkTo={route.path} linkText={route.linkText} />
             </div>
           ))}
           <div className="footer-contact-links flex flex-col mt-4 md:mt-6 items-center md:items-start">
             {footerLinks.map((footerLink) => (
               <FooterLink
+                key={footerLink.linkTo}
                 isMailLink={footerLink.isMailLink}
                 linkTo={footerLink.linkTo}
               />
@@ -76,7 +77,7 @@ const Footer = () => {
         </div>
         <div className="managers flex flex-col justify-between space-y-8 my-4 md:my-0">
           {managers.map((manager) => (
-            <div className="footer-manager-item">
+            <div key={manager.name} className="footer-manager-item">
               <FooterManagerItem
                 managerName={manager.name}
                 managerPos={manager.pos}
@@ -89,7 +90,7 @@ const Footer = () => {
           <SocialsContainer />
           <div className="footer-guyz flex flex-col">
             {behindTheScenesGuyz.map((guy) => (
-              <div className="footer-guy-item mb-8">
+              <div key={guy.name} className="footer-guy-item mb-8">
                 <FooterManagerItem
                   managerName={guy.name}
                   managerPos={guy.pos}
