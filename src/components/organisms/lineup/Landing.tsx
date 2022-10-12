@@ -21,7 +21,7 @@ const Landing = () => {
           <LandingHeading landingHeadingText="Koho si můžete letos poslechnout?" />
           <p className="text-white w-11/12 sm:w-8/12  lg:w-9/12 xl:w-7/12">
             Od 14:30 se park před Baťovou vilou rozezní melodiemi interpretů ze
-            Zlína i&nbsp;zbytku republiky!{' '}
+            Zlína i&nbsp;zbytku republiky!
           </p>
           <NavToPageWhiteButton
             linkText="nalaď majálesový playlist"

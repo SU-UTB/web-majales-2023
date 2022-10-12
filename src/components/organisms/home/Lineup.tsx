@@ -1,3 +1,4 @@
+import { ROUTES, ROUTE_PATHS } from '../../../lib/constants/Routes';
 import NavToPageBlueButton from '../../atoms/header/NavToPageBlueButton';
 
 const stageSchedules = [
@@ -90,7 +91,7 @@ const Lineup = () => {
         <div className="nav-btn mt-12 flex justify-center">
           <NavToPageBlueButton
             linkText="všichni interpreti"
-            linkTo="./lineup.html"
+            linkTo={ROUTE_PATHS.LINEUP.path}
           />
         </div>
       </div>

@@ -21,10 +21,9 @@ const Landing = () => {
               <p className="text-white">
                 Koncept a&nbsp;formu spolupráce můžeme upravit podle vašich
                 požadavků do podoby individuální nabídky. Pojďte do toho s námi,
-                ať je letošní ročník nebesky skvělý!{' '}
+                ať je letošní ročník nebesky skvělý!
                 <span className="txt-bold">
-                  {' '}
-                  Ozvěte se nám na{' '}
+                  Ozvěte se nám na
                   <a className="txt-bold" href="mailto:skojec@sutb.cz">
                     skojec@sutb.cz
                   </a>

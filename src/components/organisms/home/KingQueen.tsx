@@ -1,4 +1,5 @@
 import kingQueenImg from '../../../assets/home/king_queen.jpg';
+import { ROUTES, ROUTE_PATHS } from '../../../lib/constants/Routes';
 import NavToPageBlueButton from '../../atoms/header/NavToPageBlueButton';
 
 const KingQueen = () => {
@@ -25,7 +26,7 @@ const KingQueen = () => {
           </p>
           <NavToPageBlueButton
             linkText="více informací"
-            linkTo="./majalesKing.html"
+            linkTo={ROUTE_PATHS.MAJALES_KING_QUEEN.path}
           />
         </div>
       </div>

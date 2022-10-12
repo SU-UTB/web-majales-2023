@@ -12,12 +12,12 @@ const About = () => {
             <p className="mb-2 mt-6">
               <span className="txt-bold">
                 Soutěž probíhá ve smíšených párech,
-              </span>{' '}
+              </span>
               muž i žena musí být ze stejné fakulty. Pokud nemáš parťáka, tak
               nezoufej — nějakého ti dohodíme.
             </p>
             <p className="mb-2">
-              Registrovat se můžeš prostřednictvím online dotazníku v rozmezí{' '}
+              Registrovat se můžeš prostřednictvím online dotazníku v rozmezí
               <br />
               <span className="txt-bold">od 18. 4. do 1. 5. do 23:59.</span>
             </p>

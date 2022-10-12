@@ -3,7 +3,6 @@ import LandingDate from '../../atoms/landing/LandingDate';
 import VerticalSocials from '../../shared/VerticalSocials';
 
 const Landing = () => {
-  // TODO: add className="lg:top-72 lg:left-10" to VerticalSocials
   return (
     <section id="landing" className="relative py-16 md:py-0 md:pb-40">
       <VerticalSocials />

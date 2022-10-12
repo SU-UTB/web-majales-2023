@@ -11,7 +11,7 @@ const Rules = () => {
           </SectionHeading>
           <ol className="">
             <li>
-              Zúčastnit se může každý, kdo je{' '}
+              Zúčastnit se může každý, kdo je
               <span className="txt-bold">v tomto roce studentem UTB</span> (i
               dálkové studium).
             </li>
@@ -20,21 +20,21 @@ const Rules = () => {
               se musí skládat z jednoho muže a&nbsp;jedné ženy.
             </li>
             <li>
-              Celý tým musí být ze{' '}
+              Celý tým musí být ze
               <span className="txt-bold">stejné fakulty.</span>
             </li>
             <li>
-              Registrovat se je možné{' '}
+              Registrovat se je možné
               <span className="txt-bold">od 18. 4. 00:01 do 1. 5. 23:59.</span>
             </li>
             <li>Registrace probíhá pomocí přihlašovacího formuláře.</li>
             <li>
-              Pro výhru v soutěži je potřeba účastnit se{' '}
+              Pro výhru v soutěži je potřeba účastnit se
               <span className="txt-bold">všech kol soutěže,</span> které
-              proběhnou{' '}
-              <span className="txt-bold">6. 5. v areálu konání akce.</span>{' '}
+              proběhnou
+              <span className="txt-bold">6. 5. v areálu konání akce.</span>
               <br />
-              Způsob jednotlivých soutěžních kol bude upřesněn.{' '}
+              Způsob jednotlivých soutěžních kol bude upřesněn.
               <span className="txt-bold">Kola budou bodovaná.</span>
             </li>
             <li>

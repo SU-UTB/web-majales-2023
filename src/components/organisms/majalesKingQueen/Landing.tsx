@@ -17,7 +17,7 @@ const Landing = () => {
             </p>
             <p className="text-white">
               Utkej se v Majálesovém turnaji a&nbsp;vybojuj titul krále nebo
-              královny univerzity! Přihlaš sebe nebo vaše duo do{' '}
+              královny univerzity! Přihlaš sebe nebo vaše duo do
               <span className="txt-bold">1. 5.</span> a&nbsp;ukaž, kdo vládne na
               UTB!
             </p>

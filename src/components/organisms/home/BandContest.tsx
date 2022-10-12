@@ -13,7 +13,7 @@ const BandContest = () => {
           <p className="md:w-4/5 lg:w-3/5 xl:w-1/2">
             <span className="txt-bold">Nech sebe a svou kapelu zazářit!</span>
             Nezkusíš, nezažiješ. Přímo na Majálesu se tváří v tvář kolegům
-            utkáte o hlavní cenu, kterou je{' '}
+            utkáte o hlavní cenu, kterou je
             <span className="txt-bold">roční zásoba piva!</span>
           </p>
           <p className="mb-8 md:mb-12">
