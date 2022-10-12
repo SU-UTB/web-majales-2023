@@ -1,7 +1,7 @@
 import fbSocial from '../../assets/socials/fb_social.svg';
 import igSocial from '../../assets/socials/ig_social.svg';
 import majSocial from '../../assets/socials/maj_social.png';
-import PictureLinkItem from '../types/PictureLinkItem';
+import PictureLinkItem from '../types/TPictureLinkItem';
 
 export const SOCIALS_LINKS = {
   MAJALES_MAIN: { linkTo: './', imgSrc: majSocial, imgAlt: 'majáles' },

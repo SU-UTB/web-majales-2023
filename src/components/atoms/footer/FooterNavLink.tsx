@@ -1,4 +1,4 @@
-import LinkItem from '../../../lib/types/LinkItem';
+import LinkItem from '../../../lib/types/TLinkItem';
 
 const FooterNavLink = ({ linkTo, linkText }: LinkItem) => {
   return (

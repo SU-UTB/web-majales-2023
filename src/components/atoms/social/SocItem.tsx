@@ -1,4 +1,4 @@
-import PictureLinkItem from '../../../lib/types/PictureLinkItem';
+import PictureLinkItem from '../../../lib/types/TPictureLinkItem';
 
 const SocItem = ({ imgSrc, imgAlt, linkTo }: PictureLinkItem) => {
   return (

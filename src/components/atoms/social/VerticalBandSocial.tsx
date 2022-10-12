@@ -4,11 +4,18 @@ import spotifyImg from '../../../assets/lineup/spotify.svg';
 type Props = {
   spotifyLink: string;
   igLink: string;
+  classNames?: string;
 };
 
-const VerticalBandSocial = ({ spotifyLink, igLink }: Props) => {
+const VerticalBandSocial = ({
+  spotifyLink,
+  igLink,
+  classNames = '',
+}: Props) => {
   return (
-    <div className="vertical-band-soc flex md:flex-col space-x-4 md:space-x-0 md:space-y-4 absolute {$$props.class}">
+    <div
+      className={`vertical-band-soc flex md:flex-col space-x-4 md:space-x-0 md:space-y-4 absolute ${classNames}`}
+    >
       <a href={spotifyLink} target="_blank" rel="noopener noreferrer">
         <img
           src={spotifyImg}

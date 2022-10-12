@@ -59,7 +59,10 @@ const Footer = () => {
     <footer>
       <div className="footer-inner flex flex-col items-center md:items-start md:flex-row text-center md:text-left justify-around">
         <div className="footer-nav-links mb-4 md:mb-0">
-          <FooterItemHeadline headlineText="majáles" />
+          <FooterItemHeadline
+            headlineText="majáles"
+            classNames="mb-4 md:mb-6"
+          />
           {ROUTES.map((route) => (
             <div key={route.path} className="footer-nav-link mb-2">
               <FooterNavLink linkTo={route.path} linkText={route.linkText} />

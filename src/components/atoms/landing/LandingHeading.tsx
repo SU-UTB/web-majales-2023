@@ -4,9 +4,7 @@ type Props = {
 
 const LandingHeading = ({ landingHeadingText }: Props) => {
   return (
-    <h2 className="text-4xl txt-bold mb-8 {$$props.class}">
-      {landingHeadingText}
-    </h2>
+    <h2 className="text-4xl txt-bold mb-4 text-white">{landingHeadingText}</h2>
   );
 };
 

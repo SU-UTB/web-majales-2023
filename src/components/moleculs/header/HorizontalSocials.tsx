@@ -1,5 +1,5 @@
 import { SOCIALS_LINKS } from '../../../lib/constants/Socials';
-import PictureLinkItem from '../../../lib/types/PictureLinkItem';
+import PictureLinkItem from '../../../lib/types/TPictureLinkItem';
 import SocItem from '../../atoms/social/SocItem';
 
 const HorizontalSocials = () => {

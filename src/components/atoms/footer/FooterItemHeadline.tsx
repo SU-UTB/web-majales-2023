@@ -1,10 +1,11 @@
 type Props = {
   headlineText: string;
+  classNames?: string;
 };
 
-const FooterItemHeadline = ({ headlineText }: Props) => {
+const FooterItemHeadline = ({ headlineText, classNames = '' }: Props) => {
   return (
-    <h6 className="text-white uppercase {$$props.class}">{headlineText}</h6>
+    <h6 className={`text-white uppercase ${classNames}`}>{headlineText}</h6>
   );
 };
 

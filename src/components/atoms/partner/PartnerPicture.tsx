@@ -1,4 +1,4 @@
-import PictureLinkItem from '../../../lib/types/PictureLinkItem';
+import PictureLinkItem from '../../../lib/types/TPictureLinkItem';
 
 const PartnerPicture = ({ imgSrc, imgAlt, linkTo }: PictureLinkItem) => {
   return (

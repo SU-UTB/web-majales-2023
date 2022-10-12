@@ -1,10 +1,28 @@
 import VerticalBandSocial from '../../atoms/social/VerticalBandSocial';
 import LineupBand from '../../moleculs/LineupBand';
 
+import udgImgDesktop from '../../../assets/lineup/band1.png';
+import udgImgMobile from '../../../assets/lineup/m_band1.png';
+
+import vojtanoImgDesktop from '../../../assets/lineup/band2.png';
+import vojtanoImgMobile from '../../../assets/lineup/m_band2.png';
+
+import circusImgDesktop from '../../../assets/lineup/band3.png';
+import circusImgMobile from '../../../assets/lineup/m_band3.png';
+
+import maniakImgDesktop from '../../../assets/lineup/band4.png';
+import maniakImgMobile from '../../../assets/lineup/m_band4.png';
+
+import dekanImgDesktop from '../../../assets/lineup/band5.png';
+import dekanImgMobile from '../../../assets/lineup/m_band5.png';
+
+import klidImgDesktop from '../../../assets/lineup/band7.png';
+import klidImgMobile from '../../../assets/lineup/m_band7.png';
+
 const BandList = () => {
   const udg = {
-    imgSrc: './assets/lineup/band1.png',
-    imgSrcM: './assets/lineup/m_band1.png',
+    imgSrc: udgImgDesktop,
+    imgSrcM: udgImgMobile,
     bandName: 'UDG',
     bandType: 'CZ POP/ROCK',
     spotify:
@@ -15,8 +33,8 @@ const BandList = () => {
   };
 
   const vojtano = {
-    imgSrc: './assets/lineup/band2.png',
-    imgSrcM: './assets/lineup/m_band2.png',
+    imgSrc: vojtanoImgDesktop,
+    imgSrcM: vojtanoImgMobile,
     bandName: 'VOJTAANO',
     bandType: 'CZ FOLK POP, FOLK RAP',
     spotify:
@@ -28,8 +46,8 @@ const BandList = () => {
 
   const bandsFirst = [
     {
-      imgSrc: './assets/lineup/band3.png',
-      imgSrcM: './assets/lineup/m_band3.png',
+      imgSrc: circusImgDesktop,
+      imgSrcM: circusImgMobile,
       bandName: 'CIRCUS PROBLEM',
       bandType: 'CZ/EN BALKAN BRASS',
       spotify:
@@ -39,8 +57,8 @@ const BandList = () => {
       height: 280,
     },
     {
-      imgSrc: './assets/lineup/band4.png',
-      imgSrcM: './assets/lineup/m_band4.png',
+      imgSrc: maniakImgDesktop,
+      imgSrcM: maniakImgMobile,
       bandName: 'MANIAK',
       bandType: 'CZ RAP',
       spotify:
@@ -53,8 +71,8 @@ const BandList = () => {
 
   const bandsSecond = [
     {
-      imgSrc: './assets/lineup/band5.png',
-      imgSrcM: './assets/lineup/m_band5.png',
+      imgSrc: dekanImgDesktop,
+      imgSrcM: dekanImgMobile,
       bandName: 'JAKUB DĚKAN',
       subName: '& BAND',
       bandType: 'CZ ACOUSTIC POP',
@@ -65,8 +83,8 @@ const BandList = () => {
       height: 420,
     },
     {
-      imgSrc: './assets/lineup/band7.png',
-      imgSrcM: './assets/lineup/m_band7.png',
+      imgSrc: klidImgDesktop,
+      imgSrcM: klidImgMobile,
       bandName: 'TROCHA KLIDU',
       bandType: 'CZ POP/ROCK',
       spotify:
@@ -87,55 +105,97 @@ const BandList = () => {
     >
       <div className="band-list-first flex flex-wrap">
         <div className="lg:grid w-full lg:w-8/12 grid-cols-2 lg:grid-rows-2 lg:gap-2 lg:px-2">
-          <LineupBand band={udg}>
-            <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
-              <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
-                {udg.bandName}
-              </h3>
-              <p className="text-white text-sm sm:text-lg">{udg.bandType}</p>
-            </div>
-            <VerticalBandSocial spotifyLink={udg.spotify} igLink={udg.ig} />
-          </LineupBand>
-          {bandsFirst.map((band) => (
-            <LineupBand key={band.bandName} band={band}>
+          <LineupBand
+            band={udg}
+            classNames="col-span-2"
+            bandDescription={
               <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
                 <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
-                  {band.bandName}
+                  {udg.bandName}
                 </h3>
-                <p className="text-white text-sm sm:text-lg">{band.bandType}</p>
+                <p className="text-white text-sm sm:text-lg">{udg.bandType}</p>
               </div>
-              <VerticalBandSocial spotifyLink={band.spotify} igLink={band.ig} />
-            </LineupBand>
+            }
+            bandSocials={
+              <VerticalBandSocial
+                spotifyLink={udg.spotify}
+                igLink={udg.ig}
+                classNames="bottom-4 md:bottom-8 lg:top-14 right-4 sm:right-8 lg:left-8"
+              />
+            }
+          ></LineupBand>
+          {bandsFirst.map((band) => (
+            <LineupBand
+              key={band.bandName}
+              band={band}
+              bandDescription={
+                <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
+                  <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
+                    {band.bandName}
+                  </h3>
+                  <p className="text-white text-sm sm:text-lg">
+                    {band.bandType}
+                  </p>
+                </div>
+              }
+              bandSocials={
+                <VerticalBandSocial
+                  spotifyLink={band.spotify}
+                  igLink={band.ig}
+                  classNames="bottom-4 md:bottom-8 lg:top-14 right-4 sm:right-8 lg:left-8"
+                />
+              }
+            ></LineupBand>
           ))}
         </div>
-        <LineupBand band={vojtano}>
-          <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8 lg:right-8">
-            <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
-              {vojtano.bandName}
-            </h3>
-            <p className="text-white text-sm sm:text-lg">{vojtano.bandType}</p>
-          </div>
-          <VerticalBandSocial
-            spotifyLink={vojtano.spotify}
-            igLink={vojtano.ig}
-          />
-        </LineupBand>
+        <LineupBand
+          band={vojtano}
+          bandDescription={
+            <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8 lg:right-8">
+              <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
+                {vojtano.bandName}
+              </h3>
+              <p className="text-white text-sm sm:text-lg">
+                {vojtano.bandType}
+              </p>
+            </div>
+          }
+          bandSocials={
+            <VerticalBandSocial
+              spotifyLink={vojtano.spotify}
+              igLink={vojtano.ig}
+              classNames="bottom-4 md:bottom-8 lg:bottom-48 right-4 sm:right-8"
+            />
+          }
+        ></LineupBand>
       </div>
       <div className="band-list-second flex lg:py-2 lg:pl-2">
         <div className="lg:grid w-full grid-cols-2 lg:grid-rows-1 lg:gap-2">
           {bandsSecond.map((band) => (
-            <LineupBand key={band.bandName} band={band}>
-              <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
-                <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
-                  {band.bandName}
-                  {band.subName && (
-                    <sup className="text-white text-lg">{band.subName}</sup>
-                  )}
-                </h3>
-                <p className="text-white text-sm sm:text-lg">{band.bandType}</p>
-              </div>
-              <VerticalBandSocial spotifyLink={band.spotify} igLink={band.ig} />
-            </LineupBand>
+            <LineupBand
+              key={band.bandName}
+              band={band}
+              bandDescription={
+                <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
+                  <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
+                    {band.bandName}
+                    {band.subName && (
+                      <sup className="text-white text-lg">{band.subName}</sup>
+                    )}
+                  </h3>
+                  <p className="text-white text-sm sm:text-lg">
+                    {band.bandType}
+                  </p>
+                </div>
+              }
+              bandSocials={
+                <VerticalBandSocial
+                  spotifyLink={band.spotify}
+                  igLink={band.ig}
+                  classNames="bottom-4 md:bottom-8 lg:bottom-12 right-8"
+                />
+              }
+            ></LineupBand>
           ))}
         </div>
       </div>

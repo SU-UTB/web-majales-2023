@@ -9,7 +9,11 @@ const ResponsivePicture = ({ imgDesktop, imgMobile, imgAlt }: Props) => {
     <picture>
       <source media="(max-width: 768px)" srcSet={imgMobile} />
       <source media="(min-width: 768px)" srcSet={imgDesktop} />
-      <img src={imgMobile} alt={imgAlt} />
+      <img
+        className="block object-cover object-center w-full h-full"
+        src={imgMobile}
+        alt={imgAlt}
+      />
     </picture>
   );
 };

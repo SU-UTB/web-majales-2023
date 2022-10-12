@@ -1,4 +1,4 @@
-import majalesLogo from '../../../../public/maj_logo.png';
+import majalesLogo from '/maj_logo.png';
 
 const LogoDateContainer = () => {
   return (
