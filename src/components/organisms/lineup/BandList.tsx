@@ -95,9 +95,6 @@ const BandList = () => {
     },
   ];
 
-  //TODO: LineupBand className="w-full col-span-2 mb-4 lg:mb-0"
-  //TODO: className="bottom-4 md:bottom-8 lg:top-14 right-4 sm:right-8 lg:left-8"
-
   return (
     <div
       id="band-list"
