@@ -2,7 +2,11 @@ import { Link } from 'react-router-dom';
 import LinkItem from '../../../lib/types/TLinkItem';
 
 const HeaderNavLink = ({ linkTo, linkText }: LinkItem) => {
-  return <Link to={linkTo}>{linkText}</Link>;
+  return (
+    <Link className="uppercase txt-bold mt-4 lg:mt-0 text-dark_blu" to={linkTo}>
+      {linkText}
+    </Link>
+  );
 };
 
 export default HeaderNavLink;
