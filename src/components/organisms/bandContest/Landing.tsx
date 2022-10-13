@@ -4,7 +4,10 @@ import SectionWrapper from '../../atoms/section/SectionWrapper';
 
 const Landing = () => {
   return (
-    <section id="landing-band-contest" className="relative py-32">
+    <section
+      id="landing-band-contest"
+      className="relative py-32 bg-[url('/src/assets/band_contest/m_band_contest_landing.png')] md:bg-[url('/src/assets/band_contest/band_contest_landing.png')] bg-no-repeat bg-top bg-cover"
+    >
       <SectionWrapper>
         <LandingHeading landingHeadingText="Nech sebe a svou kapelu zazářit!" />
         <div className="about-lineup flex items-center flex-wrap">

@@ -4,7 +4,10 @@ import VerticalSocials from '../../shared/VerticalSocials';
 
 const Landing = () => {
   return (
-    <section id="landing-partners" className="relative py-12">
+    <section
+      id="landing-partners"
+      className="relative py-12 bg-[url('/src/assets/partners/m_partners_landing.png')] md:bg-[url('/src/assets/partners/partners_landing.png')] bg-no-repeat bg-top bg-cover"
+    >
       <VerticalSocials />
       <div className="flex justify-around items-center flex-wrap">
         <div className="img-section w-full md:w-4/5 lg:w-2/5">

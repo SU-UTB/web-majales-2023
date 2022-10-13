@@ -56,7 +56,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer>
+    <footer className='bg-[url("/src/assets/footer_img.png")] bg-no-repeat bg-center bg-cover'>
       <div className="footer-inner flex flex-col items-center md:items-start md:flex-row text-center md:text-left justify-around">
         <div className="footer-nav-links mb-4 md:mb-0">
           <FooterItemHeadline

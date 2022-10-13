@@ -6,7 +6,10 @@ import BandList from './BandList';
 
 const Landing = () => {
   return (
-    <section id="landing-lineup" className="py-6 md:py-12 relative">
+    <section
+      id="landing-lineup"
+      className="py-6 md:py-12 relative bg-[url('/src/assets/lineup/m_lineup_landing.png')] md:bg-[url('/src/assets/lineup/lineup_landing.png')] bg-repeat-y md:bg-no-repeat bg-top bg-contain md:bg-cover"
+    >
       <VerticalSocials />
       <div className="flex justify-center lg:items-center lg:justify-around py-4 lg:py-32 flex-wrap">
         <video

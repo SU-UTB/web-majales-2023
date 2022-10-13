@@ -4,7 +4,10 @@ import NavToPageBlueButton from '../../atoms/header/NavToPageBlueButton';
 
 const BandContest = () => {
   return (
-    <section id="band-contest" className="text-white py-8">
+    <section
+      id="band-contest"
+      className="text-white py-8 bg-[url('/src/assets/home/home_band_contest.png')] bg-no-repeat bg-center bg-cover"
+    >
       <div className="flex justify-center items-center flex-wrap">
         <div className="md:w-4/5 lg:w-2/5 py-8 md:py-16 px-8 md:px-0">
           <h5 className="section-heading text-left md:w-4/5 lg:w-3/5 mb-8">

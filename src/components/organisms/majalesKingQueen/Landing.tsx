@@ -5,7 +5,10 @@ import VerticalSocials from '../../shared/VerticalSocials';
 
 const Landing = () => {
   return (
-    <section id="landing-king" className="relative py-32">
+    <section
+      id="landing-king"
+      className="relative py-32 bg-[url('/src/assets/king/m_king_landing.png')] md:bg-[url('/src/assets/king/king_landing.png')] bg-no-repeat bg-top bg-cover"
+    >
       <VerticalSocials />
       <SectionWrapper>
         <LandingHeading landingHeadingText="Ať panuje ten nejlepší!" />
