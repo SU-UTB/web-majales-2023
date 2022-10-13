@@ -12,9 +12,9 @@ const Landing = () => {
       <VerticalSocials />
       <SectionWrapper>
         <LandingHeading landingHeadingText="Ať panuje ten nejlepší!" />
-        <div className="about-lineup flex items-center flex-wrap">
+        <div className="flex flex-wrap items-center about-lineup">
           <div className="about-txt md:w-3/5 xl:w-1/2">
-            <p className="text-white txt-bold mb-2">
+            <p className="mb-2 text-white txt-bold">
               Jsi studentem nebo studentkou UTB a&nbsp;myslíš, že máš modrou
               krev?
             </p>
@@ -25,7 +25,7 @@ const Landing = () => {
               UTB!
             </p>
           </div>
-          <div className="register-btn mt-12 md:mt-0 md:ml-8 lg:ml-10 xl:ml-12">
+          <div className="mt-12 register-btn md:mt-0 md:ml-8 lg:ml-10 xl:ml-12">
             <NavToPageWhiteButton
               blank={true}
               linkTo="https://docs.google.com/forms/d/1OdwDsAbSIjbJw9RzmeTneiEAmWY37mked_KPqKg-RIU/"

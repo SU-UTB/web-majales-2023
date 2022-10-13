@@ -8,9 +8,9 @@ const BandContest = () => {
       id="band-contest"
       className="text-white py-8 bg-[url('/src/assets/home/home_band_contest.png')] bg-no-repeat bg-center bg-cover"
     >
-      <div className="flex justify-center items-center flex-wrap">
-        <div className="md:w-4/5 lg:w-2/5 py-8 md:py-16 px-8 md:px-0">
-          <h5 className="section-heading text-left md:w-4/5 lg:w-3/5 mb-8">
+      <div className="flex flex-wrap items-center justify-center">
+        <div className="px-8 py-8 md:w-4/5 lg:w-2/5 md:py-16 md:px-0">
+          <h5 className="mb-8 text-left section-heading md:w-4/5 lg:w-3/5">
             Soutěž kapel
           </h5>
           <p className="md:w-4/5 lg:w-3/5 xl:w-1/2">

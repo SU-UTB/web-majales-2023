@@ -7,9 +7,9 @@ type Props = {
 const ContactItem = ({ contactName, contactPos, contactMail }: Props) => {
   return (
     // TODO: props class for contact-item
-    <div className="contact-item my-6 mx-4 text-center">
+    <div className="mx-4 my-6 text-center contact-item">
       <div className="mx-auto contact-desc">
-        <h6 className="text-pinky uppercase txt-bold mb-2 md:mb-4">
+        <h6 className="mb-2 uppercase text-pinky txt-bold md:mb-4">
           {contactName}
         </h6>
         <p className="manager-position">{contactPos}</p>

@@ -9,15 +9,15 @@ const Landing = () => {
       className="relative py-12 bg-[url('/src/assets/partners/m_partners_landing.png')] md:bg-[url('/src/assets/partners/partners_landing.png')] bg-no-repeat bg-top bg-cover"
     >
       <VerticalSocials />
-      <div className="flex justify-around items-center flex-wrap">
-        <div className="img-section w-full md:w-4/5 lg:w-2/5">
+      <div className="flex flex-wrap items-center justify-around">
+        <div className="w-full img-section md:w-4/5 lg:w-2/5">
           <img src={majalesLogo} alt="Majáles UTB Zlín 2022" />
         </div>
-        <div className="heading-section w-full md:w-4/5 lg:w-2/5 px-8 md:px-0">
+        <div className="w-full px-8 heading-section md:w-4/5 lg:w-2/5 md:px-0">
           <LandingHeading landingHeadingText="S kým to na vás hrajeme?" />
-          <div className="about-lineup flex items-center flex-wrap">
+          <div className="flex flex-wrap items-center about-lineup">
             <div className="about-txt md:w-full 2xl:w-4/5">
-              <p className="text-white txt-bold mb-2">
+              <p className="mb-2 text-white txt-bold">
                 Staňte se partnerem a&nbsp;nechte si zahrát, po čem vaše srdce
                 touží.
               </p>

@@ -3,7 +3,7 @@ import StudentUnionSocials from './StudentUnionSocials';
 
 const SocialsContainer = () => {
   return (
-    <div className="soc-container flex flex-col md:flex-row md:space-x-8 mb-6">
+    <div className="flex flex-col mb-6 soc-container md:flex-row md:space-x-8">
       <MajalesSocials />
       <StudentUnionSocials />
     </div>

@@ -3,7 +3,7 @@ type Props = {
 };
 
 const PartnerSection = ({ children }: Props) => {
-  return <div className="partner-section mb-8 md:mb-16">{children}</div>;
+  return <div className="mb-8 partner-section md:mb-16">{children}</div>;
 };
 
 export default PartnerSection;

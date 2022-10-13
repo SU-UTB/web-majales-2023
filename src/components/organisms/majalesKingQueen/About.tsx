@@ -4,12 +4,12 @@ const About = () => {
   return (
     <section id="about-king" className="relative pb-12 -top-40">
       <div className="mt-24">
-        <div className="w-full md:w-4/5 mx-auto px-8 md:px-4 flex items-center justify-center lg:justify-between flex-wrap">
-          <div className="img-wrapper lg:w-3/5 2xl:w-2/5 max-w-lg md:max-w-none mb-8 lg:mb-0">
+        <div className="flex flex-wrap items-center justify-center w-full px-8 mx-auto md:w-4/5 md:px-4 lg:justify-between">
+          <div className="max-w-lg mb-8 img-wrapper lg:w-3/5 2xl:w-2/5 md:max-w-none lg:mb-0">
             <img src={kingQueenImg} alt="Král a Královná Majálesu" />
           </div>
-          <div className="about-desc w-full lg:w-2/3 2xl:w-1/2 lg:mt-4">
-            <p className="mb-2 mt-6">
+          <div className="w-full about-desc lg:w-2/3 2xl:w-1/2 lg:mt-4">
+            <p className="mt-6 mb-2">
               <span className="txt-bold">
                 Soutěž probíhá ve smíšených párech,
               </span>

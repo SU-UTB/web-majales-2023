@@ -36,7 +36,7 @@ const ContactList = () => {
 
   return (
     <section id="contact-list" className="py-12 md:py-24">
-      <div className="md:w-4/5 mx-auto px-8 md:px-0 flex justify-center md:justify-between items-center flex-wrap">
+      <div className="flex flex-wrap items-center justify-center px-8 mx-auto md:w-4/5 md:px-0 md:justify-between">
         {contacts.map((contact) => (
           <ContactItem
             key={contact.name}
@@ -47,8 +47,8 @@ const ContactList = () => {
         ))}
       </div>
       <hr className="w-1/5 mx-auto my-12 bg-dark_blu_txt" />
-      <div className="info-contact text-center">
-        <h6 className="text-pinky uppercase txt-bold mb-2 md:mb-4">
+      <div className="text-center info-contact">
+        <h6 className="mb-2 uppercase text-pinky txt-bold md:mb-4">
           infolinka
         </h6>
         <a className="txt-normal" href="mailto:su@utb.cz">

@@ -3,7 +3,7 @@ import SocItem from '../../atoms/social/SocItem';
 
 const StudentUnionSocials = () => {
   return (
-    <div className="su-socials flex items-center space-x-4">
+    <div className="flex items-center su-socials space-x-4">
       {SOCIAL_LINKS_IMAGES.map((socItem) => (
         <SocItem
           key={socItem.imgSrc}

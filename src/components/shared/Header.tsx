@@ -10,14 +10,14 @@ const Header = () => {
   console.log('toggled menu?:' + toggledMenu);
 
   return (
-    <header className="w-full h-20 fixed top-0 z-10">
-      <nav className="flex justify-around items-center bg-white relative h-full">
+    <header className="fixed top-0 z-10 w-full h-20">
+      <nav className="relative flex items-center justify-around h-full bg-white">
         <LogoDateContainer />
         <HamburgerButton
           active={toggledMenu}
           handleClick={() => setToggledMenu(!toggledMenu)}
         />
-        <ul className="nav-items w-full lg:pt-4 lg:w-auto flex flex-col lg:flex-row items-center lg:space-x-8 absolute lg:static bg-white top-20 lg:top-0">
+        <ul className="absolute flex flex-col items-center w-full bg-white nav-items lg:pt-4 lg:w-auto lg:flex-row lg:space-x-8 lg:static top-20 lg:top-0">
           {ROUTES.map((route) => (
             <HeaderNavLink
               key={route.path}

@@ -7,7 +7,7 @@ const HamburgerButton = ({ active, handleClick }: Props) => {
   return (
     // TODO active classname
     <div
-      className="hamburger-btn lg:hidden cursor-pointer w-8 h-8 z-10"
+      className="z-10 w-8 h-8 cursor-pointer hamburger-btn lg:hidden"
       onClick={() => {
         (active = !active), handleClick;
       }}

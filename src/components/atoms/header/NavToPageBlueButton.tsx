@@ -12,7 +12,7 @@ const NavToPageBlueButton = ({ linkTo, linkText, blank = false }: Props) => {
       target={blank ? '_blank' : '_self'}
       to={linkTo}
       rel="noopener noreferrer"
-      className="inline-block text-white bg-dark_blu uppercase txt-bold text-lg px-8 py-4"
+      className="inline-block px-8 py-4 text-lg text-white uppercase bg-dark_blu txt-bold"
     >
       {linkText}
     </Link>

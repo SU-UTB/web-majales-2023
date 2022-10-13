@@ -15,12 +15,12 @@ const NewsList = () => {
   ];
 
   return (
-    <section id="news-list" className="relative -top-36 py-6">
-      <div className="news-wrapper px-4 md:w-4/5 mx-auto">
+    <section id="news-list" className="relative py-6 -top-36">
+      <div className="px-4 mx-auto news-wrapper md:w-4/5">
         {newsList.map((newsItem) => (
           <div
             key={newsItem.imgSrc}
-            className="flex mb-12 lg:justify-between flex-wrap"
+            className="flex flex-wrap mb-12 lg:justify-between"
           >
             <div className="news-item-img lg:w-4/12">
               <a
@@ -35,11 +35,11 @@ const NewsList = () => {
                 />
               </a>
             </div>
-            <div className="news-item-txt py-4 px-2 lg:px-4 lg:w-8/12">
-              <div className="news-item-category px-4 py-2 bg-dark_blu text-white mb-4 max-w-max">
+            <div className="px-2 py-4 news-item-txt lg:px-4 lg:w-8/12">
+              <div className="px-4 py-2 mb-4 text-white news-item-category bg-dark_blu max-w-max">
                 {newsItem.category}
               </div>
-              <h4 className="text-pinky text-2xl txt-extrabold mb-8 uppercase">
+              <h4 className="mb-8 text-2xl uppercase text-pinky txt-extrabold">
                 {newsItem.headlineTxt}
               </h4>
               <p className="mb-4">{newsItem.description}</p>

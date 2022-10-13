@@ -9,7 +9,7 @@ const FooterLink = ({ linkTo, isMailLink = false }: Props) => {
       href={isMailLink ? `mailto:${linkTo}` : `https://${linkTo}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-dark_blu underline max-w-max"
+      className="underline text-dark_blu max-w-max"
     ></a>
   );
 };

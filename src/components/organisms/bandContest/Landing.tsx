@@ -10,9 +10,9 @@ const Landing = () => {
     >
       <SectionWrapper>
         <LandingHeading landingHeadingText="Nech sebe a svou kapelu zazářit!" />
-        <div className="about-lineup flex items-center flex-wrap">
+        <div className="flex flex-wrap items-center about-lineup">
           <div className="about-txt md:w-3/5 xl:w-1/2">
-            <p className="text-white txt-bold mb-2">
+            <p className="mb-2 text-white txt-bold">
               Patří hudba neodmyslitelně k tvému životu?
             </p>
             <p className="text-white">
@@ -23,7 +23,7 @@ const Landing = () => {
               <span className="txt-bold">31. 3.</span>
             </p>
           </div>
-          <div className="register-btn mt-12 md:mt-0 md:ml-8 lg:ml-10 xl:ml-12">
+          <div className="mt-12 register-btn md:mt-0 md:ml-8 lg:ml-10 xl:ml-12">
             <NavToPageWhiteButton
               blank={true}
               linkText="hlasuj!"

@@ -3,7 +3,7 @@ import PictureLinkItem from '../../../lib/types/TPictureLinkItem';
 const SocItem = ({ imgSrc, imgAlt, linkTo }: PictureLinkItem) => {
   return (
     <a
-      className="soc-item text-center"
+      className="text-center soc-item"
       href={linkTo}
       target="_blank"
       rel="noopener noreferrer"

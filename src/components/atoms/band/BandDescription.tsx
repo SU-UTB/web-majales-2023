@@ -14,9 +14,9 @@ const BandDescription = ({
   return (
     // TODO: props class for band-desc
     <div className={`band-desc absolute ${classNames}`}>
-      <h3 className="text-white text-4xl txt-bold">{bandName}</h3>
-      {bandSubName && <sup className="text-white text-lg">{bandSubName}</sup>}
-      <p className="text-white text-lg">{bandType}</p>
+      <h3 className="text-4xl text-white txt-bold">{bandName}</h3>
+      {bandSubName && <sup className="text-lg text-white">{bandSubName}</sup>}
+      <p className="text-lg text-white">{bandType}</p>
     </div>
   );
 };

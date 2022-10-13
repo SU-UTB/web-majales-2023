@@ -3,7 +3,7 @@ type Props = {
 };
 
 const PartnerBox = ({ children }: Props) => {
-  return <div className="partner-box mb-8 md:mb-16">{children}</div>;
+  return <div className="mb-8 partner-box md:mb-16">{children}</div>;
 };
 
 export default PartnerBox;

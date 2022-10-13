@@ -200,9 +200,9 @@ const PartnerList = () => {
 
   return (
     <section id="partner-list">
-      <div className="partners-gallery flex flex-col items-center px-8 md:w-4/5 mx-auto py-12">
+      <div className="flex flex-col items-center px-8 py-12 mx-auto partners-gallery md:w-4/5">
         <PartnerSection>
-          <h4 className="txt-extrabold text-5xl mb-8 text-center">
+          <h4 className="mb-8 text-5xl text-center txt-extrabold">
             Generální partner
           </h4>
           <PartnerBox>
@@ -215,7 +215,7 @@ const PartnerList = () => {
         </PartnerSection>
 
         <PartnerSection>
-          <h4 className="txt-extrabold text-4xl text-center">
+          <h4 className="text-4xl text-center txt-extrabold">
             Logistický partner
           </h4>
           <PartnerBox>
@@ -228,10 +228,10 @@ const PartnerList = () => {
         </PartnerSection>
 
         <PartnerSection>
-          <h4 className="txt-extrabold text-2xl text-center mb-8">
+          <h4 className="mb-8 text-2xl text-center txt-extrabold">
             Hlavní partneři
           </h4>
-          <div className="main-partners flex flex-wrap justify-around mb-8 md:mb-16">
+          <div className="flex flex-wrap justify-around mb-8 main-partners md:mb-16">
             {mainPartners.map((mainPartner) => (
               <PartnerBox key={mainPartner.partnerImg}>
                 <PartnerPicture
@@ -245,8 +245,8 @@ const PartnerList = () => {
         </PartnerSection>
 
         <PartnerSection>
-          <h4 className="txt-extrabold text-2xl text-center mb-8">Partneři</h4>
-          <div className="partners flex flex-wrap justify-around mb-8 md:mb-16">
+          <h4 className="mb-8 text-2xl text-center txt-extrabold">Partneři</h4>
+          <div className="flex flex-wrap justify-around mb-8 partners md:mb-16">
             {partners.map((partner) => (
               <PartnerBox key={partner.partnerImg}>
                 <PartnerPicture
@@ -260,10 +260,10 @@ const PartnerList = () => {
         </PartnerSection>
 
         <PartnerSection>
-          <h4 className="txt-extrabold text-2xl text-center mb-8">
+          <h4 className="mb-8 text-2xl text-center txt-extrabold">
             Mediální partneři
           </h4>
-          <div className="medial-partners flex flex-wrap justify-around mb-8 md:mb-16">
+          <div className="flex flex-wrap justify-around mb-8 medial-partners md:mb-16">
             {medialPartners.map((medialPartner) => (
               <PartnerBox key={medialPartner.partnerImg}>
                 <PartnerPicture
@@ -277,7 +277,7 @@ const PartnerList = () => {
         </PartnerSection>
 
         <PartnerSection>
-          <h4 className="txt-extrabold text-2xl text-center">
+          <h4 className="text-2xl text-center txt-extrabold">
             Partner soutěže kapel
           </h4>
           <PartnerBox>
@@ -290,10 +290,10 @@ const PartnerList = () => {
         </PartnerSection>
 
         <PartnerSection>
-          <h4 className="txt-extrabold text-2xl text-center mb-4">
+          <h4 className="mb-4 text-2xl text-center txt-extrabold">
             Organizátoři
           </h4>
-          <div className="partners flex flex-wrap justify-around">
+          <div className="flex flex-wrap justify-around partners">
             {organizators.map((organizator) => (
               <PartnerBox key={organizator.partnerImg}>
                 <PartnerPicture

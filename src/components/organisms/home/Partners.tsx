@@ -24,13 +24,13 @@ const Partners = () => {
   ];
 
   return (
-    <section id="partners" className="md:w-4/5 lg:w-4/5 mx-auto">
-      <h5 className="section-heading text-right mr-8 text-light_blu mb-8">
+    <section id="partners" className="mx-auto md:w-4/5 lg:w-4/5">
+      <h5 className="mb-8 mr-8 text-right section-heading text-light_blu">
         Naši partneři
       </h5>
-      <div className="partners-gallery flex flex-col items-center">
-        <div className="general-partner flex flex-col items-center my-20">
-          <h4 className="txt-extrabold text-3xl mb-4 text-center">
+      <div className="flex flex-col items-center partners-gallery">
+        <div className="flex flex-col items-center my-20 general-partner">
+          <h4 className="mb-4 text-3xl text-center txt-extrabold">
             Generální partner
           </h4>
           <img
@@ -38,8 +38,8 @@ const Partners = () => {
             alt={generalPartner.partnerImgAlt}
           />
         </div>
-        <div className="logistic-partner flex flex-col items-center">
-          <h4 className="txt-extrabold text-2xl text-center">
+        <div className="flex flex-col items-center logistic-partner">
+          <h4 className="text-2xl text-center txt-extrabold">
             Logistický partner
           </h4>
           <img

@@ -6,7 +6,7 @@ const NewsItemLink = ({ linkTo, linkText }: LinkItem) => {
       href={linkTo}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-dark_blu underline max-w-max text-right"
+      className="text-right underline text-dark_blu max-w-max"
     >
       {linkText}
     </a>

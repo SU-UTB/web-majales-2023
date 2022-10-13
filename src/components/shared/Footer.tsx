@@ -57,18 +57,18 @@ const Footer = () => {
 
   return (
     <footer className='bg-[url("/src/assets/footer_img.png")] bg-no-repeat bg-center bg-cover'>
-      <div className="footer-inner flex flex-col items-center md:items-start md:flex-row text-center md:text-left justify-around">
-        <div className="footer-nav-links mb-4 md:mb-0">
+      <div className="flex flex-col items-center justify-around text-center footer-inner md:items-start md:flex-row md:text-left">
+        <div className="mb-4 footer-nav-links md:mb-0">
           <FooterItemHeadline
             headlineText="majáles"
             classNames="mb-4 md:mb-6"
           />
           {ROUTES.map((route) => (
-            <div key={route.path} className="footer-nav-link mb-2">
+            <div key={route.path} className="mb-2 footer-nav-link">
               <FooterNavLink linkTo={route.path} linkText={route.linkText} />
             </div>
           ))}
-          <div className="footer-contact-links flex flex-col mt-4 md:mt-6 items-center md:items-start">
+          <div className="flex flex-col items-center mt-4 footer-contact-links md:mt-6 md:items-start">
             {footerLinks.map((footerLink) => (
               <FooterLink
                 key={footerLink.linkTo}
@@ -78,7 +78,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="managers flex flex-col justify-between space-y-8 my-4 md:my-0">
+        <div className="flex flex-col justify-between my-4 managers space-y-8 md:my-0">
           {managers.map((manager) => (
             <div key={manager.name} className="footer-manager-item">
               <FooterManagerItem
@@ -89,11 +89,11 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="footer-contacts flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center footer-contacts md:items-start">
           <SocialsContainer />
-          <div className="footer-guyz flex flex-col">
+          <div className="flex flex-col footer-guyz">
             {behindTheScenesGuyz.map((guy) => (
-              <div key={guy.name} className="footer-guy-item mb-8">
+              <div key={guy.name} className="mb-8 footer-guy-item">
                 <FooterManagerItem
                   managerName={guy.name}
                   managerPos={guy.pos}
@@ -104,7 +104,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <h6 className="text-center mt-8 md:mt-12 uppercase txt-bold">
+      <h6 className="mt-8 text-center uppercase md:mt-12 txt-bold">
         ©Studentská unie utb, 2023
       </h6>
     </footer>

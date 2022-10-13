@@ -3,7 +3,7 @@ import SocItem from '../atoms/social/SocItem';
 
 const VerticalSocials = () => {
   return (
-    <div className="majales_socials_vertical hidden lg:fixed lg:flex items-center flex-col space-y-4 lg:top-72 lg:left-10">
+    <div className="flex-col items-center hidden space-y-4 majales_socials_vertical lg:fixed lg:flex lg:top-72 lg:left-10">
       <SocItem
         linkTo={SOCIALS_LINKS.SU_FB.linkTo}
         imgSrc={SOCIALS_LINKS.SU_FB.imgSrc}

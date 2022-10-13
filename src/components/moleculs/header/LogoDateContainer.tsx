@@ -2,7 +2,7 @@ import majalesLogo from '/maj_logo.png';
 
 const LogoDateContainer = () => {
   return (
-    <div className="logo-date-container flex space-x-8 items-center lg:pt-4">
+    <div className="flex items-center logo-date-container space-x-8 lg:pt-4">
       <a href="./">
         <img src={majalesLogo} alt="Majáles logo modré" />
       </a>

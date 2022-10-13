@@ -3,7 +3,7 @@ import SectionHeading from '../../atoms/section/SectionHeading';
 
 const Rules = () => {
   return (
-    <section id="rules-band-contest" className="pt-12 relative -top-40">
+    <section id="rules-band-contest" className="relative pt-12 -top-40">
       <div className="flex justify-center px-8 md:px-4">
         <div className="w-full md:w-4/5 xl:w-3/5">
           <SectionHeading>

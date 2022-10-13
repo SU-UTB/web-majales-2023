@@ -98,19 +98,19 @@ const BandList = () => {
   return (
     <div
       id="band-list"
-      className="py-20 w-full px-4 md:px-0 md:w-4/5 mx-auto overflow-hidden"
+      className="w-full px-4 py-20 mx-auto overflow-hidden md:px-0 md:w-4/5"
     >
-      <div className="band-list-first flex flex-wrap">
-        <div className="lg:grid w-full lg:w-8/12 grid-cols-2 lg:grid-rows-2 lg:gap-2 lg:px-2">
+      <div className="flex flex-wrap band-list-first">
+        <div className="w-full lg:grid lg:w-8/12 grid-cols-2 lg:grid-rows-2 lg:gap-2 lg:px-2">
           <LineupBand
             band={udg}
             classNames="col-span-2"
             bandDescription={
               <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
-                <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
+                <h3 className="text-2xl text-white sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
                   {udg.bandName}
                 </h3>
-                <p className="text-white text-sm sm:text-lg">{udg.bandType}</p>
+                <p className="text-sm text-white sm:text-lg">{udg.bandType}</p>
               </div>
             }
             bandSocials={
@@ -127,10 +127,10 @@ const BandList = () => {
               band={band}
               bandDescription={
                 <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
-                  <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
+                  <h3 className="text-2xl text-white sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
                     {band.bandName}
                   </h3>
-                  <p className="text-white text-sm sm:text-lg">
+                  <p className="text-sm text-white sm:text-lg">
                     {band.bandType}
                   </p>
                 </div>
@@ -149,10 +149,10 @@ const BandList = () => {
           band={vojtano}
           bandDescription={
             <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8 lg:right-8">
-              <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
+              <h3 className="text-2xl text-white sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
                 {vojtano.bandName}
               </h3>
-              <p className="text-white text-sm sm:text-lg">
+              <p className="text-sm text-white sm:text-lg">
                 {vojtano.bandType}
               </p>
             </div>
@@ -166,21 +166,21 @@ const BandList = () => {
           }
         ></LineupBand>
       </div>
-      <div className="band-list-second flex lg:py-2 lg:pl-2">
-        <div className="lg:grid w-full grid-cols-2 lg:grid-rows-1 lg:gap-2">
+      <div className="flex band-list-second lg:py-2 lg:pl-2">
+        <div className="w-full lg:grid grid-cols-2 lg:grid-rows-1 lg:gap-2">
           {bandsSecond.map((band) => (
             <LineupBand
               key={band.bandName}
               band={band}
               bandDescription={
                 <div className="absolute bottom-2 md:bottom-4 left-4 sm:left-8">
-                  <h3 className="text-white text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
+                  <h3 className="text-2xl text-white sm:text-3xl lg:text-2xl 2xl:text-4xl txt-extrabold">
                     {band.bandName}
                     {band.subName && (
-                      <sup className="text-white text-lg">{band.subName}</sup>
+                      <sup className="text-lg text-white">{band.subName}</sup>
                     )}
                   </h3>
-                  <p className="text-white text-sm sm:text-lg">
+                  <p className="text-sm text-white sm:text-lg">
                     {band.bandType}
                   </p>
                 </div>

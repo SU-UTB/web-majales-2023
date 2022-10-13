@@ -22,7 +22,7 @@ const FinalBandList = () => {
 
   return (
     <section id="final-band-list" className="py-12">
-      <div className="w-full md:w-4/5 xl:w-3/5 mx-auto">
+      <div className="w-full mx-auto md:w-4/5 xl:w-3/5">
         <SectionHeading sectionHeadingText="Finalisté soutěže kapel" />
         {finalBands.map((finalBand) => (
           <div key={finalBand.imgSrc} className="final-band-item">
