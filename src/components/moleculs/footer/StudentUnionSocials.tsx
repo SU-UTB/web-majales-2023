@@ -1,10 +1,10 @@
-import { SOCIAL_LINKS_IMAGES } from '../../../lib/constants/Socials';
+import { SU_SOCIAL_LINKS_IMAGES } from '../../../lib/constants/Socials';
 import SocItem from '../../atoms/social/SocItem';
 
 const StudentUnionSocials = () => {
   return (
     <div className="flex items-center su-socials space-x-4">
-      {SOCIAL_LINKS_IMAGES.map((socItem) => (
+      {SU_SOCIAL_LINKS_IMAGES.map((socItem) => (
         <SocItem
           key={socItem.imgSrc}
           linkTo={socItem.linkTo}

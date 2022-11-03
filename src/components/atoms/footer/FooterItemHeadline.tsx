@@ -5,7 +5,7 @@ type Props = {
 
 const FooterItemHeadline = ({ headlineText, classNames = '' }: Props) => {
   return (
-    <h6 className={`text-white uppercase text-[25px] ${classNames}`}>
+    <h6 className={`text-white uppercase text-[25px] font-headline ${classNames}`}>
       {headlineText}
     </h6>
   );

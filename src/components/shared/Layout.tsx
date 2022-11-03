@@ -9,7 +9,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main className="container px-4 mx-auto">{children}</main>
+      <main className="mx-auto">{children}</main>
       <Footer />
     </>
   );

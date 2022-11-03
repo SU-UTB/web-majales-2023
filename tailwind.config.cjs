@@ -11,7 +11,8 @@ module.exports = {
         dark_blu_txt: '#391F68',
       },
       fontFamily: {
-        body: ['"Cabinet Grotesk"'],
+        body: ['CabinetGroteskRegular'],
+        headline: ['CabinetGroteskExtraBold']
       },
     },
   },

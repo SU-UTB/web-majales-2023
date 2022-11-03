@@ -56,7 +56,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className='bg-[url("/src/assets/footer_img.png")] bg-no-repeat bg-center bg-cover'>
+    <footer className='bg-[url("/src/assets/footer_img.png")] bg-no-repeat bg-center bg-cover py-12'>
       <div className="flex flex-col items-center justify-around text-center footer-inner md:items-start md:flex-row md:text-left">
         <div className="mb-4 footer-nav-links md:mb-0">
           <FooterItemHeadline
