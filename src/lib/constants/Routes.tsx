@@ -12,7 +12,7 @@ export const ROUTE_PATHS = {
   BAND_CONTEST: { path: '/soutez-kapel', linkText: 'soutěž kapel' },
   MAJALES_KING_QUEEN: { path: '/kral-a-kralovna', linkText: 'král majálesu' },
   NEWS_FEED: { path: '/aktuality', linkText: 'aktuality' },
-  PARTNERS: { path: '/partneri', linkText: 'partneri' },
+  PARTNERS: { path: '/partneri', linkText: 'partneři' },
   CONTACT: { path: '/kontakt', linkText: 'kontakt' },
 };
 

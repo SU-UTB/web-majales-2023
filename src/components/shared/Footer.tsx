@@ -63,11 +63,17 @@ const Footer = () => {
             headlineText="majáles"
             classNames="mb-4 md:mb-6"
           />
-          {ROUTES.map((route) => (
-            <div key={route.path} className="mb-2 footer-nav-link">
-              <FooterNavLink linkTo={route.path} linkText={route.linkText} />
-            </div>
-          ))}
+          {ROUTES.map(
+            (route) =>
+              route.linkText && (
+                <div key={route.path} className="mb-2 footer-nav-link">
+                  <FooterNavLink
+                    linkTo={route.path}
+                    linkText={route.linkText}
+                  />
+                </div>
+              )
+          )}
           <div className="flex flex-col items-center mt-4 footer-contact-links md:mt-6 md:items-start">
             {footerLinks.map((footerLink) => (
               <FooterLink

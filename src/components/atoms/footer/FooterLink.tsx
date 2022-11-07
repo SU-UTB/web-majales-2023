@@ -10,7 +10,9 @@ const FooterLink = ({ linkTo, isMailLink = false }: Props) => {
       target="_blank"
       rel="noopener noreferrer"
       className="underline text-dark_blu max-w-max"
-    ></a>
+    >
+      {linkTo}
+    </a>
   );
 };
 
