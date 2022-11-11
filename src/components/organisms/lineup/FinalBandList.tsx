@@ -1,25 +1,7 @@
+import { finalBands } from '../../../data/bands';
 import SectionHeading from '../../atoms/section/SectionHeading';
 
 const FinalBandList = () => {
-  const finalBands = [
-    {
-      imgSrc: '',
-      imgAlt: '',
-    },
-    {
-      imgSrc: '',
-      imgAlt: '',
-    },
-    {
-      imgSrc: '',
-      imgAlt: '',
-    },
-    {
-      imgSrc: '',
-      imgAlt: '',
-    },
-  ];
-
   return (
     <section id="final-band-list" className="py-12">
       <div className="w-full mx-auto md:w-4/5 xl:w-3/5">

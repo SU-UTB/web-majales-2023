@@ -1,39 +1,7 @@
+import { contacts } from '../../../data/contacts';
 import ContactItem from '../../atoms/contact/ContactItem';
 
 const ContactList = () => {
-  const contacts = [
-    {
-      name: 'LEONA VYHNÁLKOVÁ',
-      pos: 'manažerka projektu',
-      mail: 'vyhnalkova@sutb.cz',
-    },
-    {
-      name: 'Adam Utíkal',
-      pos: 'statutární zástupce',
-      mail: 'utikal@sutb.cz',
-    },
-    {
-      name: 'Rastislav Škojec',
-      pos: 'koordinátor spolupráce',
-      mail: 'skojec@sutb.cz',
-    },
-    {
-      name: 'martin šálek',
-      pos: 'vedoucí produkce',
-      mail: 'martin.salek@sutb.cz',
-    },
-    {
-      name: 'adéla pokorná',
-      pos: 'koordinátorka účinkujících',
-      mail: 'pokorna@sutb.cz',
-    },
-    {
-      name: 'MICHAELA FILIPCOVÁ',
-      pos: 'public relations',
-      mail: 'filipcova@sutb.cz',
-    },
-  ];
-
   return (
     <section id="contact-list" className="py-12 md:py-24">
       <div className="flex flex-wrap items-center justify-center px-8 mx-auto md:w-4/5 md:px-0 md:justify-between">

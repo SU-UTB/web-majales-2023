@@ -1,28 +1,6 @@
+import { generalPartner, logisticPartner } from '../../../data/partners';
+
 const Partners = () => {
-  const generalPartner = {
-    partnerImg: './assets/partners/logos/oveckarna.png',
-    partnerImgAlt: 'Ovečkárna',
-  };
-
-  const logisticPartner = {
-    partnerImg: './assets/partners/logos/posta_bez_hranic.png',
-    partnerImgAlt: 'Pošta bez hranic',
-  };
-
-  const mainPartners = [
-    {
-      partnerImg: '',
-      partnerImgAlt: '',
-    },
-  ];
-
-  const partners = [
-    {
-      partnerImg: '',
-      partnerImgAlt: '',
-    },
-  ];
-
   return (
     <section id="partners" className="mx-auto md:w-4/5 lg:w-4/5">
       <h5 className="mb-8 mr-8 text-right section-heading text-light_blu">

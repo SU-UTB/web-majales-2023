@@ -1,19 +1,7 @@
-import newsImg from '../../../assets/news/news_1.jpg';
+import { newsList } from '../../../data/news';
 import NewsItemLink from '../../atoms/news/NewsItemLink';
 
 const NewsList = () => {
-  const newsList = [
-    {
-      imgSrc: newsImg,
-      category: 'doprovodný program',
-      headlineTxt: 'MAJÁLESOVÁ STEZKA ZLÍNEM',
-      description:
-        'Přeješ si poznat všechna zákoutí města Zlína? Chceš získat roční předplatné na sdílená kola Nextbike? Projdi naší poznávací stezkou, posbírej jedenáct písmen, slož z nich dvě slova a výslednou tajenku vlož do našeho soutěžního formuláře. Lovu zdar!',
-      linkTo: 'https://forms.gle/9xTH6LPR2Zn9iZ9c6',
-      linkTxt: 'odkaz na formulář',
-    },
-  ];
-
   return (
     <section id="news-list" className="relative py-6 -top-36">
       <div className="px-4 mx-auto news-wrapper md:w-4/5">

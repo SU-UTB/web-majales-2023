@@ -15,8 +15,9 @@ import dekanImgMobile from '../assets/lineup/m_band5.png';
 
 import klidImgDesktop from '../assets/lineup/band7.png';
 import klidImgMobile from '../assets/lineup/m_band7.png';
+import BandItem from '../lib/types/TBandItem';
 
-export const udg = {
+export const udg: BandItem = {
   imgSrc: udgImgDesktop,
   imgSrcM: udgImgMobile,
   bandName: 'UDG',
@@ -28,7 +29,7 @@ export const udg = {
   height: 350,
 };
 
-export const vojtano = {
+export const vojtano: BandItem = {
   imgSrc: vojtanoImgDesktop,
   imgSrcM: vojtanoImgMobile,
   bandName: 'VOJTAANO',
@@ -40,7 +41,7 @@ export const vojtano = {
   height: 650,
 };
 
-export const bandsFirst = [
+export const bandsFirst: BandItem[] = [
   {
     imgSrc: circusImgDesktop,
     imgSrcM: circusImgMobile,
@@ -65,7 +66,7 @@ export const bandsFirst = [
   },
 ];
 
-export const bandsSecond = [
+export const bandsSecond: BandItem[] = [
   {
     imgSrc: dekanImgDesktop,
     imgSrcM: dekanImgMobile,
@@ -88,5 +89,18 @@ export const bandsSecond = [
     ig: 'https://instagram.com/trochaklidu?utm_medium=copy_link',
     width: 787,
     height: 420,
+  },
+];
+
+export const finalBands: BandItem[] = [
+  {
+    imgSrc: '',
+    imgSrcM: '',
+    bandName: '',
+    bandType: '',
+    spotify: '',
+    ig: '',
+    width: 0,
+    height: 0,
   },
 ];

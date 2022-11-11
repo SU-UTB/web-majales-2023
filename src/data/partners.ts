@@ -34,198 +34,199 @@ import vest from '../assets/partners/logos/vest.webp';
 import zlin from '../assets/partners/logos/zlin.webp';
 import zlin_kraj from '../assets/partners/logos/zlinsky_kraj.webp';
 import zlin_stav from '../assets/partners/logos/zlinstav.webp';
+import PartnerItem from '../lib/types/TPartnerItem';
 
-export const generalPartner = {
-  partnerImg: oveckarna,
-  partnerImgAlt: 'Ovečkárna',
-  partnerLink: 'https://www.oveckarna.cz/',
+export const generalPartner: PartnerItem = {
+  imgSrc: oveckarna,
+  imgAlt: 'Ovečkárna',
+  linkTo: 'https://www.oveckarna.cz/',
 };
 
-export const logisticPartner = {
-  partnerImg: posta,
-  partnerImgAlt: 'Pošta bez hranic',
-  partnerLink: 'https://www.postabezhranic.cz/',
+export const logisticPartner: PartnerItem = {
+  imgSrc: posta,
+  imgAlt: 'Pošta bez hranic',
+  linkTo: 'https://www.postabezhranic.cz/',
 };
 
-export const bandContestPartner = {
-  partnerImg: radegast,
-  partnerImgAlt: 'Radegast',
-  partnerLink: 'https://www.radegast.cz/',
+export const bandContestPartner: PartnerItem = {
+  imgSrc: radegast,
+  imgAlt: 'Radegast',
+  linkTo: 'https://www.radegast.cz/',
 };
 
-export const mainPartners = [
+export const mainPartners: PartnerItem[] = [
   {
-    partnerImg: svoboda,
-    partnerImgAlt: 'svoboda brezik',
-    partnerLink: 'http://www.svobodabrezik.cz/',
+    imgSrc: svoboda,
+    imgAlt: 'svoboda brezik',
+    linkTo: 'http://www.svobodabrezik.cz/',
   },
   {
-    partnerImg: produkce,
-    partnerImgAlt: 'IS Produkce',
-    partnerLink: 'https://isprodukce.cz/',
+    imgSrc: produkce,
+    imgAlt: 'IS Produkce',
+    linkTo: 'https://isprodukce.cz/',
   },
   {
-    partnerImg: zlin,
-    partnerImgAlt: 'Zlín',
-    partnerLink: 'https://www.zlin.eu/',
+    imgSrc: zlin,
+    imgAlt: 'Zlín',
+    linkTo: 'https://www.zlin.eu/',
   },
   {
-    partnerImg: kalina,
-    partnerImgAlt: 'kalina',
-    partnerLink: 'https://kalina.cz/',
+    imgSrc: kalina,
+    imgAlt: 'kalina',
+    linkTo: 'https://kalina.cz/',
   },
   {
-    partnerImg: vest,
-    partnerImgAlt: 'vest',
-    partnerLink: 'https://vestzlin.cz/',
+    imgSrc: vest,
+    imgAlt: 'vest',
+    linkTo: 'https://vestzlin.cz/',
   },
   {
-    partnerImg: graspo,
-    partnerImgAlt: 'graspo',
-    partnerLink: 'https://www.graspo.com/',
+    imgSrc: graspo,
+    imgAlt: 'graspo',
+    linkTo: 'https://www.graspo.com/',
   },
   {
-    partnerImg: ms_elektro,
-    partnerImgAlt: 'ms elektro',
-    partnerLink: 'https://www.mselektro.cz/',
+    imgSrc: ms_elektro,
+    imgAlt: 'ms elektro',
+    linkTo: 'https://www.mselektro.cz/',
   },
   {
-    partnerImg: zlin_kraj,
-    partnerImgAlt: 'zlinsky kraj',
-    partnerLink: 'https://www.kr-zlinsky.cz/',
+    imgSrc: zlin_kraj,
+    imgAlt: 'zlinsky kraj',
+    linkTo: 'https://www.kr-zlinsky.cz/',
   },
   {
-    partnerImg: captain_morgan,
-    partnerImgAlt: 'captain morgan',
-    partnerLink: 'https://www.captainmorgan.com/cs-cz/',
+    imgSrc: captain_morgan,
+    imgAlt: 'captain morgan',
+    linkTo: 'https://www.captainmorgan.com/cs-cz/',
   },
   {
-    partnerImg: cisty_festival,
-    partnerImgAlt: 'cisty festival ekokom',
-    partnerLink: 'https://www.cistyfestival.cz/',
+    imgSrc: cisty_festival,
+    imgAlt: 'cisty festival ekokom',
+    linkTo: 'https://www.cistyfestival.cz/',
   },
   {
-    partnerImg: gnotes,
-    partnerImgAlt: 'G Notes',
-    partnerLink: 'https://www.gnotes.cz/',
+    imgSrc: gnotes,
+    imgAlt: 'G Notes',
+    linkTo: 'https://www.gnotes.cz/',
   },
 ];
 
-export const partners = [
+export const partners: PartnerItem[] = [
   {
-    partnerImg: zlin_stav,
-    partnerImgAlt: 'zlinstav',
-    partnerLink: 'https://www.zlinstav.com/',
+    imgSrc: zlin_stav,
+    imgAlt: 'zlinstav',
+    linkTo: 'https://www.zlinstav.com/',
   },
   {
-    partnerImg: dimer,
-    partnerImgAlt: 'dimer',
-    partnerLink: 'https://www.dimer.cz/tesneni/index.php',
+    imgSrc: dimer,
+    imgAlt: 'dimer',
+    linkTo: 'https://www.dimer.cz/tesneni/index.php',
   },
   {
-    partnerImg: nadace,
-    partnerImgAlt: 'nadace tomase bati',
-    partnerLink: 'https://www.nadacetomasebati.cz/',
+    imgSrc: nadace,
+    imgAlt: 'nadace tomase bati',
+    linkTo: 'https://www.nadacetomasebati.cz/',
   },
   {
-    partnerImg: awl,
-    partnerImgAlt: 'awl',
-    partnerLink: 'https://awl.nl/cs/',
+    imgSrc: awl,
+    imgAlt: 'awl',
+    linkTo: 'https://awl.nl/cs/',
   },
   {
-    partnerImg: teplarna,
-    partnerImgAlt: 'teplarna otrokovice',
-    partnerLink: 'https://www.tot.cz/',
+    imgSrc: teplarna,
+    imgAlt: 'teplarna otrokovice',
+    linkTo: 'https://www.tot.cz/',
   },
   {
-    partnerImg: leaves,
-    partnerImgAlt: 'leaves',
-    partnerLink: 'https://leaves.bar/',
+    imgSrc: leaves,
+    imgAlt: 'leaves',
+    linkTo: 'https://leaves.bar/',
   },
   {
-    partnerImg: nextbike,
-    partnerImgAlt: 'nextbike',
-    partnerLink: 'https://www.nextbikeczech.com/',
+    imgSrc: nextbike,
+    imgAlt: 'nextbike',
+    linkTo: 'https://www.nextbikeczech.com/',
   },
   {
-    partnerImg: burger,
-    partnerImgAlt: 'burger',
-    partnerLink: 'https://www.facebook.com/burgerzlin/',
+    imgSrc: burger,
+    imgAlt: 'burger',
+    linkTo: 'https://www.facebook.com/burgerzlin/',
   },
   {
-    partnerImg: exit_room,
-    partnerImgAlt: 'exitroom zlin',
-    partnerLink: 'https://www.exitroomzlin.cz/',
+    imgSrc: exit_room,
+    imgAlt: 'exitroom zlin',
+    linkTo: 'https://www.exitroomzlin.cz/',
   },
   {
-    partnerImg: faency,
-    partnerImgAlt: 'faency fries',
-    partnerLink: 'https://www.faencyfries.cz/',
+    imgSrc: faency,
+    imgAlt: 'faency fries',
+    linkTo: 'https://www.faencyfries.cz/',
   },
   {
-    partnerImg: impact_hub,
-    partnerImgAlt: 'impacthub zlin blue',
-    partnerLink: 'https://hubzlin.cz/',
+    imgSrc: impact_hub,
+    imgAlt: 'impacthub zlin blue',
+    linkTo: 'https://hubzlin.cz/',
   },
   {
-    partnerImg: kfc,
-    partnerImgAlt: 'kfc',
-    partnerLink: 'https://kfc.cz/',
+    imgSrc: kfc,
+    imgAlt: 'kfc',
+    linkTo: 'https://kfc.cz/',
   },
   {
-    partnerImg: laser_game,
-    partnerImgAlt: 'laser game zlin',
-    partnerLink: 'http://lasergamezlin.cz/',
+    imgSrc: laser_game,
+    imgAlt: 'laser game zlin',
+    linkTo: 'http://lasergamezlin.cz/',
   },
   {
-    partnerImg: makalu,
-    partnerImgAlt: 'makalu',
-    partnerLink: 'http://www.nepalska-restaurace-makalu.cz/zlin.php',
+    imgSrc: makalu,
+    imgAlt: 'makalu',
+    linkTo: 'http://www.nepalska-restaurace-makalu.cz/zlin.php',
   },
   {
-    partnerImg: mdz,
-    partnerImgAlt: 'mdz',
-    partnerLink: 'https://divadlozlin.cz/',
+    imgSrc: mdz,
+    imgAlt: 'mdz',
+    linkTo: 'https://divadlozlin.cz/',
   },
   {
-    partnerImg: matchball,
-    partnerImgAlt: 'matchball',
-    partnerLink: 'http://mball.cz/',
-  },
-];
-
-export const medialPartners = [
-  {
-    partnerImg: inzlin,
-    partnerImgAlt: 'inzlin',
-    partnerLink: 'http://www.inzlin.info/',
-  },
-  {
-    partnerImg: jsem_ze_zlina,
-    partnerImgAlt: 'jsem ze zlina',
-    partnerLink: 'https://www.jsemzezlina.cz/',
-  },
-  {
-    partnerImg: kudy_z_nudy,
-    partnerImgAlt: 'kudyznudy',
-    partnerLink: 'https://www.kudyznudy.cz/',
-  },
-  {
-    partnerImg: cesky_rozhlas,
-    partnerImgAlt: 'zlin cesky rozhlas',
-    partnerLink: 'https://zlin.rozhlas.cz/',
+    imgSrc: matchball,
+    imgAlt: 'matchball',
+    linkTo: 'http://mball.cz/',
   },
 ];
 
-export const organizators = [
+export const medialPartners: PartnerItem[] = [
   {
-    partnerImg: utb,
-    partnerImgAlt: 'utb',
-    partnerLink: 'https://www.utb.cz/',
+    imgSrc: inzlin,
+    imgAlt: 'inzlin',
+    linkTo: 'http://www.inzlin.info/',
   },
   {
-    partnerImg: su,
-    partnerImgAlt: 'studentska unie',
-    partnerLink: 'https://sunovy.utb.cz/',
+    imgSrc: jsem_ze_zlina,
+    imgAlt: 'jsem ze zlina',
+    linkTo: 'https://www.jsemzezlina.cz/',
+  },
+  {
+    imgSrc: kudy_z_nudy,
+    imgAlt: 'kudyznudy',
+    linkTo: 'https://www.kudyznudy.cz/',
+  },
+  {
+    imgSrc: cesky_rozhlas,
+    imgAlt: 'zlin cesky rozhlas',
+    linkTo: 'https://zlin.rozhlas.cz/',
+  },
+];
+
+export const organizators: PartnerItem[] = [
+  {
+    imgSrc: utb,
+    imgAlt: 'utb',
+    linkTo: 'https://www.utb.cz/',
+  },
+  {
+    imgSrc: su,
+    imgAlt: 'studentska unie',
+    linkTo: 'https://sunovy.utb.cz/',
   },
 ];
