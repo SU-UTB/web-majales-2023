@@ -29,6 +29,7 @@ const Landing = () => {
           <NavToPageWhiteButton
             linkText="nalaď majálesový playlist"
             linkTo="./"
+            className="mt-12"
           />
         </div>
       </div>
