@@ -1,10 +1,13 @@
 type Props = {
   landingHeadingText: string;
+  className?: string;
 };
 
-const LandingHeading = ({ landingHeadingText }: Props) => {
+const LandingHeading = ({ landingHeadingText, className }: Props) => {
   return (
-    <h2 className="mb-4 text-4xl text-white txt-bold">{landingHeadingText}</h2>
+    <h2 className={`mb-4 text-4xl text-white txt-bold ${className}`}>
+      {landingHeadingText}
+    </h2>
   );
 };
 
