@@ -1,56 +1,66 @@
-import { ROUTES } from '../../lib/constants/Routes';
-import FooterItemHeadline from '../atoms/footer/FooterItemHeadline';
-import FooterLink from '../atoms/footer/FooterLink';
-import FooterNavLink from '../atoms/footer/FooterNavLink';
-import FooterManagerItem from '../moleculs/footer/FooterManagerItem';
-import SocialsContainer from '../moleculs/footer/SocialsContainer';
+import { ROUTES } from "../../lib/constants/Routes";
+import FooterItemHeadline from "../atoms/footer/FooterItemHeadline";
+import FooterLink from "../atoms/footer/FooterLink";
+import FooterNavLink from "../atoms/footer/FooterNavLink";
+import FooterManagerItem from "../moleculs/footer/FooterManagerItem";
+import SocialsContainer from "../moleculs/footer/SocialsContainer";
 
 const Footer = () => {
   const managers = [
     {
-      name: 'LEONA VYHNÁLKOVÁ',
-      pos: 'manažerka projektu',
-      mail: 'vyhnalkova@sutb.cz',
+      name: "Marek Hujo, Martin Šálek",
+      pos: "manažeři projektu",
+      mail: "hujo@sutb.cz, martin.salek@sutb.cz",
     },
     {
-      name: 'Rastík škojec',
-      pos: 'koordinátor spolupráce',
-      mail: 'skojec@sutb.cz',
+      name: "Rastík škojec",
+      pos: "marketing",
+      mail: "skojec@sutb.cz",
     },
     {
-      name: 'MICHAELA FILIPCOVÁ',
-      pos: 'public relations',
-      mail: 'filipcova@sutb.cz',
+      name: "Michelle Hozzová",
+      pos: "externí spolupráce",
+      mail: "hozzova@sutb.cz",
+    },
+    {
+      name: "Jan Bureš",
+      pos: "správa webu a IT",
+      mail: "j_bures@sutb.cz",
     },
   ];
 
   const behindTheScenesGuyz = [
     {
-      name: 'Adam Utíkal',
-      pos: 'statutární zástupce',
-      mail: 'utikal@sutb.cz',
+      name: "Dominik Gerža",
+      pos: "statutární zástupce",
+      mail: "gerza@sutb.cz",
     },
     {
-      name: 'Fifko Tomeš',
-      pos: 'správa webu a IT',
-      mail: '',
+      name: "Sára Hlásenská",
+      pos: "webdesign a vizuální zpracování",
+      mail: "hlasenksa@sutb.cz",
     },
     {
-      name: 'Klárka bárová',
-      pos: 'webdesign a vizuální zpracování',
-      mail: '',
+      name: "David Štolba",
+      pos: "webdesign a vizuální zpracování",
+      mail: "stolba@sutb.cz",
     },
+    // {
+    //   name: "Sára Hlásenská, David Štolba",
+    //   pos: "webdesign a vizuální zpracování",
+    //   mail: "hlasenksa@sutb.cz, stolba@sutb.cz",
+    // },
   ];
 
   const footerLinks = [
     {
-      linkTo: 'sunovy.utb.cz',
+      linkTo: "sunovy.utb.cz",
     },
     {
-      linkTo: 'utb.cz',
+      linkTo: "utb.cz",
     },
     {
-      linkTo: 'su@utb.cz',
+      linkTo: "su@utb.cz",
       isMailLink: true,
     },
   ];

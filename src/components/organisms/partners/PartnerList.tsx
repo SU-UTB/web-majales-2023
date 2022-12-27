@@ -6,10 +6,10 @@ import {
   medialPartners,
   organizators,
   partners,
-} from '../../../data/partners';
-import PartnerBox from '../../atoms/partner/PartnerBox';
-import PartnerPicture from '../../atoms/partner/PartnerPicture';
-import PartnerSection from '../../atoms/partner/PartnerSection';
+} from "../../../data/partners";
+import PartnerBox from "../../atoms/partner/PartnerBox";
+import PartnerPicture from "../../atoms/partner/PartnerPicture";
+import PartnerSection from "../../atoms/partner/PartnerSection";
 
 const PartnerList = () => {
   return (
@@ -20,11 +20,11 @@ const PartnerList = () => {
             Generální partner
           </h4>
           <PartnerBox>
-            <PartnerPicture
+            {/* <PartnerPicture
               linkTo={generalPartner.partnerLink}
               imgSrc={generalPartner.partnerImg}
               imgAlt={generalPartner.partnerImgAlt}
-            />
+            /> */}
           </PartnerBox>
         </PartnerSection>
 
@@ -33,11 +33,11 @@ const PartnerList = () => {
             Logistický partner
           </h4>
           <PartnerBox>
-            <PartnerPicture
+            {/* <PartnerPicture
               linkTo={logisticPartner.partnerLink}
               imgSrc={logisticPartner.partnerImg}
               imgAlt={logisticPartner.partnerImgAlt}
-            />
+            /> */}
           </PartnerBox>
         </PartnerSection>
 
@@ -46,7 +46,7 @@ const PartnerList = () => {
             Hlavní partneři
           </h4>
           <div className="flex flex-wrap justify-around mb-8 main-partners md:mb-16">
-            {mainPartners.map((mainPartner) => (
+            {/* {mainPartners.map((mainPartner) => (
               <PartnerBox key={mainPartner.partnerImg}>
                 <PartnerPicture
                   linkTo={mainPartner.partnerLink}
@@ -54,14 +54,14 @@ const PartnerList = () => {
                   imgAlt={mainPartner.partnerImgAlt}
                 />
               </PartnerBox>
-            ))}
+            ))} */}
           </div>
         </PartnerSection>
 
         <PartnerSection>
           <h4 className="mb-8 text-2xl text-center txt-extrabold">Partneři</h4>
           <div className="flex flex-wrap justify-around mb-8 partners md:mb-16">
-            {partners.map((partner) => (
+            {/* {partners.map((partner) => (
               <PartnerBox key={partner.partnerImg}>
                 <PartnerPicture
                   linkTo={partner.partnerLink}
@@ -69,7 +69,7 @@ const PartnerList = () => {
                   imgAlt={partner.partnerImgAlt}
                 />
               </PartnerBox>
-            ))}
+            ))} */}
           </div>
         </PartnerSection>
 
@@ -78,7 +78,7 @@ const PartnerList = () => {
             Mediální partneři
           </h4>
           <div className="flex flex-wrap justify-around mb-8 medial-partners md:mb-16">
-            {medialPartners.map((medialPartner) => (
+            {/* {medialPartners.map((medialPartner) => (
               <PartnerBox key={medialPartner.partnerImg}>
                 <PartnerPicture
                   linkTo={medialPartner.partnerLink}
@@ -86,7 +86,7 @@ const PartnerList = () => {
                   imgAlt={medialPartner.partnerImgAlt}
                 />
               </PartnerBox>
-            ))}
+            ))} */}
           </div>
         </PartnerSection>
 
@@ -95,11 +95,11 @@ const PartnerList = () => {
             Partner soutěže kapel
           </h4>
           <PartnerBox>
-            <PartnerPicture
+            {/* <PartnerPicture
               linkTo={bandContestPartner.partnerLink}
               imgSrc={bandContestPartner.partnerImg}
               imgAlt={bandContestPartner.partnerImgAlt}
-            />
+            /> */}
           </PartnerBox>
         </PartnerSection>
 
@@ -108,7 +108,7 @@ const PartnerList = () => {
             Organizátoři
           </h4>
           <div className="flex flex-wrap justify-around partners">
-            {organizators.map((organizator) => (
+            {/* {organizators.map((organizator) => (
               <PartnerBox key={organizator.partnerImg}>
                 <PartnerPicture
                   linkTo={organizator.partnerLink}
@@ -116,7 +116,7 @@ const PartnerList = () => {
                   imgAlt={organizator.partnerImgAlt}
                 />
               </PartnerBox>
-            ))}
+            ))} */}
           </div>
         </PartnerSection>
       </div>

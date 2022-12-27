@@ -1,4 +1,4 @@
-import { generalPartner, logisticPartner } from '../../../data/partners';
+import { generalPartner, logisticPartner } from "../../../data/partners";
 
 const Partners = () => {
   return (
@@ -11,19 +11,19 @@ const Partners = () => {
           <h4 className="mb-4 text-3xl text-center txt-extrabold">
             Generální partner
           </h4>
-          <img
+          {/* <img
             src={generalPartner.partnerImg}
             alt={generalPartner.partnerImgAlt}
-          />
+          /> */}
         </div>
         <div className="flex flex-col items-center logistic-partner">
           <h4 className="text-2xl text-center txt-extrabold">
             Logistický partner
           </h4>
-          <img
+          {/* <img
             src={logisticPartner.partnerImg}
             alt={logisticPartner.partnerImgAlt}
-          />
+          /> */}
         </div>
       </div>
     </section>
