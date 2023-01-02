@@ -4,7 +4,7 @@ import SocItem from '../../atoms/social/SocItem';
 
 const HorizontalSocials = () => {
   return (
-    <div className="flex justify-between w-20 mt-6 majales-socials-horizontal lg:hidden">
+    <div className="flex justify-between w-20 majales-socials-horizontal lg:hidden">
       <SocItem
         linkTo={SOCIALS_LINKS.SU_FB.linkTo}
         imgSrc={SOCIALS_LINKS.SU_FB.imgSrc}
