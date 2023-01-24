@@ -32,7 +32,7 @@ const Rules = () => {
               Pro výhru v soutěži je potřeba účastnit se
               <span className="txt-bold">všech kol soutěže,</span> které
               proběhnou
-              <span className="txt-bold">6. 5. v areálu konání akce.</span>
+              <span className="txt-bold">5. 5. v areálu konání akce.</span>
               <br />
               Způsob jednotlivých soutěžních kol bude upřesněn.
               <span className="txt-bold">Kola budou bodovaná.</span>

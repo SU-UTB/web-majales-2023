@@ -23,7 +23,7 @@ const About = () => {
             </p>
             <p className="mb-2">
               Na základě vyřazovacích kol a&nbsp;urozených disciplín přímo na
-              akci <span className="txt-bold">6. 5. </span>zjistíme, kdo je
+              akci <span className="txt-bold">5. 5. </span>zjistíme, kdo je
               hoden nosit po další rok korunu a&nbsp;usednout na trůn.
               <br />
               <span className="txt-bold">Budeš to právě ty?</span>
