@@ -1,9 +1,10 @@
-import About from "../components/organisms/home/About";
-import Aftermovie from "../components/organisms/home/Aftermovie";
-import BandContest from "../components/organisms/home/BandContest";
-import KingQueen from "../components/organisms/home/KingQueen";
-import Landing from "../components/organisms/home/Landing";
-import Lineup from "../components/organisms/home/Lineup";
+import About from '../components/organisms/home/About';
+import Aftermovie from '../components/organisms/home/Aftermovie';
+import BandContest from '../components/organisms/home/BandContest';
+import KingQueen from '../components/organisms/home/KingQueen';
+import Landing from '../components/organisms/home/Landing';
+import Lineup from '../components/organisms/home/Lineup';
+import Contact from './Contact';
 
 const Home = () => {
   return (
