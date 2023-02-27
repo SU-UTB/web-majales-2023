@@ -95,7 +95,8 @@ input, button, select, textarea {
 .section-heading {
 	font-family: CabinetGroteskBold;
 	letter-spacing: 0.01em;
-	font-size: 46px;
+	font-size: 38px;
+	text-transform: uppercase;
 }
 
 ol {

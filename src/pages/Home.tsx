@@ -14,7 +14,7 @@ const Home = () => {
       <About />
       {/* <Lineup /> */}
       {/* <BandContest /> */}
-      {/* <KingQueen /> */}
+      <KingQueen />
     </>
   );
 };
