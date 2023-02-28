@@ -4,7 +4,7 @@ import SectionHeading from '../../atoms/section/SectionHeading';
 const About = () => {
   return (
     <section id='about'>
-      <div className='flex mx-auto px-8 md:w-4/5 md:py-16 md:gap-8 lg:w-3/5 xl:gap-16 bg-slate-200'>
+      <div className='flex px-8 py-4 mx-auto md:px-0 md:w-4/5 md:gap-8 lg:w-3/5 xl:gap-16'>
         <div className='md:w-1/2 lg:w-1/2  bg-[#1D6858]' />
         <div className='md:w-1/2 lg:w-1/2 '>
           <SectionHeading sectionHeadingText='Přijďte si poslechnout hvězdy české hudební scény. Vydejte se s námi k nebesům.' />
