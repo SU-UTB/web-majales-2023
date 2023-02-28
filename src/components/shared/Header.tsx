@@ -1,9 +1,7 @@
-import { useState } from 'react';
-import { ROUTES } from '../../lib/constants/Routes';
-import HamburgerButton from '../atoms/header/HamburgerButton';
 import HeaderNavLink from '../atoms/header/HeaderNavLink';
 import HorizontalSocials from '../moleculs/header/HorizontalSocials';
 import LogoDateContainer from '../moleculs/header/LogoDateContainer';
+import HamburgerMenu from './HamburgerMenu';
 
 const headerItems = [
   {
@@ -24,19 +22,13 @@ const headerItems = [
   },
 ];
 
-// TODO: rework the header for more items - there should be two unordered lists, one for mobile and the other for desktop
 const Header = () => {
-  // const [toggledMenu, setToggledMenu] = useState<boolean>(false);
-
   return (
     <header className='fixed top-0 z-10 w-full'>
-      <nav className='relative flex items-center justify-around h-full bg-white flex-wrap'>
+      <nav className='flex flex-wrap justify-between px-2 pt-2 items-center sm:px-6 md:justify-around md:px-0 md:pt-0 bg-white '>
         <LogoDateContainer />
-        {/* <HamburgerButton
-          active={toggledMenu}
-          handleClick={() => setToggledMenu(!toggledMenu)}
-        /> */}
-        <ul className='flex items-center bg-white nav-items lg:w-auto lg:flex-row lg:space-x-8 space-x-4 p-2'>
+
+        <ul className='hidden md:block items-center lg:w-auto lg:flex-row lg:space-x-8 '>
           {headerItems.map((item) => (
             <HeaderNavLink
               key={item.text}
@@ -46,6 +38,7 @@ const Header = () => {
           ))}
           <HorizontalSocials />
         </ul>
+        <HamburgerMenu items={headerItems} />
       </nav>
     </header>
   );

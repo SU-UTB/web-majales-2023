@@ -14,7 +14,7 @@ export const SOCIALS_LINKS = {
   SU_IG: {
     linkTo: 'https://www.instagram.com/studentskaunieutb/',
     imgSrc: suSocial,
-    imgAlt: 'Studentská Unie instagram'
+    imgAlt: 'Studentská Unie instagram',
   },
   MAJALES_IG: {
     linkTo: 'https://www.instagram.com/majalesutb/',
