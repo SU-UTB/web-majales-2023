@@ -1,49 +1,49 @@
-import { ROUTES } from "../../lib/constants/Routes";
-import FooterItemHeadline from "../atoms/footer/FooterItemHeadline";
-import FooterLink from "../atoms/footer/FooterLink";
-import FooterNavLink from "../atoms/footer/FooterNavLink";
-import FooterManagerItem from "../moleculs/footer/FooterManagerItem";
-import SocialsContainer from "../moleculs/footer/SocialsContainer";
+import { ROUTES } from '../../lib/constants/Routes';
+import FooterItemHeadline from '../atoms/footer/FooterItemHeadline';
+import FooterLink from '../atoms/footer/FooterLink';
+import FooterNavLink from '../atoms/footer/FooterNavLink';
+import FooterManagerItem from '../moleculs/footer/FooterManagerItem';
+import SocialsContainer from '../moleculs/footer/SocialsContainer';
 
 const Footer = () => {
   const managers = [
     {
-      name: "Marek Hujo, Martin Šálek",
-      pos: "manažeři projektu",
-      mail: "hujo@sutb.cz, martin.salek@sutb.cz",
+      name: 'Marek Hujo, Martin Šálek',
+      pos: 'manažeři projektu',
+      mail: 'hujo@sutb.cz, martin.salek@sutb.cz',
     },
     {
-      name: "Rastík škojec",
-      pos: "marketing",
-      mail: "skojec@sutb.cz",
+      name: 'Rastík škojec',
+      pos: 'marketing',
+      mail: 'skojec@sutb.cz',
     },
     {
-      name: "Michelle Hozzová",
-      pos: "externí spolupráce",
-      mail: "hozzova@sutb.cz",
+      name: 'Michelle Hozzová',
+      pos: 'externí spolupráce',
+      mail: 'hozzova@sutb.cz',
     },
     {
-      name: "Jan Bureš",
-      pos: "správa webu a IT",
-      mail: "j_bures@sutb.cz",
+      name: 'Jan Bureš',
+      pos: 'správa webu a IT',
+      mail: 'j_bures@sutb.cz',
     },
   ];
 
   const behindTheScenesGuyz = [
     {
-      name: "Dominik Gerža",
-      pos: "statutární zástupce",
-      mail: "gerza@sutb.cz",
+      name: 'Dominik Gerža',
+      pos: 'statutární zástupce',
+      mail: 'gerza@sutb.cz',
     },
     {
-      name: "Sára Hlásenská",
-      pos: "webdesign a vizuální zpracování",
-      mail: "hlasenksa@sutb.cz",
+      name: 'Sára Hlásenská',
+      pos: 'webdesign a vizuální zpracování',
+      mail: 'hlasenksa@sutb.cz',
     },
     {
-      name: "David Štolba",
-      pos: "webdesign a vizuální zpracování",
-      mail: "stolba@sutb.cz",
+      name: 'David Štolba',
+      pos: 'webdesign a vizuální zpracování',
+      mail: 'stolba@sutb.cz',
     },
     // {
     //   name: "Sára Hlásenská, David Štolba",
@@ -54,29 +54,29 @@ const Footer = () => {
 
   const footerLinks = [
     {
-      linkTo: "sunovy.utb.cz",
+      linkTo: 'sunovy.utb.cz',
     },
     {
-      linkTo: "utb.cz",
+      linkTo: 'utb.cz',
     },
     {
-      linkTo: "su@utb.cz",
+      linkTo: 'su@utb.cz',
       isMailLink: true,
     },
   ];
 
   return (
-    <footer className='bg-[url("/src/assets/footer_img.png")] bg-no-repeat bg-center bg-cover py-12'>
-      <div className="flex flex-col items-center justify-around text-center footer-inner md:items-start md:flex-row md:text-left">
-        <div className="mb-4 footer-nav-links md:mb-0">
+    <footer className="bg-[url('/src/assets/footer/footer_bg_phone.png')] md:bg-[url('/src/assets/footer/footer_bg.png')] bg-no-repeat bg-center bg-cover py-12">
+      <div className='flex flex-col items-center justify-around text-center footer-inner md:items-start md:flex-row md:text-left'>
+        <div className='mb-4 footer-nav-links md:mb-0'>
           <FooterItemHeadline
-            headlineText="majáles"
-            classNames="mb-4 md:mb-6"
+            headlineText='majáles'
+            classNames='mb-4 md:mb-6'
           />
           {ROUTES.map(
             (route) =>
               route.linkText && (
-                <div key={route.path} className="mb-2 footer-nav-link">
+                <div key={route.path} className='mb-2 footer-nav-link'>
                   <FooterNavLink
                     linkTo={route.path}
                     linkText={route.linkText}
@@ -84,7 +84,7 @@ const Footer = () => {
                 </div>
               )
           )}
-          <div className="flex flex-col items-center mt-4 footer-contact-links md:mt-6 md:items-start">
+          <div className='flex flex-col items-center mt-4 footer-contact-links md:mt-6 md:items-start'>
             {footerLinks.map((footerLink) => (
               <FooterLink
                 key={footerLink.linkTo}
@@ -94,9 +94,9 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col justify-between my-4 managers space-y-8 md:my-0">
+        <div className='flex flex-col justify-between my-4 managers space-y-8 md:my-0'>
           {managers.map((manager) => (
-            <div key={manager.name} className="footer-manager-item">
+            <div key={manager.name} className='footer-manager-item'>
               <FooterManagerItem
                 managerName={manager.name}
                 managerPos={manager.pos}
@@ -105,11 +105,11 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col items-center footer-contacts md:items-start">
+        <div className='flex flex-col items-center footer-contacts md:items-start'>
           <SocialsContainer />
-          <div className="flex flex-col footer-guyz">
+          <div className='flex flex-col footer-guyz'>
             {behindTheScenesGuyz.map((guy) => (
-              <div key={guy.name} className="mb-8 footer-guy-item">
+              <div key={guy.name} className='mb-8 footer-guy-item'>
                 <FooterManagerItem
                   managerName={guy.name}
                   managerPos={guy.pos}
@@ -120,7 +120,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <h6 className="mt-8 text-center uppercase md:mt-12 txt-bold">
+      <h6 className='mt-8 text-center uppercase md:mt-12 txt-bold'>
         ©Studentská unie utb, 2023
       </h6>
     </footer>
