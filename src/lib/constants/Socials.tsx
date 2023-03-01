@@ -1,6 +1,6 @@
 import fbSocial from '../../assets/socials/fb_social.svg';
 import igSocial from '../../assets/socials/ig_social.svg';
-import majSocial from '../../assets/socials/maj_social.png';
+import majSocial from '../../assets/socials/maj_social.svg';
 import suSocial from '../../assets/socials/su_social.svg';
 import PictureLinkItem from '../types/TPictureLinkItem';
 
