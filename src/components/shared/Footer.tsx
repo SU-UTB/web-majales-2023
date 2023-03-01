@@ -22,14 +22,14 @@ const Footer = () => {
       pos: 'externí spolupráce',
       mail: 'hozzova@sutb.cz',
     },
+  ];
+
+  const behindTheScenesGuyz = [
     {
       name: 'Jan Bureš',
       pos: 'správa webu a IT',
       mail: 'j_bures@sutb.cz',
     },
-  ];
-
-  const behindTheScenesGuyz = [
     {
       name: 'Dominik Gerža',
       pos: 'statutární zástupce',
@@ -37,13 +37,8 @@ const Footer = () => {
     },
     {
       name: 'Sára Hlásenská',
-      pos: 'webdesign a vizuální zpracování',
+      pos: 'artdirectior',
       mail: 'hlasenksa@sutb.cz',
-    },
-    {
-      name: 'David Štolba',
-      pos: 'webdesign a vizuální zpracování',
-      mail: 'stolba@sutb.cz',
     },
     // {
     //   name: "Sára Hlásenská, David Štolba",
@@ -66,7 +61,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[url('/src/assets/footer/footer_bg_phone.png')] md:bg-[url('/src/assets/footer/footer_bg.png')] bg-no-repeat bg-center bg-cover py-12">
+    <footer className="bg-[url('/src/assets/footer/footer_bg_phone.png')] md:bg-[url('/src/assets/footer/footer_bg.png')] bg-no-repeat bg-center bg-cover pt-12 pb-4">
       <div className='flex flex-col items-center justify-around text-center footer-inner md:items-start md:flex-row md:text-left'>
         <div className='mb-4 footer-nav-links md:mb-0'>
           <FooterItemHeadline
@@ -84,6 +79,7 @@ const Footer = () => {
                 </div>
               )
           )}
+
           <div className='flex flex-col items-center mt-4 footer-contact-links md:mt-6 md:items-start'>
             {footerLinks.map((footerLink) => (
               <FooterLink
@@ -92,6 +88,9 @@ const Footer = () => {
                 linkTo={footerLink.linkTo}
               />
             ))}
+          </div>
+          <div className='hidden md:block pt-10'>
+            <SocialsContainer />
           </div>
         </div>
         <div className='flex flex-col justify-between my-4 managers space-y-8 md:my-0'>
@@ -106,7 +105,6 @@ const Footer = () => {
           ))}
         </div>
         <div className='flex flex-col items-center footer-contacts md:items-start'>
-          <SocialsContainer />
           <div className='flex flex-col footer-guyz'>
             {behindTheScenesGuyz.map((guy) => (
               <div key={guy.name} className='mb-8 footer-guy-item'>
@@ -119,8 +117,11 @@ const Footer = () => {
             ))}
           </div>
         </div>
+        <div className='block md:hidden'>
+          <SocialsContainer />
+        </div>
       </div>
-      <h6 className='mt-8 text-center uppercase md:mt-12 txt-bold'>
+      <h6 className='mt-8 text-center uppercase md:mt-12 txt-bold text-[14px] md:text-[18px]'>
         ©Studentská unie utb, 2023
       </h6>
     </footer>
