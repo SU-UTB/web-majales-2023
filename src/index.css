@@ -99,6 +99,18 @@ input, button, select, textarea {
 	text-transform: uppercase;
 }
 
+.lineup-row {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	
+	@media (min-width: 768px) {
+		flex-direction: row;
+		width: 66%;
+		gap: 1rem;
+	}
+}
+
 ol {
 	list-style: decimal;
 	margin: auto;

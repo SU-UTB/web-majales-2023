@@ -1,10 +1,13 @@
 type Props = {
   children?: React.ReactNode;
+  color?: string;
 };
 
-const SectionHeadingBig = ({ children }: Props) => {
+const SectionHeadingBig = ({ children, color = 'black' }: Props) => {
   return (
-    <h5 className='mb-6 uppercase text-3xl md:text-3xl md:mb-8 txt-bold text-black '>
+    <h5
+      className={`mb-6 uppercase text-3xl md:text-3xl md:mb-8 txt-bold text-${color}`}
+    >
       {children}
     </h5>
   );

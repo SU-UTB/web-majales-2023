@@ -3,8 +3,8 @@ import Aftermovie from '../components/organisms/home/Aftermovie';
 import BandContest from '../components/organisms/home/BandContest';
 import KingQueen from '../components/organisms/home/KingQueen';
 import Heroe from '../components/organisms/home/Heroe';
-import Lineup from '../components/organisms/home/Lineup';
 import Contact from './Contact';
+import Lineup from './LineUp';
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <Heroe />
       <Aftermovie />
       <About />
-      {/* <Lineup /> */}
+      <Lineup />
       {/* <BandContest /> */}
       <KingQueen />
     </>
