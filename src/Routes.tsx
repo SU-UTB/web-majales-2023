@@ -10,9 +10,9 @@ const Routes = () => {
   return (
     <RouterRoutes location={location} key={location.key}>
       <Route index element={<Home />} />
-      {ROUTES.map((route) => (
+      {/* {ROUTES.map((route) => (
         <Route key={route.path} path={route.path} element={route.component} />
-      ))}
+      ))} */}
     </RouterRoutes>
   );
 };

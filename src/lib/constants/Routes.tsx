@@ -1,7 +1,6 @@
 import React from 'react';
 import BandContest from '../../pages/BandContest';
 import Contact from '../../pages/Contact';
-import Lineup from '../../pages/Lineup';
 import MajalesKingQueen from '../../pages/MajalesKingQueen';
 import NewsFeed from '../../pages/NewsFeed';
 import NotFoundPage from '../../pages/NotFoundPage';

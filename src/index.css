@@ -37,6 +37,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -115,4 +116,9 @@ ol {
 	list-style: decimal;
 	margin: auto;
 	padding-left: 2rem;
+}
+
+
+.green-shadow {
+	box-shadow: -3px 3px #60E4CC;
 }

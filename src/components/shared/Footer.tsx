@@ -38,7 +38,7 @@ const Footer = () => {
     {
       name: 'Sára Hlásenská',
       pos: 'artdirectior',
-      mail: 'hlasenksa@sutb.cz',
+      mail: 'hlasenska@sutb.cz',
     },
     // {
     //   name: "Sára Hlásenská, David Štolba",

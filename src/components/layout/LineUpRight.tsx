@@ -4,7 +4,9 @@ interface MyComponentProps {
 
 const LineUpRight: React.FC<MyComponentProps> = ({ children }) => {
   return (
-    <div className='w-full md:w-2/5 bg-[#1D6858] min-h-[120px]'>{children}</div>
+    <div className='w-full md:w-2/5 bg-[#1D6858] min-h-[150px] md:min-h-[120px]'>
+      {children}
+    </div>
   );
 };
 

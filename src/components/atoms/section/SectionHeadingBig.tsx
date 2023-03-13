@@ -6,7 +6,7 @@ type Props = {
 const SectionHeadingBig = ({ children, color = 'black' }: Props) => {
   return (
     <h5
-      className={`mb-6 uppercase text-3xl md:text-3xl md:mb-8 txt-bold text-${color}`}
+      className={`mb-6 uppercase text-3xl md:text-3xl txt-bold text-${color}`}
     >
       {children}
     </h5>
