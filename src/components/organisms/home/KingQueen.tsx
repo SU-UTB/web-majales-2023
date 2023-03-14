@@ -1,5 +1,6 @@
 import kingQueenImg from '../../../assets/king/king_queen02.png';
 import ButtonRegister from '../../atoms/buttons/ButtonRegister';
+import StyledImg from '../../atoms/imgs/StyledImg';
 import SectionHeadingBig from '../../atoms/section/SectionHeadingBig';
 
 const KingQueen = () => {
@@ -9,9 +10,8 @@ const KingQueen = () => {
       className="flex w-full py-12 md:py-4 bg-[url('/src/assets/king/king_queen_bg_phone.png')] lg:bg-[url('/src/assets/king/king_queen_bg.png')] bg-no-repeat bg-top bg-cover"
     >
       <div className='flex flex-col lg:flex-row px-4 mx-auto gap-10 md:w-4/5 md:px-0 md:py-16'>
-        {/* <div className='flex w-full md:w-1/2 bg-[#1D6858]'> */}
         <div className='flex w-full lg:w-1/2'>
-          <img src={kingQueenImg} alt='král a královna Majálesu' />
+          <StyledImg src={kingQueenImg} alt='král a královna Majálesu' />
         </div>
 
         <div className='w-full lg:w-1/2'>
