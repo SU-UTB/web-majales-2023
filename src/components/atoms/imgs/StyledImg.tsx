@@ -6,7 +6,7 @@ interface MyComponentProps {
 
 const StyledImg: React.FC<MyComponentProps> = ({ children, src, alt }) => {
   return (
-    <img className='w-full h-full object-cover' src={src} alt={alt}>
+    <img className='w-full h-full object-cover object-top' src={src} alt={alt}>
       {children}
     </img>
   );
