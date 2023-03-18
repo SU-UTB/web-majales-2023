@@ -30,10 +30,10 @@ const Lineup = () => {
         <LineUpRow>
           <div className='flex md:w-3/5 bg-[#1D6858] min-h-[250px] xl:min-h-[350px] green-shadow'>
             <div className='relative'>
-              <div className='absolute bottom-6 left-0 text-white p-2 font-bold '>
+              <div className='absolute bottom-6 left-0 text-white px-2 font-bold '>
                 <span className='text-xl xl:text-2xl'>???</span>
               </div>
-              <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
+              <div className='absolute bottom-0 left-0 text-white px-2 text-lg'>
                 ???
               </div>
             </div>
@@ -41,12 +41,12 @@ const Lineup = () => {
 
           <div className='flex md:w-2/5 bg-[#1D6858] min-h-[250px] green-shadow'>
             <div className='relative'>
-              <div className='absolute bottom-6 left-0 text-white p-2 font-bold'>
+              <div className='absolute bottom-6 left-0 text-white px-2 font-bold'>
                 {/* <span className='text-2xl'>PAULIE GARAND</span>
                 <span className='text-sm'> X KENNY ROUGH</span> */}
                 <span className='text-xl xl:text-2xl'>???</span>
               </div>
-              <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
+              <div className='absolute bottom-0 left-0 text-white px-2 text-lg'>
                 ???
               </div>
               {/* <StyledImg src={paulieGarand} alt='Paulie Garand x Kenny Rough' /> */}

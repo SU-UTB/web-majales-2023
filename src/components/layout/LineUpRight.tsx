@@ -21,12 +21,12 @@ const LineUpRight: React.FC<MyComponentProps> = ({
       <div className='relative'>
         {children}
         {name && (
-          <div className='absolute bottom-6 left-0 text-white p-2 font-bold text-2xl'>
+          <div className='absolute bottom-6 left-0 text-white px-2 font-bold text-2xl'>
             {name}
           </div>
         )}
         {genre && (
-          <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
+          <div className='absolute bottom-0 left-0 text-white px-2 text-lg'>
             {genre}
           </div>
         )}
