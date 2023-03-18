@@ -2,15 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-	font-family: BeVietnamRegular;
-	src: url('./assets/fonts/BeVietnam-Regular.ttf');
+  font-family: CabinetGroteskBlack;
+  src: url('./assets/fonts/CabinetGrotesk-Black.woff2') format('woff2');
+  font-weight: 900;
 }
 
 @font-face {
-	font-family: BeVietnamBold;
-	src: url('./assets/fonts/BeVietnam-Bold.ttf');
+  font-family: CabinetGroteskExtraBold;
+  src: url('./assets/fonts/CabinetGrotesk-Extrabold.woff2') format('woff2');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: CabinetGroteskBold;
+  src: url('./assets/fonts/CabinetGrotesk-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: CabinetGroteskMedium;
+  src: url('./assets/fonts/CabinetGrotesk-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: CabinetGroteskRegular;
+  src: url('./assets/fonts/CabinetGrotesk-Regular.woff2') format('woff2');
+  font-weight: 400;
 }
 
 html, body {
@@ -26,7 +45,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	color: black;
-	font-family: BeVietnamRegular;
+	font-family: CabinetGroteskRegular;
 	font-size: 18px;
 	font-display: swap;
 }
@@ -41,6 +60,7 @@ a:hover {
 }
 
 a {
+	font-family: CabinetGroteskBold;
 	letter-spacing: 0.01em;
 }
 
@@ -56,25 +76,25 @@ input, button, select, textarea {
 }
 
 .txt-extrabold {
-	font-family: BeVietnamBold;
+	font-family: CabinetGroteskExtraBold;
 	letter-spacing: 0.04em;
 }
 
 .txt-bold {
-	font-family: BeVietnamBold;
+	font-family: CabinetGroteskBold;
 	letter-spacing: 0.01em;
 }
 
 .txt-medium {
-	font-family: BeVietnamRegular;
+	font-family: CabinetGroteskMedium;
 }
 
 .txt-normal {
-	font-family: BeVietnamRegular;
+	font-family: CabinetGroteskRegular;
 }
 
 .section-heading {
-	font-family: BeVietnamBold;
+	font-family: CabinetGroteskBold;
 	letter-spacing: 0.01em;
 	font-size: 38px;
 	text-transform: uppercase;

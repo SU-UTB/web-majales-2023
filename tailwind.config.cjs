@@ -19,8 +19,8 @@ module.exports = {
         dark_blu_txt: '#391F68',
       },
       fontFamily: {
-        body: ['BeVietnamRegular'],
-        headline: ['BeVietnamBold'],
+        body: ['BeRegular'],
+        headline: ['CabinetGroteskExtraBold'],
       },
     },
   },
