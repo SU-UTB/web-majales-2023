@@ -109,7 +109,7 @@ const Lineup = () => {
         </LineUpRow>
       </div>
 
-      {/* Tablet: < 1024px*/}
+      {/* Tablet: 481-1023px*/}
       <div className='hidden xs:flex lg:hidden flex-col w-full gap-4 items-center gap'>
         <LineUpRow>
           <LineUpTabletRow>
