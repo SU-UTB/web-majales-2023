@@ -1,6 +1,6 @@
+import StyledIcon from '../atoms/imgs/StyledIcon';
 import instagram from '../../assets/icons/instagram.png';
 import spotify from '../../assets/icons/spotify.png';
-import StyledIcon from '../atoms/imgs/StyledIcon';
 
 interface MyComponentProps {
   children?: React.ReactNode;
@@ -8,29 +8,40 @@ interface MyComponentProps {
   genre?: string;
   igLink?: string;
   spotifyLink?: string;
+  black?: boolean;
 }
 
-const LineUpLeftHalf: React.FC<MyComponentProps> = ({
+const LineUpLteTablet: React.FC<MyComponentProps> = ({
   children,
   name,
   genre,
   igLink,
   spotifyLink,
+  black,
 }) => {
   return (
-    <div className='w-full md:w-1/2 bg-[#1D6858] min-h-[120px] green-shadow uppercase'>
-      <div className='relative'>
+    <div className='flex w-full bg-[#1D6858] h-[150px] md:h-[200px] green-shadow uppercase'>
+      <div className='relative flex w-full'>
         {children}
         {name && (
-          <div className='absolute bottom-6 left-0 text-white px-2 font-bold text-xl xl:text-2xl '>
+          <div
+            className={`absolute bottom-5 left-0 px-2 font-bold text-xl ${
+              black ? 'text-black' : 'text-white'
+            }`}
+          >
             {name}
           </div>
         )}
         {genre && (
-          <div className='absolute bottom-0 left-0 text-white px-2 text-lg'>
+          <div
+            className={`absolute bottom-0 left-0  text-[14px] px-2 xs:text-[16px] ${
+              black ? 'text-black' : 'text-white'
+            }`}
+          >
             {genre}
           </div>
         )}
+
         {spotifyLink && (
           <a
             className='absolute top-2 right-2'
@@ -45,7 +56,7 @@ const LineUpLeftHalf: React.FC<MyComponentProps> = ({
         {igLink && (
           <a
             className={`absolute ${
-              spotifyLink ? 'top-10 xl:top-12' : 'top-2'
+              spotifyLink ? 'top-12 xs:top-10 xl:top-12' : 'top-2'
             } right-2`}
             href={igLink}
             rel='noopener noreferrer'
@@ -59,4 +70,4 @@ const LineUpLeftHalf: React.FC<MyComponentProps> = ({
   );
 };
 
-export default LineUpLeftHalf;
+export default LineUpLteTablet;

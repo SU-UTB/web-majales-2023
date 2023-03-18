@@ -21,7 +21,7 @@ const LineUpRight: React.FC<MyComponentProps> = ({
       <div className='relative'>
         {children}
         {name && (
-          <div className='absolute bottom-6 left-0 text-white px-2 font-bold text-2xl'>
+          <div className='absolute bottom-6 left-0 text-white px-2 font-bold text-xl xl:text-2xl'>
             {name}
           </div>
         )}
@@ -44,7 +44,7 @@ const LineUpRight: React.FC<MyComponentProps> = ({
           <>
             {spotifyLink ? (
               <a
-                className='absolute top-12 right-2'
+                className='absolute top-10 xl:top-12 right-2'
                 href={igLink}
                 rel='noopener noreferrer'
                 target='_blank'

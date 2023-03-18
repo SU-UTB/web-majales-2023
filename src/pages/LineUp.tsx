@@ -2,7 +2,7 @@ import SectionHeadingBig from '../components/atoms/section/SectionHeadingBig';
 import LineUpRow from '../components/layout/LineUpRow';
 import LineUpRight from '../components/layout/LineUpRight';
 import LineUpLeft from '../components/layout/LineUpLeft';
-import LineUpPhone from '../components/layout/LineUpPhone';
+import LineUpLteTablet from '../components/layout/LineUpLteTablet';
 import LineUpLeftHalf from '../components/layout/LineUpLeftHalf';
 import paulieGarand from '../assets/lineup/bands/paulieGarand.png';
 import sofian from '../assets/lineup/bands/sofian.png';
@@ -25,7 +25,7 @@ const Lineup = () => {
         <SectionHeadingBig color='white'>Line-up</SectionHeadingBig>
       </div>
 
-      {/* Desktop */}
+      {/* Desktop: > 1024px*/}
       <div className='hidden lg:flex flex-col w-full gap-4 items-center'>
         <LineUpRow>
           <div className='flex md:w-3/5 bg-[#1D6858] min-h-[250px] xl:min-h-[350px] green-shadow'>
@@ -58,7 +58,7 @@ const Lineup = () => {
           <LineUpLeft>
             <LineUpLeftHalf
               name='SOFIAN MEDJMEDJ'
-              genre='Pop, R&B'
+              genre='Pop / R&B'
               igLink='https://instagram.com/sofianmedjmedj'
               spotifyLink='https://open.spotify.com/artist/2ZHJEckf6HJXMSuD2icSSW'
             >
@@ -109,36 +109,70 @@ const Lineup = () => {
         </LineUpRow>
       </div>
 
-      {/* Tablet */}
+      {/* Tablet: < 1024px*/}
       <div className='hidden xs:flex lg:hidden flex-col w-full gap-4 items-center gap'>
         <LineUpRow>
           <LineUpTabletRow>
-            <LineUpPhone name='???' genre='???'></LineUpPhone>
-            <LineUpPhone name='???' genre='???'></LineUpPhone>
+            <LineUpLteTablet name='???' genre='???'></LineUpLteTablet>
+            <LineUpLteTablet name='???' genre='???'></LineUpLteTablet>
           </LineUpTabletRow>
 
           <LineUpTabletRow>
-            <LineUpPhone name='SOFIAN MEDJMEDJ' genre='genre'>
+            <LineUpLteTablet
+              name='SOFIAN MEDJMEDJ'
+              genre='Pop / R&B'
+              igLink='https://instagram.com/sofianmedjmedj'
+              spotifyLink='https://open.spotify.com/artist/2ZHJEckf6HJXMSuD2icSSW'
+            >
               <StyledImg src={sofian} alt='Sofian MedjMedj' />
-            </LineUpPhone>
-            <LineUpPhone name='AIKO' genre='CZ/EN POP'>
+            </LineUpLteTablet>
+            <LineUpLteTablet
+              name='AIKO'
+              genre='CZ/EN POP'
+              igLink='https://instagram.com/aikomakesmusic?igshid=YmMyMTA2M2Y='
+              spotifyLink='https://open.spotify.com/artist/4rNUXX8pX47dfwyD6KL2zP'
+            >
               <StyledImg src={aiko} alt='Aiko' />
-            </LineUpPhone>
+            </LineUpLteTablet>
           </LineUpTabletRow>
 
           <LineUpTabletRow>
-            <LineUpPhone name='DJ NADJA' genre='genre'>
+            <LineUpLteTablet
+              name='DJ NADJA'
+              genre='Bass music, house, grime'
+              igLink='https://instagram.com/dj_nadja_hulkova?igshid=YmMyMTA2M2Y='
+              spotifyLink='https://open.spotify.com/artist/6QaMZbFyE4wGhHA3p7XbsS'
+            >
               <StyledImg src={djNadja} alt='DJ Nadja' />
-            </LineUpPhone>
+            </LineUpLteTablet>
 
-            <LineUpPhone name='DJ NADJA' genre='Univerzitní mateřská škola'>
+            <LineUpLteTablet
+              name='GOOFY COW'
+              genre='Pop punk / rock'
+              igLink='https://instagram.com/goofycowcz'
+              spotifyLink='https://open.spotify.com/artist/1gJeXJlVfqFmBTjHEvaOnf'
+            >
+              <StyledImg src={goofyCow} alt='Goofy Cow' />
+            </LineUpLteTablet>
+          </LineUpTabletRow>
+
+          <LineUpTabletRow>
+            <LineUpLteTablet
+              name='KAPELA ROBIN'
+              genre='CZ/EN POP'
+              igLink='https://instagram.com/kapela_robin'
+            >
+              <StyledImg src={kapelaRobin} alt='Kapela Robin' />
+            </LineUpLteTablet>
+
+            <LineUpLteTablet name='Qočna' genre='UTB mateřská škola'>
               <StyledImg src={qocna} alt='Qocna' />
-            </LineUpPhone>
+            </LineUpLteTablet>
           </LineUpTabletRow>
         </LineUpRow>
       </div>
 
-      {/* Phone */}
+      {/* Phone: < 480px*/}
       <div className='flex xs:hidden flex-col w-full gap-4 items-center gap'>
         <LineUpRow>
           <div className='flex w-full bg-[#1D6858] min-h-[150px] md:min-h-[200px]  green-shadow'>
@@ -163,25 +197,54 @@ const Lineup = () => {
             </div>
           </div>
 
-          <LineUpPhone name='SOFIAN MEDJMEDJ' genre='genre'>
+          <LineUpLteTablet
+            name='SOFIAN MEDJMEDJ'
+            genre='Pop / R&B'
+            black
+            igLink='https://instagram.com/sofianmedjmedj'
+            spotifyLink='https://open.spotify.com/artist/2ZHJEckf6HJXMSuD2icSSW'
+          >
             <StyledImg src={sofian} alt='Sofian MedjMedj' />
-          </LineUpPhone>
-          <LineUpPhone name='AIKO' genre='CZ/EN POP'>
-            <StyledImg src={aiko} alt='Aiko' />
-          </LineUpPhone>
-          <LineUpPhone name='DJ NADJA' genre='genre'>
-            <StyledImg src={djNadja} alt='DJ Nadja' />
-          </LineUpPhone>
+          </LineUpLteTablet>
 
-          <LineUpPhone name='GOOFY COW' genre='genre'>
+          <LineUpLteTablet
+            name='AIKO'
+            genre='CZ/EN POP'
+            igLink='https://instagram.com/aikomakesmusic?igshid=YmMyMTA2M2Y='
+            spotifyLink='https://open.spotify.com/artist/4rNUXX8pX47dfwyD6KL2zP'
+          >
+            <StyledImg src={aiko} alt='Aiko' />
+          </LineUpLteTablet>
+
+          <LineUpLteTablet
+            name='DJ NADJA'
+            genre='Bass music, house, grime'
+            igLink='https://instagram.com/dj_nadja_hulkova?igshid=YmMyMTA2M2Y='
+            spotifyLink='https://open.spotify.com/artist/6QaMZbFyE4wGhHA3p7XbsS'
+          >
+            <StyledImg src={djNadja} alt='DJ Nadja' />
+          </LineUpLteTablet>
+
+          <LineUpLteTablet
+            name='GOOFY COW'
+            genre='Pop punk / rock'
+            igLink='https://instagram.com/goofycowcz'
+            spotifyLink='https://open.spotify.com/artist/1gJeXJlVfqFmBTjHEvaOnf'
+          >
             <StyledImg src={goofyCow} alt='Goofy Cow' />
-          </LineUpPhone>
-          <LineUpPhone name='KAPELA ROBIN' genre='CZ/EN POP'>
-            <StyledImg src={kapelaRobin} alt='Kapela Robin' />
-          </LineUpPhone>
-          <LineUpPhone name='QOČNA' genre='genre'>
+          </LineUpLteTablet>
+
+          <LineUpLteTablet
+            name='KAPELA ROBIN'
+            genre='CZ/EN POP'
+            igLink='https://instagram.com/kapela_robin'
+          >
+            <StyledImg src={kapelaRobin} alt='Kapela Robin' zoomMid />
+          </LineUpLteTablet>
+
+          <LineUpLteTablet name='Qočna' genre='Univerzitní mateřská škola'>
             <StyledImg src={qocna} alt='Qocna' />
-          </LineUpPhone>
+          </LineUpLteTablet>
         </LineUpRow>
       </div>
     </div>
