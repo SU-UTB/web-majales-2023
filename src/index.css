@@ -122,3 +122,8 @@ ol {
 .green-shadow {
 	box-shadow: -3px 3px #60E4CC;
 }
+
+
+.modal-item {
+	padding-bottom: 1em;
+}
