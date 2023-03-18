@@ -126,4 +126,11 @@ ol {
 
 .modal-item {
 	padding-bottom: 1em;
+	font-size: 18px;
+}
+
+@media (max-width: 480px) {
+	.modal-item {
+		font-size: 14px;
+	}
 }

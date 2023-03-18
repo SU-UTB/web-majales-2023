@@ -10,7 +10,7 @@ const ButtonRegister: React.FC<ButtonRegisterProps> = ({
   return (
     <>
       <button
-        className='border-solid px-8 py-4 text-lg uppercase text-black bg-white txt-bold shadow-[-3px_3px_rgb(96,228,204)]'
+        className='border-solid px-4 py-4 sm:px-8 sm:py-4 text-sm md:text-lg uppercase text-black bg-white txt-bold green-shadow'
         onClick={onClick}
       >
         {children}

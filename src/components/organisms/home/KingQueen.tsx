@@ -4,6 +4,7 @@ import StyledImg from '../../atoms/imgs/StyledImg';
 import SectionHeadingBig from '../../atoms/section/SectionHeadingBig';
 import Modal, { Styles as ReactModalStyles } from 'react-modal';
 import { useState } from 'react';
+import { CloseIcon } from '../../../assets/icons/closeIcon';
 
 type ModalProps = {
   isOpen: boolean;
@@ -13,10 +14,10 @@ type ModalProps = {
 const KingQueenModal: React.FC<ModalProps> = ({ isOpen, closeModal }) => {
   const modalStyle: ReactModalStyles = {
     content: {
-      backgroundColor: '#C9C9C9',
-      maxWidth: '500px',
-      maxHeight: '70%',
       margin: 'auto',
+      backgroundColor: '#C9C9C9',
+      maxWidth: '90%',
+      maxHeight: '70%',
     },
   };
 
@@ -30,9 +31,15 @@ const KingQueenModal: React.FC<ModalProps> = ({ isOpen, closeModal }) => {
 
   return (
     <Modal isOpen={isOpen} onRequestClose={closeModal} style={modalStyle}>
-      <SectionHeadingBig>
+      <div className='flex w-full justify-end mb-4'>
+        <button className='flex bg-white p-2 green-shadow' onClick={closeModal}>
+          <CloseIcon />
+        </button>
+      </div>
+
+      <h5 className='mb-6 uppercase text-xl md:text-3xl txt-bold'>
         Pravidla pro účast v soutěži Král a Královna Majálesu UTB 2022
-      </SectionHeadingBig>
+      </h5>
 
       <p className='modal-item'>
         <strong>1. </strong> Zúčastnit se může každý, kdo je v tomto roce
