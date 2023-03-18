@@ -90,7 +90,7 @@ const KingQueen = () => {
 
   return (
     <div
-      id='kingqueen'
+      id='kral'
       className="flex w-full py-12 md:py-4 bg-[url('/src/assets/king/king_queen_bg_phone.png')] lg:bg-[url('/src/assets/king/king_queen_bg.png')] bg-no-repeat bg-top bg-cover"
     >
       <div className='flex flex-col lg:flex-row px-4 mx-auto gap-10 md:w-4/5 md:px-0 md:py-16'>

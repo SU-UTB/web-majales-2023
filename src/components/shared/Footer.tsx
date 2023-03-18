@@ -61,7 +61,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[url('/src/assets/footer/footer_bg_phone.png')] md:bg-[url('/src/assets/footer/footer_bg.png')] bg-no-repeat bg-center bg-cover pt-12 pb-4">
+    <footer
+      id='kontakt'
+      className="bg-[url('/src/assets/footer/footer_bg_phone.png')] md:bg-[url('/src/assets/footer/footer_bg.png')] bg-no-repeat bg-center bg-cover pt-12 pb-4"
+    >
       <div className='flex flex-col items-center justify-around text-center footer-inner md:items-start md:flex-row md:text-left'>
         <div className='mb-4 footer-nav-links md:mb-0'>
           <FooterItemHeadline
