@@ -30,8 +30,8 @@ const Lineup = () => {
         <LineUpRow>
           <div className='flex md:w-3/5 bg-[#1D6858] min-h-[250px] xl:min-h-[350px] green-shadow'>
             <div className='relative'>
-              <div className='absolute bottom-6 left-0 text-white p-2 font-bold'>
-                <span className='text-2xl'>???</span>
+              <div className='absolute bottom-6 left-0 text-white p-2 font-bold '>
+                <span className='text-xl xl:text-2xl'>???</span>
               </div>
               <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
                 ???
@@ -44,7 +44,7 @@ const Lineup = () => {
               <div className='absolute bottom-6 left-0 text-white p-2 font-bold'>
                 {/* <span className='text-2xl'>PAULIE GARAND</span>
                 <span className='text-sm'> X KENNY ROUGH</span> */}
-                <span className='text-2xl'>???</span>
+                <span className='text-xl xl:text-2xl'>???</span>
               </div>
               <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
                 ???
@@ -56,30 +56,54 @@ const Lineup = () => {
 
         <LineUpRow>
           <LineUpLeft>
-            <LineUpLeftHalf name='SOFIAN MEDJMEDJ' genre='genre'>
+            <LineUpLeftHalf
+              name='SOFIAN MEDJMEDJ'
+              genre='Pop, R&B'
+              igLink='https://instagram.com/sofianmedjmedj'
+              spotifyLink='https://open.spotify.com/artist/2ZHJEckf6HJXMSuD2icSSW'
+            >
               <StyledImg src={sofian} alt='Sofian MedjMedj' />
             </LineUpLeftHalf>
-            <LineUpLeftHalf name='AIKO' genre='CZ/EN POP'>
+            <LineUpLeftHalf
+              name='AIKO'
+              genre='CZ/EN POP'
+              igLink='https://instagram.com/aikomakesmusic?igshid=YmMyMTA2M2Y='
+              spotifyLink='https://open.spotify.com/artist/4rNUXX8pX47dfwyD6KL2zP'
+            >
               <StyledImg src={aiko} alt='Aiko' />
             </LineUpLeftHalf>
           </LineUpLeft>
 
-          <LineUpRight name='DJ NADJA' genre='genre'>
+          <LineUpRight
+            name='DJ NADJA'
+            genre='Bass music, house, grime'
+            igLink='https://instagram.com/dj_nadja_hulkova?igshid=YmMyMTA2M2Y='
+            spotifyLink='https://open.spotify.com/artist/6QaMZbFyE4wGhHA3p7XbsS'
+          >
             <StyledImg src={djNadja} alt='DJ Nadja' />
           </LineUpRight>
         </LineUpRow>
 
         <LineUpRow>
           <LineUpLeft>
-            <LineUpLeftHalf name='GOOFY COW' genre='genre'>
+            <LineUpLeftHalf
+              name='GOOFY COW'
+              genre='Pop punk / rock'
+              igLink='https://instagram.com/goofycowcz'
+              spotifyLink='https://open.spotify.com/artist/1gJeXJlVfqFmBTjHEvaOnf'
+            >
               <StyledImg src={goofyCow} alt='Goofy Cow' />
             </LineUpLeftHalf>
-            <LineUpLeftHalf name='KAPELA ROBIN' genre='CZ/EN POP'>
+            <LineUpLeftHalf
+              name='KAPELA ROBIN'
+              genre='CZ/EN POP'
+              igLink='https://instagram.com/kapela_robin'
+            >
               <StyledImg src={kapelaRobin} alt='Kapela Robin' />
             </LineUpLeftHalf>
           </LineUpLeft>
 
-          <LineUpRight name='QOČNA' genre='genre'>
+          <LineUpRight name='QOČNA' genre='Univerzitní mateřská škola'>
             <StyledImg src={qocna} alt='Qocna' />
           </LineUpRight>
         </LineUpRow>
@@ -107,8 +131,8 @@ const Lineup = () => {
               <StyledImg src={djNadja} alt='DJ Nadja' />
             </LineUpPhone>
 
-            <LineUpPhone name='DJ NADJA' genre='genre'>
-              <StyledImg src={qocna} alt='DJ Nadja' />
+            <LineUpPhone name='DJ NADJA' genre='Univerzitní mateřská škola'>
+              <StyledImg src={qocna} alt='Qocna' />
             </LineUpPhone>
           </LineUpTabletRow>
         </LineUpRow>
