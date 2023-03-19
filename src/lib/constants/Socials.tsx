@@ -1,6 +1,6 @@
 import fbSocial from '../../assets/socials/fb_social.svg';
 import igSocial from '../../assets/socials/ig_social.svg';
-import majSocial from '../../assets/socials/maj_social.png';
+import majSocial from '../../assets/socials/maj_social.svg';
 import suSocial from '../../assets/socials/su_social.svg';
 import PictureLinkItem from '../types/TPictureLinkItem';
 
@@ -14,7 +14,7 @@ export const SOCIALS_LINKS = {
   SU_IG: {
     linkTo: 'https://www.instagram.com/studentskaunieutb/',
     imgSrc: suSocial,
-    imgAlt: 'Studentská Unie instagram'
+    imgAlt: 'Studentská Unie instagram',
   },
   MAJALES_IG: {
     linkTo: 'https://www.instagram.com/majalesutb/',

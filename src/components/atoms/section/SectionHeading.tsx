@@ -5,7 +5,7 @@ type Props = {
 
 const SectionHeading = ({ sectionHeadingText, children }: Props) => {
   return (
-    <h5 className="mb-8 text-3xl txt-bold md:w-4/5 lg:w-3/5 text-light_blu">
+    <h5 className='mb-6 md:mb-8 text-2xl md:text-3xl txt-bold text-black'>
       {sectionHeadingText}
       {children}
     </h5>

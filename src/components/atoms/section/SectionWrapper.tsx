@@ -4,9 +4,9 @@ type Props = {
 
 const SectionWrapper = ({ children }: Props) => {
   return (
-    <div className="flex flex-col justify-center h-full px-8 mx-auto section-wrapper md:w-4/5 lg:w-3/5 md:px-4">
+    <section className='flex flex-col justify-center h-full px-12 mx-auto section-wrapper md:w-4/5 lg:w-3/5 md:px-4'>
       {children}
-    </div>
+    </section>
   );
 };
 
