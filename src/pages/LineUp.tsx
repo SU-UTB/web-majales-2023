@@ -14,6 +14,7 @@ import qocna from '../assets/lineup/bands/qocna.png';
 import ineKafe from '../assets/lineup/bands/ineKafe.png';
 import StyledImg from '../components/atoms/imgs/StyledImg';
 import LineUpTabletRow from '../components/layout/LineUpTabletRow';
+import { lineUp } from '../contents/lineUp.content';
 
 const Lineup = () => {
   return (
@@ -178,10 +179,10 @@ const Lineup = () => {
           <div className='flex w-full bg-[#1D6858] min-h-[150px] md:min-h-[200px]  green-shadow'>
             <div className='relative'>
               <div className='absolute bottom-6 left-0 text-white p-2 font-bold'>
-                <span className='text-2xl'>???</span>
+                <span className='text-xl'>???</span>
               </div>
               <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
-                <span>???</span>
+                <span className='text-[14px]'> ???</span>
               </div>
             </div>
           </div>
@@ -192,59 +193,27 @@ const Lineup = () => {
                 <span className='text-2xl'>???</span>
               </div>
               <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
-                <span>???</span>
+                <span className='text-[14px]'>???</span>
               </div>
             </div>
           </div>
 
-          <LineUpLteTablet
-            name='SOFIAN MEDJMEDJ'
-            genre='Pop / R&B'
-            black
-            igLink='https://instagram.com/sofianmedjmedj'
-            spotifyLink='https://open.spotify.com/artist/2ZHJEckf6HJXMSuD2icSSW'
-          >
-            <StyledImg src={sofian} alt='Sofian MedjMedj' />
-          </LineUpLteTablet>
-
-          <LineUpLteTablet
-            name='AIKO'
-            genre='CZ/EN POP'
-            igLink='https://instagram.com/aikomakesmusic?igshid=YmMyMTA2M2Y='
-            spotifyLink='https://open.spotify.com/artist/4rNUXX8pX47dfwyD6KL2zP'
-          >
-            <StyledImg src={aiko} alt='Aiko' />
-          </LineUpLteTablet>
-
-          <LineUpLteTablet
-            name='DJ NADJA'
-            genre='Bass music, house, grime'
-            igLink='https://instagram.com/dj_nadja_hulkova?igshid=YmMyMTA2M2Y='
-            spotifyLink='https://open.spotify.com/artist/6QaMZbFyE4wGhHA3p7XbsS'
-          >
-            <StyledImg src={djNadja} alt='DJ Nadja' />
-          </LineUpLteTablet>
-
-          <LineUpLteTablet
-            name='GOOFY COW'
-            genre='Pop punk / rock'
-            igLink='https://instagram.com/goofycowcz'
-            spotifyLink='https://open.spotify.com/artist/1gJeXJlVfqFmBTjHEvaOnf'
-          >
-            <StyledImg src={goofyCow} alt='Goofy Cow' />
-          </LineUpLteTablet>
-
-          <LineUpLteTablet
-            name='KAPELA ROBIN'
-            genre='CZ/EN POP'
-            igLink='https://instagram.com/kapela_robin'
-          >
-            <StyledImg src={kapelaRobin} alt='Kapela Robin' zoomMid />
-          </LineUpLteTablet>
-
-          <LineUpLteTablet name='Qočna' genre='Univerzitní mateřská škola'>
-            <StyledImg src={qocna} alt='Qocna' />
-          </LineUpLteTablet>
+          {lineUp.map((item, index) => (
+            <LineUpLteTablet
+              key={index}
+              name={item.name}
+              genre={item.genre}
+              black={item.black}
+              igLink={item.igLink}
+              spotifyLink={item.spotifyLink}
+            >
+              <StyledImg
+                src={item.imageSrc}
+                alt={item.imageAlt}
+                zoomMid={item.zoomMid}
+              />
+            </LineUpLteTablet>
+          ))}
         </LineUpRow>
       </div>
     </div>
