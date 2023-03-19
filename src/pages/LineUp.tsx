@@ -190,7 +190,7 @@ const Lineup = () => {
           <div className='flex w-full bg-[#1D6858] min-h-[150px] md:min-h-[200px]  green-shadow'>
             <div className='relative'>
               <div className='absolute bottom-6 left-0 text-white p-2 font-bold'>
-                <span className='text-2xl'>???</span>
+                <span className='text-xl'>???</span>
               </div>
               <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
                 <span className='text-[14px]'>???</span>
