@@ -19,7 +19,7 @@ const Lineup = () => {
   return (
     <div
       id='lineup'
-      className="w-full py-8 md:py-12 bg-[url('/src/assets/lineup/lineUp_bg_phone.png')] md:bg-[url('/src/assets/lineup/lineUp_bg.png')] bg-no-repeat bg-cover"
+      className="w-full py-8 md:py-12 bg-gradient-to-r from-[#5fb298] to-[#b9d5ca] md:bg-[url('/src/assets/lineup/lineUp_bg.png')] bg-no-repeat bg-cover"
     >
       <div className='flex mx-auto w-full px-4 gap-4 md:w-4/5 md:px-0'>
         <SectionHeadingBig color='white'>Line-up</SectionHeadingBig>
