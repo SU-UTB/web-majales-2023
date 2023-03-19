@@ -5,6 +5,7 @@ import SectionHeadingBig from '../../atoms/section/SectionHeadingBig';
 import Modal, { Styles as ReactModalStyles } from 'react-modal';
 import { useState } from 'react';
 import { CloseIcon } from '../../../assets/icons/closeIcon';
+import ReactModal from 'react-modal';
 
 type ModalProps = {
   isOpen: boolean;
@@ -21,13 +22,7 @@ const KingQueenModal: React.FC<ModalProps> = ({ isOpen, closeModal }) => {
     },
   };
 
-  const handleGoGoogleForm = () => {
-    window.open(
-      'https://docs.google.com/forms/d/1VSCF5O6vCvNVXFqxJ5iP2ogdxWfiU5GsxKYrdycHA80',
-      '_blank',
-      'noreferrer'
-    );
-  };
+  ReactModal.setAppElement('#root'); // set app element here
 
   return (
     <Modal isOpen={isOpen} onRequestClose={closeModal} style={modalStyle}>
@@ -69,7 +64,7 @@ const KingQueenModal: React.FC<ModalProps> = ({ isOpen, closeModal }) => {
         e-maily účastníků.
       </p>
       <div className='mx-auto'>
-        <ButtonRegister onClick={handleGoGoogleForm}>
+        <ButtonRegister redirect='https://docs.google.com/forms/d/1VSCF5O6vCvNVXFqxJ5iP2ogdxWfiU5GsxKYrdycHA80'>
           Registruj&nbsp;se
         </ButtonRegister>
       </div>
