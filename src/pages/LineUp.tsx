@@ -15,6 +15,9 @@ import ineKafe from '../assets/lineup/bands/ineKafe.png';
 import StyledImg from '../components/atoms/imgs/StyledImg';
 import LineUpTabletRow from '../components/layout/LineUpTabletRow';
 import { lineUp } from '../contents/lineUp.content';
+import StyledIcon from '../components/atoms/imgs/StyledIcon';
+import spotify from '../assets/icons/spotify.png';
+import instagram from '../assets/icons/instagram.png';
 
 const Lineup = () => {
   return (
@@ -29,7 +32,7 @@ const Lineup = () => {
       {/* Desktop: > 1024px*/}
       <div className='hidden lg:flex flex-col w-full gap-4 items-center'>
         <LineUpRow>
-          <div className='flex md:w-3/5 bg-[#1D6858] min-h-[250px] xl:min-h-[350px] green-shadow'>
+          <div className='flex md:w-3/5 bg-[#1D6858] min-h-[200px] xl:min-h-[300px] green-shadow'>
             <div className='relative'>
               <div className='absolute bottom-6 left-0 text-white px-2 font-bold '>
                 <span className='text-xl xl:text-2xl'>???</span>
@@ -40,17 +43,34 @@ const Lineup = () => {
             </div>
           </div>
 
-          <div className='flex md:w-2/5 bg-[#1D6858] min-h-[250px] green-shadow'>
+          <div className='flex md:w-2/5 bg-[#1D6858] min-h-[200px] xl:min-h-[300px] green-shadow'>
             <div className='relative'>
               <div className='absolute bottom-6 left-0 text-white px-2 font-bold'>
-                {/* <span className='text-2xl'>PAULIE GARAND</span>
-                <span className='text-sm'> X KENNY ROUGH</span> */}
-                <span className='text-xl xl:text-2xl'>???</span>
+                <span className='text-2xl'>PAULIE GARAND </span>
+                <span className='text-lg'> X KENNY ROUGH</span>
               </div>
+              <StyledImg src={paulieGarand} alt='Paulie Garand x Kenny Rough' />
               <div className='absolute bottom-0 left-0 text-white px-2 text-lg'>
-                ???
+                {'RAP'}
               </div>
-              {/* <StyledImg src={paulieGarand} alt='Paulie Garand x Kenny Rough' /> */}
+
+              <a
+                className='absolute top-2 right-2'
+                href='https://open.spotify.com/artist/1E1taJPk3Mh3tRs9uLAu3n'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                <StyledIcon src={spotify} alt={`Paulie Garand spotify`} />
+              </a>
+
+              <a
+                className='absolute top-12 right-2'
+                href='https://instagram.com/pauliegarand'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                <StyledIcon src={instagram} alt={`Paulie Garand instagram`} />
+              </a>
             </div>
           </div>
         </LineUpRow>
@@ -115,7 +135,15 @@ const Lineup = () => {
         <LineUpRow>
           <LineUpTabletRow>
             <LineUpLteTablet name='???' genre='???'></LineUpLteTablet>
-            <LineUpLteTablet name='???' genre='???'></LineUpLteTablet>
+            <LineUpLteTablet
+              name='Paulie Garand'
+              secondName='Kenny Rough'
+              genre='Pop / R&B'
+              igLink='https://instagram.com/sofianmedjmedj'
+              spotifyLink='https://open.spotify.com/artist/2ZHJEckf6HJXMSuD2icSSW'
+            >
+              <StyledImg src={paulieGarand} alt='Paulie Garand x Kenny Rough' />
+            </LineUpLteTablet>
           </LineUpTabletRow>
 
           <LineUpTabletRow>
@@ -183,17 +211,6 @@ const Lineup = () => {
               </div>
               <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
                 <span className='text-[14px]'> ???</span>
-              </div>
-            </div>
-          </div>
-
-          <div className='flex w-full bg-[#1D6858] min-h-[150px] md:min-h-[200px]  green-shadow'>
-            <div className='relative'>
-              <div className='absolute bottom-6 left-0 text-white p-2 font-bold'>
-                <span className='text-xl'>???</span>
-              </div>
-              <div className='absolute bottom-0 left-0 text-white p-2 text-lg'>
-                <span className='text-[14px]'>???</span>
               </div>
             </div>
           </div>

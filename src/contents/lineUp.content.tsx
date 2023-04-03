@@ -10,6 +10,15 @@ import ineKafe from '../assets/lineup/bands/ineKafe.png';
 
 export const lineUp: LineUpItem[] = [
   {
+    name: 'PAULIE GARAND',
+    genre: 'Rap',
+    imageSrc: `${paulieGarand}`,
+    zoomMid: true,
+    imageAlt: 'Paulie Garand x Kenny Rough',
+    igLink: 'https://instagram.com/pauliegarand',
+    spotifyLink: 'https://open.spotify.com/artist/1E1taJPk3Mh3tRs9uLAu3n',
+  },
+  {
     name: 'SOFIAN MEDJMEDJ',
     genre: 'Pop / R&B',
     imageSrc: `${sofian}`,
