@@ -5,24 +5,32 @@ import spotify from '../../assets/icons/spotify.png';
 interface MyComponentProps {
   children?: React.ReactNode;
   name?: string;
+  secondName?: string;
   genre?: string;
   igLink?: string;
   spotifyLink?: string;
+  headliner?: boolean;
 }
 const LineUpRight: React.FC<MyComponentProps> = ({
   children,
   name,
+  secondName,
   genre,
   igLink,
   spotifyLink,
+  headliner,
 }) => {
   return (
-    <div className='w-full md:w-2/5 bg-[#1D6858] min-h-[120px] md:min-h-[120px] green-shadow uppercase'>
+    <div
+      className={`w-full md:w-2/5 ${
+        headliner ? 'min-h-[200px]' : 'min-h-[120px] md'
+      } min-h-[120px] md:min-h-[120px] green-shadow uppercase `}
+    >
       <div className='relative'>
         {children}
         {name && (
           <div className='absolute bottom-6 left-0 text-white px-2 font-bold text-xl xl:text-2xl'>
-            {name}
+            {name} {secondName && <span className='text-lg'>{secondName}</span>}
           </div>
         )}
         {genre && (
@@ -33,7 +41,7 @@ const LineUpRight: React.FC<MyComponentProps> = ({
         {spotifyLink && (
           <a
             className='absolute top-2 right-2'
-            href={igLink}
+            href={spotifyLink}
             rel='noopener noreferrer'
             target='_blank'
           >

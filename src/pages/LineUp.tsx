@@ -32,7 +32,7 @@ const Lineup = () => {
       {/* Desktop: > 1024px*/}
       <div className='hidden lg:flex flex-col w-full gap-4 items-center'>
         <LineUpRow>
-          <div className='flex md:w-3/5 bg-[#1D6858] min-h-[200px] xl:min-h-[300px] green-shadow'>
+          <div className='flex md:w-3/5 bg-[#1D6858] min-h-[200px] green-shadow'>
             <div className='relative'>
               <div className='absolute bottom-6 left-0 text-white px-2 font-bold '>
                 <span className='text-xl xl:text-2xl'>???</span>
@@ -43,36 +43,16 @@ const Lineup = () => {
             </div>
           </div>
 
-          <div className='flex md:w-2/5 bg-[#1D6858] min-h-[200px] xl:min-h-[300px] green-shadow'>
-            <div className='relative'>
-              <div className='absolute bottom-6 left-0 text-white px-2 font-bold'>
-                <span className='text-2xl'>PAULIE GARAND </span>
-                <span className='text-lg'> X KENNY ROUGH</span>
-              </div>
-              <StyledImg src={paulieGarand} alt='Paulie Garand x Kenny Rough' />
-              <div className='absolute bottom-0 left-0 text-white px-2 text-lg'>
-                {'RAP'}
-              </div>
-
-              <a
-                className='absolute top-2 right-2'
-                href='https://open.spotify.com/artist/1E1taJPk3Mh3tRs9uLAu3n'
-                rel='noopener noreferrer'
-                target='_blank'
-              >
-                <StyledIcon src={spotify} alt={`Paulie Garand spotify`} />
-              </a>
-
-              <a
-                className='absolute top-12 right-2'
-                href='https://instagram.com/pauliegarand'
-                rel='noopener noreferrer'
-                target='_blank'
-              >
-                <StyledIcon src={instagram} alt={`Paulie Garand instagram`} />
-              </a>
-            </div>
-          </div>
+          <LineUpRight
+            name='PAULIE GARAND'
+            secondName='x Kenny Rough'
+            genre='Rap'
+            igLink='https://instagram.com/pauliegarand'
+            spotifyLink='https://open.spotify.com/artist/1E1taJPk3Mh3tRs9uLAu3n'
+            headliner
+          >
+            <StyledImg src={paulieGarand} alt='Paulie Garand x Kenny Rough' />
+          </LineUpRight>
         </LineUpRow>
 
         <LineUpRow>
@@ -88,7 +68,7 @@ const Lineup = () => {
             <LineUpLeftHalf
               name='AIKO'
               genre='CZ/EN POP'
-              igLink='https://instagram.com/aikomakesmusic?igshid=YmMyMTA2M2Y='
+              igLink='https://instagram.com/aikomakesmusic'
               spotifyLink='https://open.spotify.com/artist/4rNUXX8pX47dfwyD6KL2zP'
             >
               <StyledImg src={aiko} alt='Aiko' />
@@ -98,7 +78,7 @@ const Lineup = () => {
           <LineUpRight
             name='DJ NADJA'
             genre='Bass music, house, grime'
-            igLink='https://instagram.com/dj_nadja_hulkova?igshid=YmMyMTA2M2Y='
+            igLink='https://instagram.com/dj_nadja_hulkova'
             spotifyLink='https://open.spotify.com/artist/6QaMZbFyE4wGhHA3p7XbsS'
           >
             <StyledImg src={djNadja} alt='DJ Nadja' />
