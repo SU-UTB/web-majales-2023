@@ -6,11 +6,11 @@ import djNadja from '../assets/lineup/bands/djNadja.png';
 import goofyCow from '../assets/lineup/bands/goofyCow.png';
 import kapelaRobin from '../assets/lineup/bands/kapelaRobin.png';
 import qocna from '../assets/lineup/bands/qocna.png';
-import ineKafe from '../assets/lineup/bands/ineKafe.png';
 
 export const lineUp: LineUpItem[] = [
   {
     name: 'PAULIE GARAND',
+    secondName: 'x KENNY ROUGH',
     genre: 'Rap',
     imageSrc: `${paulieGarand}`,
     zoomMid: true,

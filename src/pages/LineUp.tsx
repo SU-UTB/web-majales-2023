@@ -219,6 +219,7 @@ const Lineup = () => {
             <LineUpLteTablet
               key={index}
               name={item.name}
+              secondName={item.secondName}
               genre={item.genre}
               black={item.black}
               igLink={item.igLink}

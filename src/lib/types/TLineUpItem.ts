@@ -1,6 +1,7 @@
 type LineUpItem = {
   children?: React.ReactNode;
   name?: string;
+  secondName?: string;
   genre?: string;
   imageSrc: any;
   imageAlt: string;
