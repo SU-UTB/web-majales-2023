@@ -104,9 +104,9 @@ const KingQueen = () => {
             a&nbsp;vybojujte si titul krále a&nbsp;královny univerzity!
           </p>
           <p className='mb-8'>
-            <span className='txt-bold'>17. 3. spouštíme registrace</span>,
-            budete mít natrénováno na urozené disciplíny? Ale nezaspi na
-            vavřínech, registrovat se můžeš do
+            Už <span className='txt-bold'>17. 3. spouštíme registrace.</span>
+            Tak započni trénink na urozené disciplíny. Ale nezaspi na vavřínech,
+            registrovat se můžeš do
             <span className='txt-bold'> 30. 4.!</span>
           </p>
           <ButtonRegister onClick={openModal}>Registruj&nbsp;se</ButtonRegister>
