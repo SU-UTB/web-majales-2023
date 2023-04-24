@@ -5,19 +5,21 @@ import LineUpLeft from '../components/layout/LineUpLeft';
 import LineUpLteTablet from '../components/layout/LineUpLteTablet';
 import LineUpLeftHalf from '../components/layout/LineUpLeftHalf';
 import paulieGarand from '../assets/lineup/bands/paulieGarand.png';
+import paulieGarandCropped from '../assets/lineup/bands/paulieGarandCropped01.png';
 import sofian from '../assets/lineup/bands/sofian.png';
 import aiko from '../assets/lineup/bands/aiko.png';
 import djNadja from '../assets/lineup/bands/djNadja.png';
 import goofyCow from '../assets/lineup/bands/goofyCow.png';
 import kapelaRobin from '../assets/lineup/bands/kapelaRobin.png';
 import qocna from '../assets/lineup/bands/qocna.png';
-import ineKafe from '../assets/lineup/bands/ineKafe.png';
 import StyledImg from '../components/atoms/imgs/StyledImg';
 import LineUpTabletRow from '../components/layout/LineUpTabletRow';
 import { lineUp } from '../contents/lineUp.content';
 import StyledIcon from '../components/atoms/imgs/StyledIcon';
 import spotify from '../assets/icons/spotify.png';
 import instagram from '../assets/icons/instagram.png';
+import LineUpHeadlinerLeft from '../components/layout/LineUpHeadlinerLeft';
+import LineUpHeadlinerRight from '../components/layout/LineUpHeadlinerRight';
 
 const Lineup = () => {
   return (
@@ -32,7 +34,22 @@ const Lineup = () => {
       {/* Desktop: > 1024px*/}
       <div className='hidden lg:flex flex-col w-full gap-4 items-center'>
         <LineUpRow>
-          <div className='flex md:w-3/5 bg-[#1D6858] min-h-[200px] green-shadow'>
+          <LineUpHeadlinerLeft
+            name='PAULIE GARAND'
+            secondName='x Kenny Rough'
+            genre='Rap'
+            igLink='https://instagram.com/pauliegarand'
+            spotifyLink='https://open.spotify.com/artist/1E1taJPk3Mh3tRs9uLAu3n'
+            headliner
+          >
+            <StyledImg
+              src={paulieGarandCropped}
+              alt='Paulie Garand x Kenny Rough'
+              zoomMid
+            />
+          </LineUpHeadlinerLeft>
+
+          <div className='flex md:w-2/5 bg-[#1D6858] green-shadow '>
             <div className='relative'>
               <div className='absolute bottom-6 left-0 text-white px-2 font-bold '>
                 <span className='text-xl xl:text-2xl'>???</span>
@@ -42,17 +59,6 @@ const Lineup = () => {
               </div>
             </div>
           </div>
-
-          <LineUpRight
-            name='PAULIE GARAND'
-            secondName='x Kenny Rough'
-            genre='Rap'
-            igLink='https://instagram.com/pauliegarand'
-            spotifyLink='https://open.spotify.com/artist/1E1taJPk3Mh3tRs9uLAu3n'
-            headliner
-          >
-            <StyledImg src={paulieGarand} alt='Paulie Garand x Kenny Rough' />
-          </LineUpRight>
         </LineUpRow>
 
         <LineUpRow>
@@ -114,7 +120,6 @@ const Lineup = () => {
       <div className='hidden xs:flex lg:hidden flex-col w-full gap-4 items-center gap'>
         <LineUpRow>
           <LineUpTabletRow>
-            <LineUpLteTablet name='???' genre='???'></LineUpLteTablet>
             <LineUpLteTablet
               name='Paulie Garand'
               secondName='Kenny Rough'
@@ -124,6 +129,7 @@ const Lineup = () => {
             >
               <StyledImg src={paulieGarand} alt='Paulie Garand x Kenny Rough' />
             </LineUpLteTablet>
+            <LineUpLteTablet name='???' genre='???'></LineUpLteTablet>
           </LineUpTabletRow>
 
           <LineUpTabletRow>

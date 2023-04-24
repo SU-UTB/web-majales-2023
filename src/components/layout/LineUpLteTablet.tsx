@@ -28,7 +28,7 @@ const LineUpLteTablet: React.FC<MyComponentProps> = ({
         {name && (
           <div
             className={`absolute bottom-5 left-0 px-2 font-bold text-xl ${
-              black ? 'text-white' : 'text-white'
+              black ? 'text-black' : 'text-white'
             }`}
           >
             {name} {secondName && <div className='text-lg'>{secondName}</div>}

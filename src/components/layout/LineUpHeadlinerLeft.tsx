@@ -11,7 +11,7 @@ interface MyComponentProps {
   spotifyLink?: string;
   headliner?: boolean;
 }
-const LineUpRight: React.FC<MyComponentProps> = ({
+const LineUpHeadlinerLeft: React.FC<MyComponentProps> = ({
   children,
   name,
   secondName,
@@ -22,9 +22,9 @@ const LineUpRight: React.FC<MyComponentProps> = ({
 }) => {
   return (
     <div
-      className={`w-full md:w-2/5 ${
-        headliner ? 'min-h-[200px]' : 'min-h-[120px]'
-      } min-h-[120px] md:min-h-[120px] green-shadow uppercase `}
+      className={`w-full md:w-3/5 ${
+        headliner ? '' : 'max-h-[120px]'
+      } min-h-[120px] md:min-h-[120px] green-shadow uppercase overflow-hidden`}
     >
       <div className='relative'>
         {children}
@@ -76,4 +76,4 @@ const LineUpRight: React.FC<MyComponentProps> = ({
   );
 };
 
-export default LineUpRight;
+export default LineUpHeadlinerLeft;
