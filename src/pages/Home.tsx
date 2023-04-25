@@ -3,6 +3,7 @@ import Aftermovie from '../components/organisms/home/Aftermovie';
 import KingQueen from '../components/organisms/home/KingQueen';
 import Heroe from '../components/organisms/home/Heroe';
 import Lineup from './LineUp';
+import Partners from '../components/organisms/partners/Partners';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Lineup />
       <KingQueen />
+      <Partners />
     </>
   );
 };
