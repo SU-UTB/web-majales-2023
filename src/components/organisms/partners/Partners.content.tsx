@@ -1,13 +1,11 @@
 import PartnerItem from '../../../lib/types/TPartner';
 import vincentka from '../../../assets/partners/2023/mainPartners/vincentka.png';
-import postaBezHranic from '../../../assets/partners/2023/mainPartners/postaBezHranic.png';
 import meatFly from '../../../assets/partners/2023/mainPartners/meatFly.png';
 import isProdukce from '../../../assets/partners/2023/mainPartners/isProdukce.png';
 
 import geniczechom from '../../../assets/partners/2023/classicPartners/geniczechom.png';
 import radegast from '../../../assets/partners/2023/classicPartners/radegast.png';
 import theLabel from '../../../assets/partners/2023/classicPartners/theLabel.png';
-import vest from '../../../assets/partners/2023/classicPartners/vest.png';
 import kenneth from '../../../assets/partners/2023/classicPartners/kenneth.png';
 import nextBike from '../../../assets/partners/2023/classicPartners/nextBike.png';
 import vertikon from '../../../assets/partners/2023/classicPartners/vertikon.png';
@@ -37,11 +35,6 @@ export const mainPartners: PartnerItem[] = [
     name: 'Vincentka',
     logoSrc: vincentka,
   },
-
-  {
-    name: 'Posta bez hranic',
-    logoSrc: postaBezHranic,
-  },
 ];
 
 export const partners: PartnerItem[] = [
@@ -66,11 +59,6 @@ export const partners: PartnerItem[] = [
   {
     name: 'Next bike',
     logoSrc: nextBike,
-  },
-
-  {
-    name: 'Vest',
-    logoSrc: vest,
   },
 
   {
