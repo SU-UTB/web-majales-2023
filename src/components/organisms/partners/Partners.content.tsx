@@ -2,6 +2,7 @@ import PartnerItem from '../../../lib/types/TPartner';
 import vincentka from '../../../assets/partners/2023/mainPartners/vincentka.png';
 import meatFly from '../../../assets/partners/2023/mainPartners/meatFly.png';
 import isProdukce from '../../../assets/partners/2023/mainPartners/isProdukce.png';
+import plazmaPlus from '../../../assets/partners/2023/mainPartners/plazmaPlus.png';
 
 import geniczechom from '../../../assets/partners/2023/classicPartners/geniczechom.png';
 import radegast from '../../../assets/partners/2023/classicPartners/radegast.png';
@@ -18,6 +19,10 @@ import f1_fitness from '../../../assets/partners/2023/classicPartners/f1_fitness
 import bubbleTea from '../../../assets/partners/2023/classicPartners/bubbleTea.png';
 
 export const mainPartners: PartnerItem[] = [
+  {
+    name: 'Plazma Plus',
+    logoSrc: plazmaPlus,
+  },
   {
     name: 'IS Produkce',
     logoSrc: isProdukce,
