@@ -22,7 +22,7 @@ const LineUpLteTablet: React.FC<MyComponentProps> = ({
   black,
 }) => {
   return (
-    <div className='flex w-full bg-[#1D6858] h-[150px] md:h-[200px] green-shadow uppercase'>
+    <div className='flex w-full bg-[#1D6858] h-[200px] md:h-[200px] green-shadow uppercase'>
       <div className='relative flex w-full'>
         {children}
         {name && (

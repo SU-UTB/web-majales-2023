@@ -33,7 +33,6 @@ export const lineUp: LineUpItem[] = [
     genre: 'Pop / R&B',
     imageSrc: `${sofian}`,
     imageAlt: 'Sofian MedjMedj',
-    black: true,
     igLink: 'https://instagram.com/sofianmedjmedj',
     spotifyLink: 'https://open.spotify.com/artist/2ZHJEckf6HJXMSuD2icSSW',
   },
