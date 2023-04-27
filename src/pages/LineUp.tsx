@@ -36,7 +36,7 @@ const Lineup = () => {
         <LineUpRow>
           <LineUpHeadlinerLeft
             name='PAULIE GARAND'
-            secondName='x Kenny Rough'
+            secondName='& Liveband'
             genre='Rap'
             igLink='https://instagram.com/pauliegarand'
             spotifyLink='https://open.spotify.com/artist/1E1taJPk3Mh3tRs9uLAu3n'
@@ -44,7 +44,7 @@ const Lineup = () => {
           >
             <StyledImg
               src={paulieGarandCropped}
-              alt='Paulie Garand x Kenny Rough'
+              alt='Paulie Garand & Liveband'
               zoomMid
             />
           </LineUpHeadlinerLeft>
@@ -122,12 +122,12 @@ const Lineup = () => {
           <LineUpTabletRow>
             <LineUpLteTablet
               name='Paulie Garand'
-              secondName='Kenny Rough'
+              secondName='& Liveband'
               genre='Pop / R&B'
               igLink='https://instagram.com/sofianmedjmedj'
               spotifyLink='https://open.spotify.com/artist/2ZHJEckf6HJXMSuD2icSSW'
             >
-              <StyledImg src={paulieGarand} alt='Paulie Garand x Kenny Rough' />
+              <StyledImg src={paulieGarand} alt='Paulie Garand & Liveband' />
             </LineUpLteTablet>
             <LineUpLteTablet name='???' genre='???'></LineUpLteTablet>
           </LineUpTabletRow>

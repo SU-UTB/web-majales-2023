@@ -10,11 +10,11 @@ import qocna from '../assets/lineup/bands/qocna.png';
 export const lineUp: LineUpItem[] = [
   {
     name: 'PAULIE GARAND',
-    secondName: 'x KENNY ROUGH',
+    secondName: '& Liveband',
     genre: 'Rap',
     imageSrc: `${paulieGarand}`,
     zoomMid: true,
-    imageAlt: 'Paulie Garand x Kenny Rough',
+    imageAlt: 'Paulie Garand & Liveband',
     igLink: 'https://instagram.com/pauliegarand',
     spotifyLink: 'https://open.spotify.com/artist/1E1taJPk3Mh3tRs9uLAu3n',
   },
