@@ -16,6 +16,11 @@ export const SOCIALS_LINKS = {
     imgSrc: suSocial,
     imgAlt: 'Studentská Unie instagram',
   },
+  MAJALES_FB: {
+    linkTo: 'https://www.facebook.com/events/1379759939433793',
+    imgSrc: fbSocial,
+    imgAlt: 'majáles facebook',
+  },
   MAJALES_IG: {
     linkTo: 'https://www.instagram.com/majalesutb/',
     imgSrc: igSocial,
@@ -30,9 +35,9 @@ export const MAJALES_SOCIAL_LINKS_IMAGES: PictureLinkItem[] = [
     imgAlt: SOCIALS_LINKS.MAJALES_MAIN.imgAlt,
   },
   {
-    linkTo: SOCIALS_LINKS.SU_FB.linkTo,
-    imgSrc: SOCIALS_LINKS.SU_FB.imgSrc,
-    imgAlt: SOCIALS_LINKS.SU_FB.imgAlt,
+    linkTo: SOCIALS_LINKS.MAJALES_FB.linkTo,
+    imgSrc: SOCIALS_LINKS.MAJALES_FB.imgSrc,
+    imgAlt: SOCIALS_LINKS.MAJALES_FB.imgAlt,
   },
   {
     linkTo: SOCIALS_LINKS.MAJALES_IG.linkTo,
@@ -53,7 +58,7 @@ export const SU_SOCIAL_LINKS_IMAGES: PictureLinkItem[] = [
     imgAlt: SOCIALS_LINKS.SU_FB.imgAlt,
   },
   {
-    linkTo: SOCIALS_LINKS.MAJALES_IG.linkTo,
+    linkTo: SOCIALS_LINKS.SU_IG.linkTo,
     imgSrc: SOCIALS_LINKS.MAJALES_IG.imgSrc,
     imgAlt: SOCIALS_LINKS.MAJALES_IG.imgAlt,
   },
