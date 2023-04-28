@@ -40,11 +40,6 @@ const Footer = () => {
       pos: 'artdirectior',
       mail: 'hlasenska@sutb.cz',
     },
-    // {
-    //   name: "Sára Hlásenská, David Štolba",
-    //   pos: "webdesign a vizuální zpracování",
-    //   mail: "hlasenksa@sutb.cz, stolba@sutb.cz",
-    // },
   ];
 
   const footerLinks = [
@@ -63,7 +58,6 @@ const Footer = () => {
   return (
     <footer
       id='kontakt'
-      // className="bg-[url('/src/assets/footer/footer_bg_phone.png')] md:bg-[url('/src/assets/footer/footer_bg.png')] bg-no-repeat bg-center bg-cover pt-12 pb-4"
       className='bg-gradient-to-r from-[#da920f] to-[#dcc785] pt-12 pb-4'
     >
       <div className='flex flex-col items-center justify-around text-center footer-inner md:items-start md:flex-row md:text-left'>

@@ -5,6 +5,7 @@ import spotify from '../../assets/icons/spotify.png';
 interface MyComponentProps {
   children?: React.ReactNode;
   name?: string;
+  secondName?: string;
   genre?: string;
   igLink?: string;
   spotifyLink?: string;
@@ -14,13 +15,14 @@ interface MyComponentProps {
 const LineUpLteTablet: React.FC<MyComponentProps> = ({
   children,
   name,
+  secondName,
   genre,
   igLink,
   spotifyLink,
   black,
 }) => {
   return (
-    <div className='flex w-full bg-[#1D6858] h-[150px] md:h-[200px] green-shadow uppercase'>
+    <div className='flex w-full bg-[#1D6858] h-[200px] md:h-[200px] green-shadow uppercase'>
       <div className='relative flex w-full'>
         {children}
         {name && (
@@ -29,7 +31,7 @@ const LineUpLteTablet: React.FC<MyComponentProps> = ({
               black ? 'text-black' : 'text-white'
             }`}
           >
-            {name}
+            {name} {secondName && <div className='text-lg'>{secondName}</div>}
           </div>
         )}
         {genre && (

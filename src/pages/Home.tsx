@@ -1,10 +1,9 @@
 import About from '../components/organisms/home/About';
 import Aftermovie from '../components/organisms/home/Aftermovie';
-import BandContest from '../components/organisms/home/BandContest';
 import KingQueen from '../components/organisms/home/KingQueen';
 import Heroe from '../components/organisms/home/Heroe';
-import Contact from './Contact';
 import Lineup from './LineUp';
+import Partners from '../components/organisms/partners/Partners';
 
 const Home = () => {
   return (
@@ -13,8 +12,8 @@ const Home = () => {
       <Aftermovie />
       <About />
       <Lineup />
-      {/* <BandContest /> */}
       <KingQueen />
+      <Partners />
     </>
   );
 };

@@ -18,7 +18,7 @@ const LineUpLeftHalf: React.FC<MyComponentProps> = ({
   spotifyLink,
 }) => {
   return (
-    <div className='w-full md:w-1/2 bg-[#1D6858] min-h-[120px] green-shadow uppercase'>
+    <div className='w-full md:w-1/2 min-h-[120px] green-shadow uppercase'>
       <div className='relative'>
         {children}
         {name && (
