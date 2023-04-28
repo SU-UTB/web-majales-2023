@@ -22,23 +22,28 @@ export const mainPartners: PartnerItem[] = [
   {
     name: 'Plazma Plus',
     logoSrc: plazmaPlus,
+    linkURL: 'https://plazma.plus/',
   },
   {
     name: 'IS Produkce',
     logoSrc: isProdukce,
+    linkURL: 'https://isprodukce.cz/',
+  },
+  {
+    name: 'Vincentka',
+    logoSrc: vincentka,
+    linkURL: 'https://www.vincentka.cz/',
   },
   {
     name: 'Geniczechom',
     logoSrc: geniczechom,
+    linkURL: 'https://www.geniczech.cz/',
   },
 
   {
     name: 'MeatFly',
     logoSrc: meatFly,
-  },
-  {
-    name: 'Vincentka',
-    logoSrc: vincentka,
+    linkURL: 'https://www.meatfly.cz/',
   },
 ];
 
@@ -46,58 +51,70 @@ export const partners: PartnerItem[] = [
   {
     name: 'The label',
     logoSrc: theLabel,
+    linkURL: 'https://www.the-label.cz/',
   },
   {
     name: 'Cisty festival',
     logoSrc: cistyFestival,
+    linkURL: 'https://www.cistyfestival.cz/',
   },
 
   {
     name: 'Kenneth',
     logoSrc: kenneth,
+    linkURL: 'https://www.kenneth.cz/',
   },
 
   {
     name: 'Radegast',
     logoSrc: radegast,
+    linkURL: 'https://www.radegast.cz/',
   },
   {
     name: 'Next bike',
     logoSrc: nextBike,
+    linkURL: 'https://www.nextbikeczech.com/',
   },
 
   {
     name: 'Vertikon',
     logoSrc: vertikon,
+    linkURL: 'https://www.vertikon.cz/',
   },
 
   {
     name: 'Kafe Na rohu',
     logoSrc: kafeNaRohu,
+    linkURL: 'https://www.kafenarohu.cz/',
   },
 
   {
     name: 'Faency Fries',
     logoSrc: faencyFries,
+    linkURL: 'https://www.faencyfries.cz/',
   },
 
   {
     name: 'Svet plodu',
     logoSrc: svetPlodu,
+    linkURL: 'https://www.svetplodu.cz/',
   },
 
   {
     name: 'Lazo Plazo fest',
     logoSrc: lazoPlazo,
+    linkURL: 'https://lazoplazofest.cz/',
   },
 
   {
     name: 'F1 fitness',
     logoSrc: f1_fitness,
+    linkURL: 'http://www.fitnessf1.cz/',
   },
 
   {
     name: 'Halo bubble Tea',
     logoSrc: bubbleTea,
+    linkURL: 'http://halobubbletea.cz/',
   },
 ];

@@ -12,9 +12,13 @@ const Partners = () => {
     >
       <div className='flex flex-col w-full self-center'>
         <PartnerHeading>Generální partner</PartnerHeading>
-        <div className='lg:w-[350px] xs:w-[250px] w-[200px] mb-10 xs:mb-20 self-center gap-8'>
+        <a
+          className='lg:w-[250px] xs:w-[200px] w-[150px] mt-4 mb-10 xs:mb-20 self-center gap-8'
+          href='https://www.trinitybank.cz/'
+          target='_blank'
+        >
           <img src={trinityBank} alt='Trinity Bank' />
-        </div>
+        </a>
       </div>
 
       <div className='self-center'>
@@ -22,36 +26,48 @@ const Partners = () => {
       </div>
       <div className='flex mb-14 xs:mb-20 flex-wrap justify-center gap-8 xs:gap-12'>
         {mainPartners.map((item, index) => (
-          <div
-            className='lg:w-[170px] xs:w-[150px] w-[120px] h-auto self-center'
+          <a
             key={index}
+            className='lg:w-[170px] xs:w-[150px] w-[120px] h-auto self-center'
+            href={item.linkURL}
+            target='_blank'
           >
             <img className='w-full' src={item.logoSrc} alt={item.name} />
-          </div>
+          </a>
         ))}
       </div>
 
       <PartnerHeading>Logistický partner</PartnerHeading>
-      <div className='flex flex-col lg:w-[200px] xs:w-[170px] w-[130px] mb-14 xs:mb-20 self-center gap-8'>
+      <a
+        className='flex flex-col lg:w-[200px] xs:w-[170px] w-[130px] mb-14 xs:mb-20 self-center gap-8'
+        href='https://www.postabezhranic.cz/'
+        target='_blank'
+      >
         <img src={postaBezHranic} alt='Posta bez hranic' />
-      </div>
+      </a>
 
       <PartnerHeading>Partner pro RoadShow Majáles UTB 2023</PartnerHeading>
-      <div className='flex flex-col lg:w-[150px] xs:w-[150px] w-[100px] mb-14 xs:mb-20 self-center gap-8'>
+      <a
+        className='flex flex-col lg:w-[150px] xs:w-[150px] w-[100px] mb-14 xs:mb-20 self-center gap-8'
+        href='https://vestzlin.cz/'
+        target='_blank'
+      >
         <img src={vest} alt='Vest' />
-      </div>
+      </a>
 
       <div className='self-center'>
         <PartnerHeading>Partneři</PartnerHeading>
       </div>
       <div className='flex flex-wrap justify-center align-middle gap-8 xs:gap-12'>
         {partners.map((item, index) => (
-          <div
-            className='lg:w-[150px] xs:w-[130px] w-[100px] h-auto self-center'
+          <a
             key={index}
+            className='lg:w-[150px] xs:w-[130px] w-[100px] h-auto self-center'
+            href={item.linkURL}
+            target='_blank'
           >
             <img className='w-full' src={item.logoSrc} alt={item.name} />
-          </div>
+          </a>
         ))}
       </div>
     </div>
