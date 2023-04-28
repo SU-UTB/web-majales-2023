@@ -24,7 +24,7 @@ const LineUpRight: React.FC<MyComponentProps> = ({
     <div
       className={`w-full md:w-2/5 ${
         headliner ? 'min-h-[200px]' : 'min-h-[120px]'
-      } min-h-[120px] md:min-h-[120px] green-shadow uppercase `}
+      } min-h-[120px] green-shadow uppercase `}
     >
       <div className='relative'>
         {children}

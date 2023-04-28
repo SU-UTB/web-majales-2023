@@ -12,12 +12,12 @@ const headerItems = [
     text: 'Král Majálesu',
   },
   {
-    tag: '#kontakt',
-    text: 'Kontakt',
-  },
-  {
     tag: '#partneri',
     text: 'Partneři',
+  },
+  {
+    tag: '#kontakt',
+    text: 'Kontakt',
   },
 ];
 

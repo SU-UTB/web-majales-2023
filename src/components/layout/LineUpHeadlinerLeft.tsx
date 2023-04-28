@@ -24,7 +24,7 @@ const LineUpHeadlinerLeft: React.FC<MyComponentProps> = ({
     <div
       className={`w-full md:w-3/5 ${
         headliner ? '' : 'max-h-[120px]'
-      } min-h-[120px] md:min-h-[120px] green-shadow uppercase overflow-hidden`}
+      } min-h-[120px] green-shadow uppercase overflow-hidden`}
     >
       <div className='relative'>
         {children}
