@@ -3,6 +3,7 @@ import vincentka from '../../../assets/partners/2023/mainPartners/vincentka.png'
 import meatFly from '../../../assets/partners/2023/mainPartners/meatFly.png';
 import isProdukce from '../../../assets/partners/2023/mainPartners/isProdukce.png';
 import plazmaPlus from '../../../assets/partners/2023/mainPartners/plazmaPlus.png';
+import moraviaContainers from '../../../assets/partners/2023/mainPartners/moraviaContainers.png';
 
 import geniczechom from '../../../assets/partners/2023/classicPartners/geniczechom.png';
 import radegast from '../../../assets/partners/2023/classicPartners/radegast.png';
@@ -38,6 +39,12 @@ export const mainPartners: PartnerItem[] = [
     name: 'Geniczechom',
     logoSrc: geniczechom,
     linkURL: 'https://www.geniczech.cz/',
+  },
+
+  {
+    name: 'Moravia Containers',
+    logoSrc: moraviaContainers,
+    linkURL: 'https://moraviacontainers.com/cz/',
   },
 
   {
