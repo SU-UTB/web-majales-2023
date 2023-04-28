@@ -33,7 +33,7 @@ const KingQueenModal: React.FC<ModalProps> = ({ isOpen, closeModal }) => {
       </div>
 
       <h5 className='mb-6 uppercase text-xl md:text-3xl txt-bold'>
-        Pravidla pro účast v soutěži Král a Královna Majálesu UTB 2022
+        Pravidla pro účast v soutěži Král&nbsp;a&nbsp;Královna Majálesu UTB 2022
       </h5>
 
       <p className='modal-item'>
@@ -45,18 +45,17 @@ const KingQueenModal: React.FC<ModalProps> = ({ isOpen, closeModal }) => {
         jednoho muže a jedné ženy.
       </p>
       <p className='modal-item'>
-        <strong>3. </strong> Celý tým musí být ze stejné fakulty.
+        <strong>3. </strong> Tým nemusí být ze stejné fakulty.
       </p>
       <p className='modal-item'>
-        <strong>4. </strong> Registrovat se je možné od 18. 4. 00:01 do 1. 5.
-        23:59.
+        <strong>4. </strong> Registrovat se je možné do 30. 4. 23:59.
       </p>
       <p className='modal-item'>
         <strong>5. </strong> Registrace probíhá pomocí přihlašovacího formuláře.
       </p>
       <p className='modal-item'>
         <strong>6. </strong> Pro výhru v soutěži je potřeba účastnit se všech
-        kol soutěže, které proběhnou 6. 5. v areálu konání akce. Způsob
+        kol soutěže, které proběhnou 5. 5. v areálu konání akce. Způsob
         jednotlivých soutěžních kol bude upřesněn. Kola budou bodovaná.
       </p>
       <p className='modal-item'>
