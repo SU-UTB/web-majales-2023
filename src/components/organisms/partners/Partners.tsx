@@ -3,12 +3,14 @@ import trinityBank from '../../../assets/partners/2023/trinityBank.png';
 import postaBezHranic from '../../../assets/partners/2023/mainPartners/postaBezHranic.png';
 import vest from '../../../assets/partners/2023/classicPartners/vest.png';
 import PartnerHeading from '../../atoms/section/PartnerHeading';
+import su from '../../../assets/partners/2023/suCut.png';
+import utb from '../../../assets/partners/2023/utb.svg';
 
 const Partners = () => {
   return (
     <div
       id='partneri'
-      className='flex flex-col w-4/5 w-max-[1600px] m-auto my-12 xs:my-20 gap-10 xs:gap-8'
+      className='flex flex-col w-4/5 w-max-[1600px] m-auto my-12 xs:mt-20 xs:mb-0 gap-10 xs:gap-8'
     >
       <div className='flex flex-col w-full self-center'>
         <PartnerHeading>Generální partner</PartnerHeading>
@@ -58,7 +60,7 @@ const Partners = () => {
       <div className='self-center'>
         <PartnerHeading>Partneři</PartnerHeading>
       </div>
-      <div className='flex flex-wrap justify-center align-middle gap-8 xs:gap-12'>
+      <div className='flex flex-wrap justify-center align-middle gap-8 xs:gap-12 mb-20'>
         {partners.map((item, index) => (
           <a
             key={index}
@@ -69,6 +71,26 @@ const Partners = () => {
             <img className='w-full' src={item.logoSrc} alt={item.name} />
           </a>
         ))}
+      </div>
+
+      <div className='self-center'>
+        <PartnerHeading>Organizátoři</PartnerHeading>
+      </div>
+      <div className='flex mb-10 xs:mb-20 xs:mt-6 flex-wrap justify-center gap-12 md:gap-20'>
+        <a
+          className='flex flex-col lg:w-[300px] xs:w-[250px] w-[200px] self-center'
+          href='https://www.instagram.com/studentskaunieutb/'
+          target='_blank'
+        >
+          <img src={su} alt='Studentská Unie UTB' />
+        </a>
+        <a
+          className='flex flex-col lg:w-[300px] xs:w-[250px] w-[200px] self-center'
+          href='https://www.utb.cz/'
+          target='_blank'
+        >
+          <img src={utb} alt='Univerzita Tomase Bati' />
+        </a>
       </div>
     </div>
   );
