@@ -94,7 +94,7 @@ const KingQueen = () => {
 
         <div className='w-full lg:w-1/2'>
           <SectionHeadingBig color='white'>
-            Meatlfy Král a&nbsp;královna <br />
+            Meatfly Král a&nbsp;královna <br />
             Majálesu
           </SectionHeadingBig>
 
