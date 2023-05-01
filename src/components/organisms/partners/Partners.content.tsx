@@ -18,6 +18,7 @@ import faencyFries from '../../../assets/partners/2023/classicPartners/faencyFri
 import lazoPlazo from '../../../assets/partners/2023/classicPartners/lazoPlazo.svg';
 import f1_fitness from '../../../assets/partners/2023/classicPartners/f1_fitness.png';
 import bubbleTea from '../../../assets/partners/2023/classicPartners/bubbleTea.png';
+import riva from '../../../assets/partners/2023/classicPartners/riva.png';
 
 export const mainPartners: PartnerItem[] = [
   {
@@ -123,5 +124,10 @@ export const partners: PartnerItem[] = [
     name: 'Halo bubble Tea',
     logoSrc: bubbleTea,
     linkURL: 'http://halobubbletea.cz/',
+  },
+  {
+    name: 'Riva kebab haus',
+    logoSrc: riva,
+    linkURL: 'https://www.facebook.com/profile.php?id=100049107807003',
   },
 ];
