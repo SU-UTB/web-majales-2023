@@ -1,9 +1,11 @@
-import { ROUTES } from '../../lib/constants/Routes';
-import FooterItemHeadline from '../atoms/footer/FooterItemHeadline';
-import FooterLink from '../atoms/footer/FooterLink';
-import FooterNavLink from '../atoms/footer/FooterNavLink';
-import FooterManagerItem from '../moleculs/footer/FooterManagerItem';
-import SocialsContainer from '../moleculs/footer/SocialsContainer';
+import { useState } from 'react';
+import { ROUTES } from '../../../lib/constants/Routes';
+import FooterItemHeadline from '../../atoms/footer/FooterItemHeadline';
+import FooterLink from '../../atoms/footer/FooterLink';
+import FooterNavLink from '../../atoms/footer/FooterNavLink';
+import FooterManagerItem from '../../moleculs/footer/FooterManagerItem';
+import SocialsContainer from '../../moleculs/footer/SocialsContainer';
+import PdfModal from './PdfModal';
 
 const Footer = () => {
   const managers = [
@@ -55,6 +57,12 @@ const Footer = () => {
     },
   ];
 
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState<boolean>(false);
+
+  const togglePdfModal = () => {
+    setIsPdfModalOpen(!isPdfModalOpen);
+  };
+
   return (
     <footer
       id='kontakt'
@@ -65,6 +73,14 @@ const Footer = () => {
           <FooterItemHeadline
             headlineText='majáles'
             classNames='mb-4 md:mb-6'
+          />
+          <a className='cursor-pointer' onClick={togglePdfModal}>
+            Návštěvní řád
+          </a>
+          <PdfModal
+            isOpen={isPdfModalOpen}
+            closeModal={togglePdfModal}
+            pdfFile='/navstevni-rad-Majales-UTB.pdf'
           />
           {ROUTES.map(
             (route) =>
