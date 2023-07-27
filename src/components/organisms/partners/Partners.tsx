@@ -1,4 +1,4 @@
-import { mainPartners, partners } from './Partners.content';
+import { mainPartners, partners, supporters } from './Partners.content';
 import trinityBank from '../../../assets/partners/2023/trinityBank.png';
 import postaBezHranic from '../../../assets/partners/2023/mainPartners/postaBezHranic.png';
 import vest from '../../../assets/partners/2023/classicPartners/vest.png';
@@ -62,6 +62,22 @@ const Partners = () => {
       </div>
       <div className='flex flex-wrap justify-center align-middle gap-8 xs:gap-12 mb-20'>
         {partners.map((item, index) => (
+          <a
+            key={index}
+            className='lg:w-[150px] xs:w-[130px] w-[100px] h-auto self-center'
+            href={item.linkURL}
+            target='_blank'
+          >
+            <img className='w-full' src={item.logoSrc} alt={item.name} />
+          </a>
+        ))}
+      </div>
+
+      <div className='self-center'>
+        <PartnerHeading>Majáles podporují</PartnerHeading>
+      </div>
+      <div className='flex flex-wrap justify-center align-middle gap-8 xs:gap-12 mb-20 md:mt-4'>
+        {supporters.map((item, index) => (
           <a
             key={index}
             className='lg:w-[150px] xs:w-[130px] w-[100px] h-auto self-center'

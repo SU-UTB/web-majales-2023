@@ -20,6 +20,9 @@ import f1_fitness from '../../../assets/partners/2023/classicPartners/f1_fitness
 import bubbleTea from '../../../assets/partners/2023/classicPartners/bubbleTea.png';
 import riva from '../../../assets/partners/2023/classicPartners/riva.png';
 
+import zlinMesto from '../../../assets/partners/2023/supporters/zlinMesto.jpg';
+import zlinKraj from '../../../assets/partners/2023/supporters/zlinKraj.jpg';
+
 export const mainPartners: PartnerItem[] = [
   {
     name: 'Plazma Plus',
@@ -129,5 +132,18 @@ export const partners: PartnerItem[] = [
     name: 'Riva kebab haus',
     logoSrc: riva,
     linkURL: 'https://www.facebook.com/profile.php?id=100049107807003',
+  },
+];
+
+export const supporters: PartnerItem[] = [
+  {
+    name: 'Město Zlín',
+    logoSrc: zlinMesto,
+    linkURL: 'https://www.zlin.eu/',
+  },
+  {
+    name: 'Zlínský kraj',
+    logoSrc: zlinKraj,
+    linkURL: 'https://zlinskykraj.cz/',
   },
 ];
