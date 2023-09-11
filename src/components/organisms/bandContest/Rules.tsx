@@ -34,7 +34,7 @@ const Rules = () => {
             <li>
               Do druhého kola postoupí první
               <span className="txt-bold">tři finalisté hlasování;</span> ti
-              dostanou příležitost zahrát si 6. 5. přímo na
+              dostanou příležitost zahrát si 5. 5. přímo na
               <span className="txt-bold">stagi Majálesu UTB 2022.</span>
               Vystoupení musí trvat
               <span className="txt-bold">40—55 minut.</span>
