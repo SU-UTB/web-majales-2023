@@ -1,4 +1,4 @@
-import Footer from './Footer';
+import Footer from './Footer/Footer';
 import Header from './Header';
 
 type Props = {
@@ -9,7 +9,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main className="mx-auto">{children}</main>
+      <main className='mx-auto'>{children}</main>
       <Footer />
     </>
   );

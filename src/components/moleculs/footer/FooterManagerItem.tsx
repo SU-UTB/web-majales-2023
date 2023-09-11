@@ -10,8 +10,10 @@ const FooterManagerItem = ({ managerName, managerPos, managerMail }: Props) => {
   return (
     <>
       <FooterItemHeadline headlineText={managerName} />
-      <p className="manager-position">{managerPos}</p>
-      <a href={`mailto:${managerMail}`}>{managerMail}</a>
+      <p className='text-[18px] md:text-[20px]'>{managerPos}</p>
+      <a className='text-[16px] md:text-[18px]' href={`mailto:${managerMail}`}>
+        {managerMail}
+      </a>
     </>
   );
 };

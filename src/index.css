@@ -37,13 +37,14 @@ html, body {
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #391F68;
+	color: black;
 	font-family: CabinetGroteskRegular;
 	font-size: 18px;
 	font-display: swap;
@@ -95,11 +96,41 @@ input, button, select, textarea {
 .section-heading {
 	font-family: CabinetGroteskBold;
 	letter-spacing: 0.01em;
-	font-size: 46px;
+	font-size: 38px;
+	text-transform: uppercase;
+}
+
+.lineup-row {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	
+	@media (min-width: 768px) {
+		flex-direction: row;
+		width: 66%;
+		gap: 1rem;
+	}
 }
 
 ol {
 	list-style: decimal;
 	margin: auto;
 	padding-left: 2rem;
+}
+
+
+.green-shadow {
+	box-shadow: -3px 3px #60E4CC;
+}
+
+
+.modal-item {
+	padding-bottom: 1em;
+	font-size: 18px;
+}
+
+@media (max-width: 480px) {
+	.modal-item {
+		font-size: 14px;
+	}
 }
