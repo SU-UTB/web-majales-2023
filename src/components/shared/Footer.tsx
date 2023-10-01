@@ -8,28 +8,15 @@ import SocialsContainer from '../moleculs/footer/SocialsContainer';
 const Footer = () => {
   const managers = [
     {
-      name: 'Marek Hujo, Martin Šálek',
+      name: 'Michaela Kasardová, Simona Hazuchová',
       pos: 'manažeři projektu',
-      mail: 'hujo@sutb.cz, martin.salek@sutb.cz',
+      mail: 'kasardova@sutb.cz, hazuchova@sutb.cz',
     },
-    {
-      name: 'Rastík škojec',
-      pos: 'marketing',
-      mail: 'skojec@sutb.cz',
-    },
-    {
-      name: 'Michelle Hozzová',
-      pos: 'externí spolupráce',
-      mail: 'hozzova@sutb.cz',
-    },
+
   ];
 
   const behindTheScenesGuyz = [
-    {
-      name: 'Jan Bureš',
-      pos: 'správa webu a IT',
-      mail: 'j_bures@sutb.cz',
-    },
+
     {
       name: 'Dominik Gerža',
       pos: 'statutární zástupce',
@@ -44,7 +31,7 @@ const Footer = () => {
 
   const footerLinks = [
     {
-      linkTo: 'sunovy.utb.cz',
+      linkTo: 'su.utb.cz',
     },
     {
       linkTo: 'utb.cz',
