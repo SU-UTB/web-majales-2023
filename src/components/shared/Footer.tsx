@@ -4,6 +4,7 @@ import FooterLink from '../atoms/footer/FooterLink';
 import FooterNavLink from '../atoms/footer/FooterNavLink';
 import FooterManagerItem from '../moleculs/footer/FooterManagerItem';
 import SocialsContainer from '../moleculs/footer/SocialsContainer';
+import GetYear from '../../utils/GetYear';
 
 const Footer = () => {
   const managers = [
@@ -107,10 +108,10 @@ const Footer = () => {
         </div>
       </div>
       <h6 className='mt-8 text-center uppercase md:mt-12 txt-bold text-[14px] md:text-[18px]'>
-        ©Studentská unie utb, 2023
+        ©Studentská unie utb, {GetYear()}
       </h6>
     </footer>
   );
-};
+};  
 
 export default Footer;
