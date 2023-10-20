@@ -1,3 +1,4 @@
+
 import { ROUTES } from '../../lib/constants/Routes';
 import FooterItemHeadline from '../atoms/footer/FooterItemHeadline';
 import FooterLink from '../atoms/footer/FooterLink';
@@ -7,57 +8,77 @@ import SocialsContainer from '../moleculs/footer/SocialsContainer';
 import GetYear from '../../utils/GetYear';
 
 const Footer = () => {
-  const managers = [
-    {
-      name: 'Michaela Kasardová, Simona Hazuchová',
-      pos: 'manažeři projektu',
-      mail: 'kasardova@sutb.cz, hazuchova@sutb.cz',
-    },
-
-  ];
-
   const behindTheScenesGuyz = [
-
     {
-      name: 'Dominik Gerža',
-      pos: 'statutární zástupce',
-      mail: 'gerza@sutb.cz',
+      name: "VERONIKA PAVELKOVÁ",
+      pos: "marketing",
+      mail: "pavelkova@sutb.cz",
     },
     {
-      name: 'Sára Hlásenská',
-      pos: 'artdirectior',
-      mail: 'hlasenska@sutb.cz',
+      name: "PETRA NĚMCOVÁ",
+      pos: "media relations",
+      mail: "nemcova@sutb.cz",
+    },
+    {
+      name: "MARTIN ŠÁLEK",
+      pos: "produkce",
+      mail: "martin.salek@sutb.cz",
+    },
+    {
+      name: "DAVID ŠTÍCHA",
+      pos: "kapely",
+      mail: "sticha@sutb.cz",
+    },
+    {
+      name: "KAREL KRATOCHVÍL",
+      pos: "sales",
+      mail: "kratochvil@sutb.cz",
+    },
+    {
+      name: "SÁRA HLÁSENSKÁ",
+      pos: "artdirectior",
+      mail: "hlasenska@sutb.cz",
+    },
+    {
+      name: "Michaela Kasardová",
+      pos: "manažer projektu",
+      mail: "kasardova@sutb.cz",
+    },
+    {
+      name: "Simona Hazuchová",
+      pos: "manažer projektu",
+      mail: "hazuchova@sutb.cz",
     },
   ];
 
   const footerLinks = [
     {
-      linkTo: 'su.utb.cz',
+      linkTo: "su.utb.cz",
     },
     {
-      linkTo: 'utb.cz',
+      linkTo: "utb.cz",
     },
     {
-      linkTo: 'su@utb.cz',
+      linkTo: "su@utb.cz",
       isMailLink: true,
     },
   ];
 
   return (
     <footer
-      id='kontakt'
-      className='bg-gradient-to-r from-[#da920f] to-[#dcc785] pt-12 pb-4'
+      id="kontakt"
+      className="bg-gradient-to-r from-[#da920f] to-[#dcc785] pt-12 pb-4"
     >
-      <div className='flex flex-col items-center justify-around text-center footer-inner md:items-start md:flex-row md:text-left'>
-        <div className='mb-4 footer-nav-links md:mb-0'>
+      <div className="flex flex-col items-center justify-around text-center footer-inner md:items-start md:flex-row md:text-left">
+        <div className="mb-4 footer-nav-links md:mb-0">
           <FooterItemHeadline
-            headlineText='majáles'
-            classNames='mb-4 md:mb-6'
+            headlineText="majáles"
+            classNames="mb-4 md:mb-6"
           />
           {ROUTES.map(
             (route) =>
               route.linkText && (
-                <div key={route.path} className='mb-2 footer-nav-link'>
+                <div key={route.path} className="mb-2 footer-nav-link">
                   <FooterNavLink
                     linkTo={route.path}
                     linkText={route.linkText}
@@ -66,7 +87,7 @@ const Footer = () => {
               )
           )}
 
-          <div className='flex flex-col items-center mt-4 footer-contact-links md:mt-6 md:items-start'>
+          <div className="flex flex-col items-center mt-4 footer-contact-links md:mt-6 md:items-start">
             {footerLinks.map((footerLink) => (
               <FooterLink
                 key={footerLink.linkTo}
@@ -75,25 +96,15 @@ const Footer = () => {
               />
             ))}
           </div>
-          <div className='hidden md:block pt-10'>
+          <div className="hidden md:block pt-10">
             <SocialsContainer />
           </div>
         </div>
-        <div className='flex flex-col justify-between my-4 managers space-y-8 md:my-0'>
-          {managers.map((manager) => (
-            <div key={manager.name} className='footer-manager-item'>
-              <FooterManagerItem
-                managerName={manager.name}
-                managerPos={manager.pos}
-                managerMail={manager.mail}
-              />
-            </div>
-          ))}
-        </div>
-        <div className='flex flex-col items-center footer-contacts md:items-start'>
-          <div className='flex flex-col footer-guyz'>
+
+        <div className="footer-contacts md:items-start">
+          <div className=" md:grid md:grid-rows-2 md:grid-cols-4  ml-3 md:gap-4  sm:flex sm:flex-col  footer-guyz">
             {behindTheScenesGuyz.map((guy) => (
-              <div key={guy.name} className='mb-8 footer-guy-item'>
+              <div key={guy.name} className="mb-8  footer-guy-item">
                 <FooterManagerItem
                   managerName={guy.name}
                   managerPos={guy.pos}
@@ -103,7 +114,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className='block md:hidden'>
+        <div className="block md:hidden">
           <SocialsContainer />
         </div>
       </div>
