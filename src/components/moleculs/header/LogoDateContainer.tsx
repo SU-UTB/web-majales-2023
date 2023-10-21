@@ -1,5 +1,4 @@
 import majalesLogo from "/maj_logo.png";
-import GetYear from "../../../utils/GetYear";
 
 const LogoDateContainer = () => {
   return (
@@ -7,7 +6,7 @@ const LogoDateContainer = () => {
       <a href="./">
         <img src={majalesLogo} alt="Majáles logo modré" />
       </a>
-      <p className="text-[#F47011] txt-bold">5.&nbsp;5.&nbsp;{GetYear()}</p>
+      <p className="text-[#F47011] txt-bold">5.&nbsp;5.&nbsp;2024</p>
     </div>
   );
 };

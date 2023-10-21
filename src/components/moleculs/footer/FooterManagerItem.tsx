@@ -1,4 +1,4 @@
-  import FooterItemHeadline from '../../atoms/footer/FooterItemHeadline';
+import FooterItemHeadline from '../../atoms/footer/FooterItemHeadline';
 
 type Props = {
   managerName: string;
