@@ -46,7 +46,7 @@ const Partners = () => {
         <img src={postaBezHranic} alt='Posta bez hranic' />
       </a>
 
-      <PartnerHeading>Partner pro RoadShow Majáles UTB 2023</PartnerHeading>
+      <PartnerHeading>Partner pro RoadShow Majáles UTB 2024</PartnerHeading>
       <a
         className='flex flex-col lg:w-[150px] xs:w-[150px] w-[100px] mb-14 xs:mb-20 self-center gap-8'
         href='https://vestzlin.cz/'

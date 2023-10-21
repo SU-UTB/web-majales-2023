@@ -1,9 +1,10 @@
-import { ROUTES } from "../../lib/constants/Routes";
-import FooterItemHeadline from "../atoms/footer/FooterItemHeadline";
-import FooterLink from "../atoms/footer/FooterLink";
-import FooterNavLink from "../atoms/footer/FooterNavLink";
-import FooterManagerItem from "../moleculs/footer/FooterManagerItem";
-import SocialsContainer from "../moleculs/footer/SocialsContainer";
+
+import { ROUTES } from '../../lib/constants/Routes';
+import FooterItemHeadline from '../atoms/footer/FooterItemHeadline';
+import FooterLink from '../atoms/footer/FooterLink';
+import FooterNavLink from '../atoms/footer/FooterNavLink';
+import FooterManagerItem from '../moleculs/footer/FooterManagerItem';
+import SocialsContainer from '../moleculs/footer/SocialsContainer';
 
 const Footer = () => {
   const behindTheScenesGuyz = [
@@ -116,11 +117,11 @@ const Footer = () => {
           <SocialsContainer />
         </div>
       </div>
-      <h6 className="mt-8 text-center uppercase md:mt-12 txt-bold text-[14px] md:text-[18px]">
-        ©Studentská unie utb, 2023
+      <h6 className='mt-8 text-center uppercase md:mt-12 txt-bold text-[14px] md:text-[18px]'>
+        ©Studentská unie utb, 2024
       </h6>
     </footer>
   );
-};
+};  
 
 export default Footer;
