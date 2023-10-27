@@ -19,7 +19,7 @@ const About = () => {
         <div className='w-full lg:w-1/2 '>
           <SectionHeading sectionHeadingText='Přijďte si poslechnout hvězdy české hudební scény. Vydejte se s námi k nebesům.' />
           <Paragraph>
-            Už <strong>5. května </strong>
+            Už <strong>3. května </strong>
             se potkáme v malebném
             <strong> parku před Baťovou vilou.</strong> Tradičně se můžete těšit
             na mraky doprovodných eventů nebo volbu krále a&nbsp;královny

@@ -6,7 +6,7 @@ const LogoDateContainer = () => {
       <a href="./">
         <img src={majalesLogo} alt="Majáles logo modré" />
       </a>
-      <p className="text-[#F47011] txt-bold">5.&nbsp;5.&nbsp;2024</p>
+      <p className="text-[#F47011] txt-bold">3.&nbsp;5.&nbsp;2024</p>
     </div>
   );
 };
