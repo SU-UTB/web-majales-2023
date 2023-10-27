@@ -1,14 +1,3 @@
-import {
-  bandContestPartner,
-  generalPartner,
-  logisticPartner,
-  mainPartners,
-  medialPartners,
-  organizators,
-  partners,
-} from '../../../data/partners';
-import PartnerBox from '../../atoms/partner/PartnerBox';
-import PartnerPicture from '../../atoms/partner/PartnerPicture';
 import PartnerSection from '../../atoms/partner/PartnerSection';
 
 const PartnerList = () => {
