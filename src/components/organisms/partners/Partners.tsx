@@ -1,4 +1,3 @@
-import { mainPartners, partners } from './Partners.content';
 import PartnerHeading from '../../atoms/section/PartnerHeading';
 
 const Partners = () => {
